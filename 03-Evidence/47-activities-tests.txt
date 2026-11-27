@@ -1,0 +1,11 @@
+tests_v2/test_activity3_precision_recall.py::test_precision_recall_at_5_hand_example PASSED [ 20%]
+tests_v2/test_activity3_precision_recall.py::test_precision_recall_no_relevant_retrieved PASSED [ 40%]
+tests_v2/test_activity4_hit_rate_mrr.py::test_hit_rate_and_mrr_hand_example PASSED [ 60%]
+tests_v2/test_activity4_hit_rate_mrr.py::test_hit_rate_and_mrr_counts_only_first_relevant PASSED [ 80%]
+tests_v2/test_activity4_hit_rate_mrr.py::test_hit_rate_and_mrr_rejects_mismatched_inputs PASSED [100%]
+============================== 5 passed in 0.43s ===============================
+--- full offline suite ---
+198 passed, 2 deselected in 19.02s
+--- lint / frozen manifests ---
+All checks passed!
+OVERALL: PASS

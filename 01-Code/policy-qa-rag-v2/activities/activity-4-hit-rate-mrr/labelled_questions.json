@@ -1,0 +1,133 @@
+{
+  "source": "evaluation/datasets/eval_queries_v1_1.json (frozen) - first 10 answerable questions",
+  "question_text": "read from the frozen dataset by ID (held-out texts are not copied, see test_held_out_guard)",
+  "relevance_rule": "chunk fully contains at least one required evidence sentence",
+  "chunking": "v1_paragraph_800_150",
+  "questions": [
+    {
+      "id": "EV-01",
+      "category": "paraphrase / synonym",
+      "required_evidence": [
+        [
+          "HR-001-S04-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-001-CH03"
+      ]
+    },
+    {
+      "id": "EV-02",
+      "category": "paraphrase / synonym",
+      "required_evidence": [
+        [
+          "HR-001-S06-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-001-CH04"
+      ]
+    },
+    {
+      "id": "EV-03",
+      "category": "paraphrase / synonym",
+      "required_evidence": [
+        [
+          "HR-001-S03-E03"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-001-CH02",
+        "HR-001-CH03"
+      ]
+    },
+    {
+      "id": "EV-04",
+      "category": "paraphrase / synonym",
+      "required_evidence": [
+        [
+          "HR-002-S05-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-002-CH03"
+      ]
+    },
+    {
+      "id": "EV-05",
+      "category": "paraphrase / synonym",
+      "required_evidence": [
+        [
+          "IT-002-S03-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "IT-002-CH02"
+      ]
+    },
+    {
+      "id": "EV-07",
+      "category": "exact keyword / identifier",
+      "required_evidence": [
+        [
+          "IT-001-S03-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "IT-001-CH02"
+      ]
+    },
+    {
+      "id": "EV-08",
+      "category": "exact keyword / identifier",
+      "required_evidence": [
+        [
+          "HR-004-S06-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-004-CH03"
+      ]
+    },
+    {
+      "id": "EV-09",
+      "category": "exact keyword / identifier",
+      "required_evidence": [
+        [
+          "IT-002-S05-E01"
+        ],
+        [
+          "IT-002-S05-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "IT-002-CH02",
+        "IT-002-CH03"
+      ]
+    },
+    {
+      "id": "EV-10",
+      "category": "numerical / date",
+      "required_evidence": [
+        [
+          "HR-001-S03-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-001-CH02"
+      ]
+    },
+    {
+      "id": "EV-11",
+      "category": "numerical / date",
+      "required_evidence": [
+        [
+          "HR-002-S04-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-002-CH02"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+============================================================================================
+ACTIVITY 4 - HIT RATE@K AND MRR@K | Day 12 retriever (v1_paragraph_800_150) | 10 labelled questions
+============================================================================================
+ID     relevant chunk IDs           top-5 retrieved (rank order)                                  
+EV-01  HR-001-CH03                  *HR-001-CH03, HR-001-CH04, HR-001-CH02, HR-001-CH05, HR-002-CH02
+EV-02  HR-001-CH04                  *HR-001-CH04, HR-001-CH03, HR-001-CH05, HR-001-CH02, HR-002-CH02
+EV-03  HR-001-CH02, HR-001-CH03     HR-003-CH02, *HR-001-CH03, HR-003-CH03, HR-002-CH02, HR-001-CH05
+EV-04  HR-002-CH03                  *HR-002-CH03, HR-002-CH04, HR-002-CH02, HR-004-CH02, HR-004-CH03
+EV-05  IT-002-CH02                  *IT-002-CH02, IT-002-CH01, IT-001-CH03, IT-002-CH03, HR-002-CH03
+EV-07  IT-001-CH02                  *IT-001-CH02, HR-004-CH01, IT-001-CH01, HR-002-CH01, HR-001-CH01
+EV-08  HR-004-CH03                  *HR-004-CH03, HR-002-CH02, HR-001-CH02, HR-002-CH01, HR-001-CH01
+EV-09  IT-002-CH02, IT-002-CH03     *IT-002-CH03, *IT-002-CH02, IT-002-CH01, HR-002-CH04, IT-001-CH02
+EV-10  HR-001-CH02                  *HR-001-CH02, HR-001-CH05, HR-001-CH04, HR-001-CH03, HR-002-CH02
+EV-11  HR-002-CH02                  *HR-002-CH02, HR-002-CH03, HR-001-CH05, HR-001-CH02, HR-002-CH04
+(* = known relevant chunk)
+
+Metric          K=3      K=5   Change
+hit_rate      1.000    1.000   +0.000
+mrr           0.950    0.950   +0.000
+
+First-relevant rank per question: [1, 1, 2, 1, 1, 1, 1, 1, 1, 1]
+[PASS] 5 checks: compact function == evaluation.metrics (K=3, K=5); == saved Phase 7 v1 records (K=3, K=5); live top-5 == saved Phase 7 ranking (10/10)
+Wrote labelled_questions.json and results/hit-rate-mrr.json

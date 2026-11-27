@@ -1,0 +1,200 @@
+{
+  "run_utc": "2026-11-27T09:05:30+00:00",
+  "retriever": "Day 12 dense, v1_paragraph_800_150",
+  "questions": 10,
+  "per_question": [
+    {
+      "id": "EV-01",
+      "relevant": [
+        "HR-001-CH03"
+      ],
+      "top5": [
+        "HR-001-CH03",
+        "HR-001-CH04",
+        "HR-001-CH02",
+        "HR-001-CH05",
+        "HR-002-CH02"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-02",
+      "relevant": [
+        "HR-001-CH04"
+      ],
+      "top5": [
+        "HR-001-CH04",
+        "HR-001-CH03",
+        "HR-001-CH05",
+        "HR-001-CH02",
+        "HR-002-CH02"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-03",
+      "relevant": [
+        "HR-001-CH02",
+        "HR-001-CH03"
+      ],
+      "top5": [
+        "HR-003-CH02",
+        "HR-001-CH03",
+        "HR-003-CH03",
+        "HR-002-CH02",
+        "HR-001-CH05"
+      ],
+      "first_relevant_rank": 2,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 0.5,
+      "rr@5": 0.5
+    },
+    {
+      "id": "EV-04",
+      "relevant": [
+        "HR-002-CH03"
+      ],
+      "top5": [
+        "HR-002-CH03",
+        "HR-002-CH04",
+        "HR-002-CH02",
+        "HR-004-CH02",
+        "HR-004-CH03"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-05",
+      "relevant": [
+        "IT-002-CH02"
+      ],
+      "top5": [
+        "IT-002-CH02",
+        "IT-002-CH01",
+        "IT-001-CH03",
+        "IT-002-CH03",
+        "HR-002-CH03"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-07",
+      "relevant": [
+        "IT-001-CH02"
+      ],
+      "top5": [
+        "IT-001-CH02",
+        "HR-004-CH01",
+        "IT-001-CH01",
+        "HR-002-CH01",
+        "HR-001-CH01"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-08",
+      "relevant": [
+        "HR-004-CH03"
+      ],
+      "top5": [
+        "HR-004-CH03",
+        "HR-002-CH02",
+        "HR-001-CH02",
+        "HR-002-CH01",
+        "HR-001-CH01"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-09",
+      "relevant": [
+        "IT-002-CH02",
+        "IT-002-CH03"
+      ],
+      "top5": [
+        "IT-002-CH03",
+        "IT-002-CH02",
+        "IT-002-CH01",
+        "HR-002-CH04",
+        "IT-001-CH02"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-10",
+      "relevant": [
+        "HR-001-CH02"
+      ],
+      "top5": [
+        "HR-001-CH02",
+        "HR-001-CH05",
+        "HR-001-CH04",
+        "HR-001-CH03",
+        "HR-002-CH02"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    },
+    {
+      "id": "EV-11",
+      "relevant": [
+        "HR-002-CH02"
+      ],
+      "top5": [
+        "HR-002-CH02",
+        "HR-002-CH03",
+        "HR-001-CH05",
+        "HR-001-CH02",
+        "HR-002-CH04"
+      ],
+      "first_relevant_rank": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "rr@3": 1.0,
+      "rr@5": 1.0
+    }
+  ],
+  "results": {
+    "k=3": {
+      "hit_rate": 1.0,
+      "mrr": 0.95
+    },
+    "k=5": {
+      "hit_rate": 1.0,
+      "mrr": 0.95
+    }
+  },
+  "all_checks_pass": true
+}

@@ -76,3 +76,17 @@ File names are as saved (four differ slightly from the walkthrough plan; content
 | `40-demo-pytest.png` | 193 passed, 2 deselected | fresh |
 | `41-demo-ask.png` | Real-LLM cited answer (EV-16) and correct refusal (EV-27, cached) | saved (`results/phase7/answers.jsonl`) |
 
+
+## Day 13 Activities 1–4 (screenshots 42–47, captured 2026-11-27)
+
+Manual captures by the project owner of live local runs (no LLM or API calls); each run also saved its text log
+(`.txt`, same number). File names are as saved (two contain a double dot).
+
+| File | Activity | Shows | Fresh run / saved |
+|---|---|---|---|
+| `42-activity1-chunking-top3.png` / `.txt` | 1 – Chunking | fixed 500 vs recursive 800/100: top-3 for 5 questions, Hit@3/MRR@3/P@3/Cov@3, 12/12 checks PASS | fresh |
+| `43-activity2-hybrid-rrf-rerank.png` / `.txt` | 2 – BM25 + RRF + rerank | vector vs BM25 vs hybrid (RRF) vs hybrid + cross-encoder rankings and Hit/MRR@3/5, 11/11 checks PASS | fresh |
+| `44-activity3-precision-recall-at-5..png` / `44-…at-5.txt` | 3 – P@5 / R@5 | relevant IDs, top-5, intersection, fractions per question; mean P@5 0.320, R@5 1.000, 10/10 checks PASS | fresh |
+| `45-activity4-function..png` | 4 – Hit Rate / MRR | the 14-line `hit_rate_and_mrr` function (lines 36–49) | fresh (file listing) |
+| `46-activity4-hit-rate-mrr.png` / `.txt` | 4 – Hit Rate / MRR | 10 labelled questions, Hit Rate 1.000 and MRR 0.950 at K=3 and K=5, 5/5 checks PASS | fresh |
+| `47-activities-tests.png` / `.txt` | 3 and 4 – tests | 5 new hand-worked tests PASS; full suite 198 passed; ruff clean; manifests OVERALL PASS | fresh |
