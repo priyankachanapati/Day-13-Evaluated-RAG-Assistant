@@ -1,0 +1,45 @@
+================================================================================================
+ACTIVITY 3 - PRECISION@5 AND RECALL@5  |  Day 12 retriever (dense, v1_paragraph_800_150, 22 chunks)
+================================================================================================
+Precision@5 = |relevant ∩ top-5| / |top-5|      Recall@5 = |relevant ∩ top-5| / |relevant|
+
+DEV-01  How far in advance do I have to request a two-week holiday?
+  relevant chunk IDs  : ['HR-001-CH02']
+  top-5 retrieved     : 1.HR-001-CH05(0.468), 2.HR-001-CH04(0.454), 3.HR-002-CH02(0.417), 4.HR-001-CH02(0.398), 5.HR-001-CH03(0.325)
+  intersection        : ['HR-001-CH02']
+  Precision@5 = 1/5 = 0.200    Recall@5 = 1/1 = 1.000
+
+DEV-02  What is KeyVault?
+  relevant chunk IDs  : ['IT-001-CH03']
+  top-5 retrieved     : 1.IT-001-CH03(0.295), 2.IT-001-CH02(0.237), 3.IT-001-CH01(0.179), 4.IT-002-CH01(0.172), 5.IT-002-CH02(0.127)
+  intersection        : ['IT-001-CH03']
+  Precision@5 = 1/5 = 0.200    Recall@5 = 1/1 = 1.000
+
+DEV-03  What is the IT Service Desk's internal extension number?
+  relevant chunk IDs  : ['IT-001-CH03', 'IT-002-CH03']
+  top-5 retrieved     : 1.IT-002-CH03(0.434), 2.IT-001-CH03(0.404), 3.IT-002-CH01(0.358), 4.IT-002-CH02(0.312), 5.HR-004-CH01(0.244)
+  intersection        : ['IT-002-CH03', 'IT-001-CH03']
+  Precision@5 = 2/5 = 0.400    Recall@5 = 2/2 = 1.000
+
+DEV-04  Can I use public Wi-Fi when working from home, and do I always need the VPN?
+  relevant chunk IDs  : ['HR-002-CH03', 'HR-002-CH04']
+  top-5 retrieved     : 1.HR-002-CH03(0.637), 2.HR-002-CH04(0.551), 3.HR-002-CH02(0.352), 4.IT-002-CH02(0.269), 5.HR-002-CH01(0.252)
+  intersection        : ['HR-002-CH03', 'HR-002-CH04']
+  Precision@5 = 2/5 = 0.400    Recall@5 = 2/2 = 1.000
+
+DEV-05  On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?
+  relevant chunk IDs  : ['HR-003-CH02', 'HR-003-CH03']
+  top-5 retrieved     : 1.HR-003-CH02(0.560), 2.HR-003-CH03(0.512), 3.HR-003-CH04(0.249), 4.HR-002-CH04(0.199), 5.HR-002-CH03(0.169)
+  intersection        : ['HR-003-CH02', 'HR-003-CH03']
+  Precision@5 = 2/5 = 0.400    Recall@5 = 2/2 = 1.000
+
+Question |rel| hits   Precision@5    Recall@5
+DEV-01       1    1  1/5 = 0.200  1/1 = 1.000
+DEV-02       1    1  1/5 = 0.200  1/1 = 1.000
+DEV-03       2    2  2/5 = 0.400  2/2 = 1.000
+DEV-04       2    2  2/5 = 0.400  2/2 = 1.000
+DEV-05       2    2  2/5 = 0.400  2/2 = 1.000
+Mean                        0.320       1.000   (macro average over 5 questions)
+
+[PASS] 10 checks: Fraction results == evaluation.metrics.query_metrics (5/5) and live top-5 == saved Activity B dense ranking (5/5)
+Wrote labelled_questions.json and results/precision-recall-at-5.json

@@ -1,0 +1,170 @@
+{
+  "run_utc": "2026-11-27T09:01:25+00:00",
+  "k": 5,
+  "retriever": "Day 12 dense retriever, v1_paragraph_800_150",
+  "definition": {
+    "precision_at_k": "relevant retrieved in top k / total retrieved in top k",
+    "recall_at_k": "relevant retrieved in top k / total known relevant"
+  },
+  "per_question": [
+    {
+      "id": "DEV-01",
+      "relevant": [
+        "HR-001-CH02"
+      ],
+      "retrieved_top5": [
+        "HR-001-CH05",
+        "HR-001-CH04",
+        "HR-002-CH02",
+        "HR-001-CH02",
+        "HR-001-CH03"
+      ],
+      "similarities": [
+        0.4679,
+        0.4544,
+        0.4174,
+        0.3983,
+        0.3252
+      ],
+      "intersection": [
+        "HR-001-CH02"
+      ],
+      "numerator": 1,
+      "precision_denominator": 5,
+      "recall_denominator": 1,
+      "precision_at_5": "1/5",
+      "recall_at_5": "1",
+      "precision_at_5_value": 0.2,
+      "recall_at_5_value": 1.0
+    },
+    {
+      "id": "DEV-02",
+      "relevant": [
+        "IT-001-CH03"
+      ],
+      "retrieved_top5": [
+        "IT-001-CH03",
+        "IT-001-CH02",
+        "IT-001-CH01",
+        "IT-002-CH01",
+        "IT-002-CH02"
+      ],
+      "similarities": [
+        0.295,
+        0.2372,
+        0.1791,
+        0.172,
+        0.1267
+      ],
+      "intersection": [
+        "IT-001-CH03"
+      ],
+      "numerator": 1,
+      "precision_denominator": 5,
+      "recall_denominator": 1,
+      "precision_at_5": "1/5",
+      "recall_at_5": "1",
+      "precision_at_5_value": 0.2,
+      "recall_at_5_value": 1.0
+    },
+    {
+      "id": "DEV-03",
+      "relevant": [
+        "IT-001-CH03",
+        "IT-002-CH03"
+      ],
+      "retrieved_top5": [
+        "IT-002-CH03",
+        "IT-001-CH03",
+        "IT-002-CH01",
+        "IT-002-CH02",
+        "HR-004-CH01"
+      ],
+      "similarities": [
+        0.434,
+        0.4036,
+        0.3584,
+        0.312,
+        0.2442
+      ],
+      "intersection": [
+        "IT-002-CH03",
+        "IT-001-CH03"
+      ],
+      "numerator": 2,
+      "precision_denominator": 5,
+      "recall_denominator": 2,
+      "precision_at_5": "2/5",
+      "recall_at_5": "1",
+      "precision_at_5_value": 0.4,
+      "recall_at_5_value": 1.0
+    },
+    {
+      "id": "DEV-04",
+      "relevant": [
+        "HR-002-CH03",
+        "HR-002-CH04"
+      ],
+      "retrieved_top5": [
+        "HR-002-CH03",
+        "HR-002-CH04",
+        "HR-002-CH02",
+        "IT-002-CH02",
+        "HR-002-CH01"
+      ],
+      "similarities": [
+        0.6373,
+        0.5512,
+        0.352,
+        0.2687,
+        0.2523
+      ],
+      "intersection": [
+        "HR-002-CH03",
+        "HR-002-CH04"
+      ],
+      "numerator": 2,
+      "precision_denominator": 5,
+      "recall_denominator": 2,
+      "precision_at_5": "2/5",
+      "recall_at_5": "1",
+      "precision_at_5_value": 0.4,
+      "recall_at_5_value": 1.0
+    },
+    {
+      "id": "DEV-05",
+      "relevant": [
+        "HR-003-CH02",
+        "HR-003-CH03"
+      ],
+      "retrieved_top5": [
+        "HR-003-CH02",
+        "HR-003-CH03",
+        "HR-003-CH04",
+        "HR-002-CH04",
+        "HR-002-CH03"
+      ],
+      "similarities": [
+        0.5598,
+        0.5117,
+        0.2486,
+        0.1988,
+        0.1689
+      ],
+      "intersection": [
+        "HR-003-CH02",
+        "HR-003-CH03"
+      ],
+      "numerator": 2,
+      "precision_denominator": 5,
+      "recall_denominator": 2,
+      "precision_at_5": "2/5",
+      "recall_at_5": "1",
+      "precision_at_5_value": 0.4,
+      "recall_at_5_value": 1.0
+    }
+  ],
+  "mean_precision_at_5": 0.32,
+  "mean_recall_at_5": 1.0,
+  "all_checks_pass": true
+}

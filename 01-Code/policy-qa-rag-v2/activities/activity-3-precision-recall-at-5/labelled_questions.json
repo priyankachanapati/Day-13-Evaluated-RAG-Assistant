@@ -1,0 +1,77 @@
+{
+  "source": "evaluation/datasets/dev_queries.json (frozen)",
+  "relevance_rule": "chunk fully contains at least one required evidence sentence",
+  "chunking": "v1_paragraph_800_150",
+  "questions": [
+    {
+      "id": "DEV-01",
+      "question": "How far in advance do I have to request a two-week holiday?",
+      "required_evidence": [
+        [
+          "HR-001-S02-E04"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-001-CH02"
+      ]
+    },
+    {
+      "id": "DEV-02",
+      "question": "What is KeyVault?",
+      "required_evidence": [
+        [
+          "IT-001-S05-E03"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "IT-001-CH03"
+      ]
+    },
+    {
+      "id": "DEV-03",
+      "question": "What is the IT Service Desk's internal extension number?",
+      "required_evidence": [
+        [
+          "IT-001-S06-E02",
+          "IT-002-S08-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "IT-001-CH03",
+        "IT-002-CH03"
+      ]
+    },
+    {
+      "id": "DEV-04",
+      "question": "Can I use public Wi-Fi when working from home, and do I always need the VPN?",
+      "required_evidence": [
+        [
+          "HR-002-S06-E03"
+        ],
+        [
+          "HR-002-S06-E02"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-002-CH03",
+        "HR-002-CH04"
+      ]
+    },
+    {
+      "id": "DEV-05",
+      "question": "On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?",
+      "required_evidence": [
+        [
+          "HR-003-S04-E02"
+        ],
+        [
+          "HR-003-S05-E01"
+        ]
+      ],
+      "known_relevant_chunk_ids": [
+        "HR-003-CH02",
+        "HR-003-CH03"
+      ]
+    }
+  ]
+}
