@@ -1,0 +1,543 @@
+{
+  "run_utc": "2026-11-27T08:59:33+00:00",
+  "chunking": "v1_paragraph_800_150",
+  "rrf_k": 60,
+  "candidates": 10,
+  "reranker": {
+    "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+  },
+  "per_query": [
+    {
+      "id": "DEV-01",
+      "query": "How far in advance do I have to request a two-week holiday?",
+      "relevant": [
+        "HR-001-CH02"
+      ],
+      "rankings_top5": {
+        "dense": [
+          "HR-001-CH05",
+          "HR-001-CH04",
+          "HR-002-CH02",
+          "HR-001-CH02",
+          "HR-001-CH03"
+        ],
+        "bm25": [
+          "HR-002-CH02",
+          "HR-001-CH02",
+          "HR-001-CH04",
+          "HR-001-CH05",
+          "HR-004-CH02"
+        ],
+        "hybrid": [
+          "HR-002-CH02",
+          "HR-001-CH05",
+          "HR-001-CH04",
+          "HR-001-CH02",
+          "HR-001-CH03"
+        ],
+        "hybrid+rerank": [
+          "HR-001-CH02",
+          "HR-001-CH05",
+          "HR-001-CH04",
+          "HR-002-CH02",
+          "HR-001-CH03"
+        ]
+      },
+      "metrics": {
+        "dense": {
+          "hit@3": 0,
+          "hit@5": 1,
+          "rr@3": 0.0,
+          "rr@5": 0.25
+        },
+        "bm25": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 0.5,
+          "rr@5": 0.5
+        },
+        "hybrid": {
+          "hit@3": 0,
+          "hit@5": 1,
+          "rr@3": 0.0,
+          "rr@5": 0.25
+        },
+        "hybrid+rerank": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        }
+      },
+      "rrf_source_ranks_top5": [
+        {
+          "chunk_id": "HR-002-CH02",
+          "rrf": 0.03227,
+          "dense": 3,
+          "bm25": 1
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "rrf": 0.03202,
+          "dense": 1,
+          "bm25": 4
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "rrf": 0.032,
+          "dense": 2,
+          "bm25": 3
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "rrf": 0.03175,
+          "dense": 4,
+          "bm25": 2
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "rrf": 0.03054,
+          "dense": 5,
+          "bm25": 6
+        }
+      ],
+      "search_plus_rerank_ms": 290.6
+    },
+    {
+      "id": "DEV-02",
+      "query": "What is KeyVault?",
+      "relevant": [
+        "IT-001-CH03"
+      ],
+      "rankings_top5": {
+        "dense": [
+          "IT-001-CH03",
+          "IT-001-CH02",
+          "IT-001-CH01",
+          "IT-002-CH01",
+          "IT-002-CH02"
+        ],
+        "bm25": [
+          "IT-001-CH03"
+        ],
+        "hybrid": [
+          "IT-001-CH03",
+          "IT-001-CH02",
+          "IT-001-CH01",
+          "IT-002-CH01",
+          "IT-002-CH02"
+        ],
+        "hybrid+rerank": [
+          "IT-001-CH03",
+          "IT-001-CH01",
+          "HR-004-CH01",
+          "IT-001-CH02",
+          "HR-001-CH01"
+        ]
+      },
+      "metrics": {
+        "dense": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "bm25": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid+rerank": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        }
+      },
+      "rrf_source_ranks_top5": [
+        {
+          "chunk_id": "IT-001-CH03",
+          "rrf": 0.03279,
+          "dense": 1,
+          "bm25": 1
+        },
+        {
+          "chunk_id": "IT-001-CH02",
+          "rrf": 0.01613,
+          "dense": 2
+        },
+        {
+          "chunk_id": "IT-001-CH01",
+          "rrf": 0.01587,
+          "dense": 3
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "rrf": 0.01562,
+          "dense": 4
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "rrf": 0.01538,
+          "dense": 5
+        }
+      ],
+      "search_plus_rerank_ms": 86.1
+    },
+    {
+      "id": "DEV-03",
+      "query": "What is the IT Service Desk's internal extension number?",
+      "relevant": [
+        "IT-001-CH03",
+        "IT-002-CH03"
+      ],
+      "rankings_top5": {
+        "dense": [
+          "IT-002-CH03",
+          "IT-001-CH03",
+          "IT-002-CH01",
+          "IT-002-CH02",
+          "HR-004-CH01"
+        ],
+        "bm25": [
+          "IT-001-CH03",
+          "IT-002-CH03",
+          "IT-001-CH02",
+          "HR-002-CH02",
+          "IT-002-CH02"
+        ],
+        "hybrid": [
+          "IT-002-CH03",
+          "IT-001-CH03",
+          "IT-002-CH01",
+          "IT-002-CH02",
+          "HR-001-CH01"
+        ],
+        "hybrid+rerank": [
+          "IT-001-CH03",
+          "IT-002-CH03",
+          "IT-001-CH02",
+          "IT-002-CH02",
+          "IT-002-CH01"
+        ]
+      },
+      "metrics": {
+        "dense": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "bm25": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid+rerank": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        }
+      },
+      "rrf_source_ranks_top5": [
+        {
+          "chunk_id": "IT-002-CH03",
+          "rrf": 0.03252,
+          "dense": 1,
+          "bm25": 2
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "rrf": 0.03252,
+          "dense": 2,
+          "bm25": 1
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "rrf": 0.03102,
+          "dense": 3,
+          "bm25": 6
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "rrf": 0.03101,
+          "dense": 4,
+          "bm25": 5
+        },
+        {
+          "chunk_id": "HR-001-CH01",
+          "rrf": 0.02921,
+          "dense": 10,
+          "bm25": 7
+        }
+      ],
+      "search_plus_rerank_ms": 84.0
+    },
+    {
+      "id": "DEV-04",
+      "query": "Can I use public Wi-Fi when working from home, and do I always need the VPN?",
+      "relevant": [
+        "HR-002-CH03",
+        "HR-002-CH04"
+      ],
+      "rankings_top5": {
+        "dense": [
+          "HR-002-CH03",
+          "HR-002-CH04",
+          "HR-002-CH02",
+          "IT-002-CH02",
+          "HR-002-CH01"
+        ],
+        "bm25": [
+          "HR-002-CH03",
+          "HR-002-CH04",
+          "HR-002-CH02",
+          "HR-001-CH04",
+          "HR-002-CH01"
+        ],
+        "hybrid": [
+          "HR-002-CH03",
+          "HR-002-CH04",
+          "HR-002-CH02",
+          "HR-002-CH01",
+          "IT-002-CH02"
+        ],
+        "hybrid+rerank": [
+          "HR-002-CH04",
+          "HR-002-CH03",
+          "HR-002-CH02",
+          "HR-002-CH01",
+          "IT-002-CH02"
+        ]
+      },
+      "metrics": {
+        "dense": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "bm25": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid+rerank": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        }
+      },
+      "rrf_source_ranks_top5": [
+        {
+          "chunk_id": "HR-002-CH03",
+          "rrf": 0.03279,
+          "dense": 1,
+          "bm25": 1
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "rrf": 0.03226,
+          "dense": 2,
+          "bm25": 2
+        },
+        {
+          "chunk_id": "HR-002-CH02",
+          "rrf": 0.03175,
+          "dense": 3,
+          "bm25": 3
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "rrf": 0.03077,
+          "dense": 5,
+          "bm25": 5
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "rrf": 0.03055,
+          "dense": 4,
+          "bm25": 7
+        }
+      ],
+      "search_plus_rerank_ms": 81.0
+    },
+    {
+      "id": "DEV-05",
+      "query": "On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?",
+      "relevant": [
+        "HR-003-CH02",
+        "HR-003-CH03"
+      ],
+      "rankings_top5": {
+        "dense": [
+          "HR-003-CH02",
+          "HR-003-CH03",
+          "HR-003-CH04",
+          "HR-002-CH04",
+          "HR-002-CH03"
+        ],
+        "bm25": [
+          "HR-003-CH03",
+          "HR-003-CH02",
+          "HR-003-CH04",
+          "HR-001-CH02",
+          "IT-002-CH03"
+        ],
+        "hybrid": [
+          "HR-003-CH02",
+          "HR-003-CH03",
+          "HR-003-CH04",
+          "HR-002-CH04",
+          "HR-001-CH02"
+        ],
+        "hybrid+rerank": [
+          "HR-003-CH03",
+          "HR-003-CH02",
+          "HR-001-CH02",
+          "HR-003-CH04",
+          "IT-002-CH03"
+        ]
+      },
+      "metrics": {
+        "dense": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "bm25": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        },
+        "hybrid+rerank": {
+          "hit@3": 1,
+          "hit@5": 1,
+          "rr@3": 1.0,
+          "rr@5": 1.0
+        }
+      },
+      "rrf_source_ranks_top5": [
+        {
+          "chunk_id": "HR-003-CH02",
+          "rrf": 0.03252,
+          "dense": 1,
+          "bm25": 2
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "rrf": 0.03252,
+          "dense": 2,
+          "bm25": 1
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "rrf": 0.03175,
+          "dense": 3,
+          "bm25": 3
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "rrf": 0.03033,
+          "dense": 4,
+          "bm25": 8
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "rrf": 0.03033,
+          "dense": 8,
+          "bm25": 4
+        }
+      ],
+      "search_plus_rerank_ms": 89.7
+    }
+  ],
+  "summary": {
+    "dense": {
+      "dev5": {
+        "hit@3": 0.8,
+        "hit@5": 1.0,
+        "mrr@3": 0.8,
+        "mrr@5": 0.85
+      },
+      "phase7_saved_25": {
+        "hit@3": 1.0,
+        "mrr@3": 0.98,
+        "mrr@5": 0.98
+      }
+    },
+    "bm25": {
+      "dev5": {
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@3": 0.9,
+        "mrr@5": 0.9
+      },
+      "phase7_saved_25": {
+        "hit@3": 0.96,
+        "mrr@3": 0.94,
+        "mrr@5": 0.94
+      }
+    },
+    "hybrid": {
+      "dev5": {
+        "hit@3": 0.8,
+        "hit@5": 1.0,
+        "mrr@3": 0.8,
+        "mrr@5": 0.85
+      },
+      "phase7_saved_25": {
+        "hit@3": 0.96,
+        "mrr@3": 0.96,
+        "mrr@5": 0.968
+      }
+    },
+    "hybrid+rerank": {
+      "dev5": {
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@3": 1.0,
+        "mrr@5": 1.0
+      },
+      "phase7_saved_25": {
+        "hit@3": 1.0,
+        "mrr@3": 1.0,
+        "mrr@5": 1.0
+      }
+    }
+  },
+  "all_checks_pass": true,
+  "note": "latency is a single warm local run on CPU (indicative only)"
+}
