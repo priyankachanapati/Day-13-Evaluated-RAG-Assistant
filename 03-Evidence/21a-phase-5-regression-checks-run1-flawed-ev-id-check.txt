@@ -1,0 +1,37 @@
+== Phase 5 regression checks (2026-11-26T16:30:39Z); HF_HUB_OFFLINE=1 ==
+
+-- 1. Frozen v1 tests + all v2 tests
+140 passed, 2 deselected in 7.99s
+   new in Phase 5: test_retrieval_metrics.py 15, test_eval_dataset.py 6
+
+-- 2. Lint + format
+All checks passed!
+47 files already formatted
+
+-- 3. Frozen v1 baseline + corpus
+OVERALL: PASS
+
+-- 4. Phase 2 (14) + Phase 3 (13) + Phase 4 (9) artifacts unchanged
+   PASS (36 files)
+
+-- 5. Frozen evaluation dataset, evidence catalog, dev queries
+   evaluation/datasets/eval_queries_30.json: OK
+   evaluation/datasets/evidence_catalog.json: OK
+   evaluation/datasets/dev_queries.json: OK
+VALIDATION: PASS
+Saved catalog identical to rebuild: PASS
+
+-- 6. Independence: no saved result mentions a held-out query ID (EV-01..EV-30)
+   result files mentioning EV- IDs: 3 (expected 0)
+
+-- 7. Activity D demo (dev queries only): cross-check with saved Phase 3/4 metrics
+Cross-check against the saved per-query metrics: **120/120 identical**.
+OVERALL: PASS (recomputed metrics identical to saved Phase 3/4 values)
+
+-- 8. Phase 1 v1 baseline reproduction
+  [PASS] retrieval: scores rounded to 4 dp exactly equal saved values (strict): 60/60 chunks (similarity and distance both exact)
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 9. No generator/prompt/threshold change: src/ is the frozen v1 (see 3); no Groq client used in Phase 5 code: 0 files
+-- 10. Day 12 git working tree changes: 0
+-- 11. .env present: no

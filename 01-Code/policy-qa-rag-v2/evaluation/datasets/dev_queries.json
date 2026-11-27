@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "purpose": "Development set for Activities A-C and for tuning. Never part of the 30-query held-out evaluation set.",
+  "frozen_before_first_run": "2026-11-26",
+  "evidence_catalog": "evaluation/datasets/evidence_catalog.json (version 1.0)",
+  "labelling_rules": [
+    "required_evidence is a list of groups; each group is one fact the answer needs.",
+    "A group lists alternative evidence IDs; the group is satisfied if ANY of them is fully contained in a retrieved chunk.",
+    "Labels were written from the policy text only, before any retrieval results were seen."
+  ],
+  "queries": [
+    {
+      "id": "DEV-01",
+      "query": "How far in advance do I have to request a two-week holiday?",
+      "category": "paraphrase / vocabulary mismatch",
+      "expected_policy_id": "HR-001",
+      "required_evidence": [["HR-001-S02-E04"]],
+      "note": "'holiday' and 'two-week' vs the policy's 'annual leave' and '5 or more consecutive working days'."
+    },
+    {
+      "id": "DEV-02",
+      "query": "What is KeyVault?",
+      "category": "exact keyword / named entity",
+      "expected_policy_id": "IT-001",
+      "required_evidence": [["IT-001-S05-E03"]],
+      "note": "Rare proper noun appearing once in the corpus; short query with little semantic content."
+    },
+    {
+      "id": "DEV-03",
+      "query": "What is the IT Service Desk's internal extension number?",
+      "category": "identifier / number lookup",
+      "expected_policy_id": "IT-001",
+      "required_evidence": [["IT-001-S06-E02", "IT-002-S08-E01"]],
+      "note": "The extension (4357) is stated in two policies; either sentence answers the question."
+    },
+    {
+      "id": "DEV-04",
+      "query": "Can I use public Wi-Fi when working from home, and do I always need the VPN?",
+      "category": "multi-fact, same section",
+      "expected_policy_id": "HR-002",
+      "required_evidence": [["HR-002-S06-E03"], ["HR-002-S06-E02"]],
+      "note": "Public Wi-Fi rule and the VPN-at-all-times rule are adjacent sentences."
+    },
+    {
+      "id": "DEV-05",
+      "query": "On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?",
+      "category": "multi-fact, cross-section",
+      "expected_policy_id": "HR-003",
+      "required_evidence": [["HR-003-S04-E02"], ["HR-003-S05-E01"]],
+      "note": "Facts are in two different sections (4. Flights and Accommodation, 5. Meals)."
+    }
+  ]
+}

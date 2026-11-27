@@ -1,0 +1,23 @@
+{
+  "title": "Phase 7 pre-registration: RAG v1 vs v2 on the frozen evaluation set",
+  "registered_utc": "2026-11-26T17:20:54Z",
+  "written_before_any_phase7_run": true,
+  "dataset": {"file": "evaluation/datasets/eval_queries_v1_1.json", "version": "1.1",
+              "sha256": "e860b7294c57c2275c8d9a886b39fb55470158be103ca3288d478cdad73e39ca", "queries": 30, "answerable": 25, "unanswerable": 5},
+  "excluded": {"EV-06": "exposed in Phase 6; retrieval-only sensitivity check, reported separately, never in totals"},
+  "fixed_settings": {"llm": "openai/gpt-oss-120b via Groq, temperature 0 (v1 GroqGenerator)", "prompt": "v1 SYSTEM_PROMPT + build_user_prompt",
+                     "context_k": 4, "candidates": 10, "rrf_k": 60, "dense_refusal_threshold": 0.25,
+                     "relevance": "chunk fully contains a required canonical fact (evaluation.metrics / retrieval_metrics)"},
+  "part_a_retrieval": {"configs": "all 18 (3 chunkings x dense/bm25/hybrid x rerank off/on)", "llm_calls": 0,
+                       "metrics": ["Hit@3", "Hit@5", "MRR@3", "MRR@5", "P@3", "P@5", "R@3", "R@5", "Coverage@3", "Coverage@5",
+                                   "context coverage (the <=4 chunks after the dense filter)", "dense-gate refusals of the 5 unanswerable"],
+                       "aggregation": "macro over the 25 answerable queries; unanswerable excluded from retrieval metrics"},
+  "part_b_answers": {"configs": ["v1_paragraph_800_150+dense", "v1_paragraph_800_150+hybrid+rerank", "recursive_800_100+hybrid+rerank"],
+                     "baseline": "v1_paragraph_800_150+dense (RAG v1-equivalent, verified identical prompts)",
+                     "max_llm_calls": 90, "evaluation": "deterministic (evaluation/answer_eval.py); no LLM judge",
+                     "manual_review": "failed items reviewed afterwards and classified; reported separately, never changes the deterministic numbers"},
+  "selection_rule": ["primary: correct answers (25 answerable) + correct refusals (5) = score out of 30",
+                     "tie-break 1: mean context coverage (Part A)", "tie-break 2: lower median end-to-end latency"],
+  "comparison": "per-query paired wins/losses/ties of each v2 config vs v1 on 'correct'; exact two-sided sign test (ties excluded)",
+  "no_tuning": "no prompt, threshold, chunking, BM25, RRF, reranker or answer-key change after registration"
+}

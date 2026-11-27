@@ -1,0 +1,35 @@
+== Phase 6 regression checks (2026-11-26T16:47:06Z); HF_HUB_OFFLINE=1 ==
+
+-- 1. Frozen v1 tests + all v2 tests
+185 passed, 2 deselected in 14.92s
+   test_pipeline_v2.py: 33 tests
+   test_answer_eval.py: 7 tests
+   test_dev_answer_runner.py: 4 tests
+   test_held_out_guard.py: 1 tests
+
+-- 2. Lint + format
+All checks passed!
+59 files already formatted
+
+-- 3. Frozen v1 baseline + corpus
+OVERALL: PASS
+
+-- 4. Phase 2-5 artifacts, eval dataset, dev queries, dev answer keys, catalog
+   PASS (49 files)
+VALIDATION: PASS
+
+-- 5. Phase 1 v1 baseline reproduction
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 6. v1 equivalence (standalone): v1_equivalent() vs frozen v1 RAGPipeline, 15 smoke questions
+   prompts identical: True (15 calls each); statuses identical: 15/15
+
+-- 7. Held-out guard (no EV question text in code/tests/scripts/activities/results)
+1 passed in 0.04s
+   result files mentioning an EV- ID: 0
+
+-- 8. Secret scan: strings resembling a Groq key (gsk_ followed by 20+ chars) in project files (excl. .venv)
+   matches: 0
+-- 9. .env present: no | .env ignored by .gitignore rule: 1 rule(s)
+-- 10. Real Groq calls made in Phase 6: 0 (no credentials; results/llm-cache exists: no)
+-- 11. Day 12 git working tree changes: 0

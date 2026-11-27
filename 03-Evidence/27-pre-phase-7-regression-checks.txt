@@ -1,0 +1,35 @@
+== Pre-Phase-7 regression checks (2026-11-26T17:05:10Z); HF_HUB_OFFLINE=1 ==
+
+-- 1. Frozen v1 tests + all v2 tests
+191 passed, 2 deselected in 20.15s
+
+-- 2. Lint + format
+All checks passed!
+63 files already formatted
+
+-- 3. Frozen v1 baseline + corpus
+OVERALL: PASS
+
+-- 4. Original frozen files: Phase 2-5 artifacts, dataset v1.0, dev queries, dev answer keys, catalog
+   PASS (49 files)
+   dataset v1.0 SHA-256: c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb (frozen: c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb)
+VALIDATION: PASS
+
+-- 5. Dataset v1.1 + exposure record, Phase 6 artifacts (regenerated after the runner fix)
+   evaluation/datasets/eval_queries_v1_1.json: OK
+   evaluation/datasets/eval_queries_exposed.json: OK
+VALIDATION: PASS
+   Phase 6 artifacts PASS (15 files)
+
+-- 6. Phase 1 v1 baseline reproduction
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 7. Held-out guard (v1.0 incl. EV-06 and v1.1 incl. EV-31)
+1 passed in 0.04s
+   result files mentioning an EV- ID: 0
+   EV-31 question text anywhere outside dataset files (code/results/logs): 0
+
+-- 8. Secret scan (key-like strings, excluding the git-ignored .env): 0 files
+   .env.example GROQ_API_KEY is the placeholder: True
+-- 9. Real-LLM cache entries (successful calls only): 0
+-- 10. Day 12 git working tree changes: 0

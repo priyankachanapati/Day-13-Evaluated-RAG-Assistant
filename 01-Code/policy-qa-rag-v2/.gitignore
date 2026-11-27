@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Generated vector databases (rebuilt from data/policies by the ingest commands)
+.chroma/
+.chroma-*/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

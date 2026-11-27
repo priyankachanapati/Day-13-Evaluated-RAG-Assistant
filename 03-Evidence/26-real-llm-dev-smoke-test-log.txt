@@ -1,0 +1,23 @@
+== Phase 6 real-LLM development smoke test (2026-11-26T17:01:30Z) ==
+Command: HF_HUB_OFFLINE=1 .venv/bin/python scripts/run_dev_answer_eval.py --run-name real-smoke-1
+Run real-smoke-1: 2 configs x 8 queries, LLM openai/gpt-oss-120b (real); 0 already done
+  v1_paragraph_800_150+dense                 DEV-01  error                       ERROR
+  v1_paragraph_800_150+dense                 DEV-02  error                       ERROR
+  v1_paragraph_800_150+dense                 DEV-03  error                       ERROR
+  v1_paragraph_800_150+dense                 DEV-04  error                       ERROR
+  v1_paragraph_800_150+dense                 DEV-05  error                       ERROR
+  v1_paragraph_800_150+dense                 SM-13   error                       ERROR
+  v1_paragraph_800_150+dense                 SM-14   error                       ERROR
+  v1_paragraph_800_150+dense                 SM-15   error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         DEV-01  error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         DEV-02  error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         DEV-03  error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         DEV-04  error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         DEV-05  error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         SM-13   error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         SM-14   error                       ERROR
+  v1_paragraph_800_150+hybrid+rerank         SM-15   error                       ERROR
+Status: complete | real LLM calls this invocation: 0 | cache hits: 0
+Saved: /Users/vamsi/Documents/AI-Engineering-Training/Day-13/01-Code/policy-qa-rag-v2/results/dev-answer-eval/real-smoke-1/records.jsonl, summary.json, summary.md
+exit code: 0
+finished (UTC): 2026-11-26T17:01:38Z

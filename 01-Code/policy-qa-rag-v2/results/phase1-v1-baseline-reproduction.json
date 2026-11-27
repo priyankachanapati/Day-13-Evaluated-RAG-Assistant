@@ -1,0 +1,671 @@
+{
+  "started_utc": "2026-11-27T03:03:54+00:00",
+  "reference_file": "reference/day12-smoke-results-run1.json",
+  "tolerance": 5.1e-05,
+  "settings": {
+    "top_k": 4,
+    "min_similarity": 0.25,
+    "chunk_size": 800,
+    "chunk_overlap": 150,
+    "collection": "policy_chunks",
+    "llm_model": "openai/gpt-oss-120b"
+  },
+  "versions": {
+    "chromadb": "1.5.9",
+    "onnxruntime": "1.32.0",
+    "numpy": "2.5.5",
+    "tokenizers": "0.23.3"
+  },
+  "ingestion": {
+    "documents": 6,
+    "chunks": 22,
+    "chunks_per_policy": {
+      "HR-001": 5,
+      "HR-002": 4,
+      "HR-003": 4,
+      "HR-004": 3,
+      "IT-001": 3,
+      "IT-002": 3
+    },
+    "reference": {
+      "documents": 6,
+      "chunks": 22,
+      "chunks_per_policy": {
+        "HR-001": 5,
+        "HR-002": 4,
+        "HR-003": 4,
+        "HR-004": 3,
+        "IT-001": 3,
+        "IT-002": 3
+      }
+    }
+  },
+  "v1_chunk_fingerprint_sha256": "b00e0446692ffdd8455c337b160963bec0b4064024be0cd3d252f97422cd794d",
+  "max_abs_similarity_diff": 4.9917984008773786e-05,
+  "max_abs_distance_diff": 4.9917984008773786e-05,
+  "checks": [
+    {
+      "name": "config top_k / min_similarity equal run 1",
+      "pass": true,
+      "detail": "top_k=4 (ref 4), min_similarity=0.25 (ref 0.25), chunk_size=800, overlap=150"
+    },
+    {
+      "name": "15 smoke questions identical to run 1",
+      "pass": true,
+      "detail": "15 questions"
+    },
+    {
+      "name": "ingestion: documents / chunks / chunks per policy",
+      "pass": true,
+      "detail": "6 docs, 22 chunks (ref 6 docs, 22 chunks); per policy {'HR-001': 5, 'HR-002': 4, 'HR-003': 4, 'HR-004': 3, 'IT-001': 3, 'IT-002': 3}"
+    },
+    {
+      "name": "retrieval: top-4 chunk IDs and order identical",
+      "pass": true,
+      "detail": "15/15 questions"
+    },
+    {
+      "name": "retrieval: scores within 5.1e-05 of saved values",
+      "pass": true,
+      "detail": "max |\u0394similarity| = 4.99e-05, max |\u0394distance| = 4.99e-05"
+    },
+    {
+      "name": "retrieval: scores rounded to 4 dp exactly equal saved values (strict)",
+      "pass": true,
+      "detail": "60/60 chunks (similarity and distance both exact)"
+    },
+    {
+      "name": "refusal gate (similarity >= 0.25) same decision as run 1",
+      "pass": true,
+      "detail": "gate passes for 15/15; run 1 had 0 no-context refusals"
+    }
+  ],
+  "overall_pass": true,
+  "questions": [
+    {
+      "id": "SM-01",
+      "question": "How many days of paid annual leave do full-time employees receive each year?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.62994575500808e-05,
+      "max_abs_distance_diff": 4.629945755002529e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.65154629945755,
+          "distance": 0.34845370054244995
+        },
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "similarity": 0.5600431561470032,
+          "distance": 0.4399568438529968
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "similarity": 0.5508713722229004,
+          "distance": 0.4491286277770996
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "similarity": 0.5288391709327698,
+          "distance": 0.4711608290672302
+        }
+      ]
+    },
+    {
+      "id": "SM-02",
+      "question": "How many unused annual leave days can be carried forward, and by when must they be used?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.303483963008503e-05,
+      "max_abs_distance_diff": 4.303483963014054e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.7786269783973694,
+          "distance": 0.22137302160263062
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "similarity": 0.6246398687362671,
+          "distance": 0.3753601312637329
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "similarity": 0.5722430348396301,
+          "distance": 0.4277569651603699
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "policy_id": "HR-001",
+          "similarity": 0.5508726835250854,
+          "distance": 0.44912731647491455
+        }
+      ]
+    },
+    {
+      "id": "SM-03",
+      "question": "When do I need a medical certificate for sick leave?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 2.921142578127256e-05,
+      "max_abs_distance_diff": 2.921142578127256e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "similarity": 0.5820971131324768,
+          "distance": 0.4179028868675232
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "similarity": 0.38787078857421875,
+          "distance": 0.6121292114257812
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.37640005350112915,
+          "distance": 0.6235999464988708
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "policy_id": "HR-001",
+          "similarity": 0.3754187226295471,
+          "distance": 0.6245812773704529
+        }
+      ]
+    },
+    {
+      "id": "SM-04",
+      "question": "How many days per week can an eligible employee work from home?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 1.493835449217773e-05,
+      "max_abs_distance_diff": 1.493835449217773e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-002-CH02",
+          "policy_id": "HR-002",
+          "similarity": 0.7632983922958374,
+          "distance": 0.2367016077041626
+        },
+        {
+          "chunk_id": "HR-002-CH03",
+          "policy_id": "HR-002",
+          "similarity": 0.5806981325149536,
+          "distance": 0.4193018674850464
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "policy_id": "HR-002",
+          "similarity": 0.5110149383544922,
+          "distance": 0.4889850616455078
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "similarity": 0.45569849014282227,
+          "distance": 0.5443015098571777
+        }
+      ]
+    },
+    {
+      "id": "SM-05",
+      "question": "What are the core hours I must be available when working from home?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.6209621429427195e-05,
+      "max_abs_distance_diff": 4.6209621429427195e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-002-CH03",
+          "policy_id": "HR-002",
+          "similarity": 0.6911792159080505,
+          "distance": 0.30882078409194946
+        },
+        {
+          "chunk_id": "HR-002-CH02",
+          "policy_id": "HR-002",
+          "similarity": 0.5874552130699158,
+          "distance": 0.41254478693008423
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "policy_id": "HR-002",
+          "similarity": 0.45675379037857056,
+          "distance": 0.5432462096214294
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "similarity": 0.35526812076568604,
+          "distance": 0.644731879234314
+        }
+      ]
+    },
+    {
+      "id": "SM-06",
+      "question": "How long do I have to submit an expense claim, and when is a receipt required?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 2.4418354034438927e-05,
+      "max_abs_distance_diff": 2.4418354034438927e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "similarity": 0.49730384349823,
+          "distance": 0.50269615650177
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "similarity": 0.4544755816459656,
+          "distance": 0.5455244183540344
+        },
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "similarity": 0.37648332118988037,
+          "distance": 0.6235166788101196
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "similarity": 0.3733820915222168,
+          "distance": 0.6266179084777832
+        }
+      ]
+    },
+    {
+      "id": "SM-07",
+      "question": "What is the maximum hotel cost per night that will be reimbursed on a business trip?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.6676635742204375e-05,
+      "max_abs_distance_diff": 4.6676635742204375e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "similarity": 0.65743488073349,
+          "distance": 0.34256511926651
+        },
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "similarity": 0.6467919945716858,
+          "distance": 0.3532080054283142
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "policy_id": "HR-003",
+          "similarity": 0.3560466766357422,
+          "distance": 0.6439533233642578
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "similarity": 0.31129884719848633,
+          "distance": 0.6887011528015137
+        }
+      ]
+    },
+    {
+      "id": "SM-08",
+      "question": "What is the minimum password length, and how often must passwords be changed?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.898986816403994e-05,
+      "max_abs_distance_diff": 4.898986816403994e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "IT-001-CH01",
+          "policy_id": "IT-001",
+          "similarity": 0.6025983095169067,
+          "distance": 0.39740169048309326
+        },
+        {
+          "chunk_id": "IT-001-CH02",
+          "policy_id": "IT-001",
+          "similarity": 0.5348852872848511,
+          "distance": 0.4651147127151489
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "similarity": 0.4538675546646118,
+          "distance": 0.5461324453353882
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.26294898986816406,
+          "distance": 0.7370510101318359
+        }
+      ]
+    },
+    {
+      "id": "SM-09",
+      "question": "What happens to my account if I enter the wrong password five times in a row?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.976463317868385e-05,
+      "max_abs_distance_diff": 4.976463317873936e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "IT-001-CH02",
+          "policy_id": "IT-001",
+          "similarity": 0.5183335542678833,
+          "distance": 0.4816664457321167
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "similarity": 0.4680497646331787,
+          "distance": 0.5319502353668213
+        },
+        {
+          "chunk_id": "IT-001-CH01",
+          "policy_id": "IT-001",
+          "similarity": 0.41184353828430176,
+          "distance": 0.5881564617156982
+        },
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "similarity": 0.16597527265548706,
+          "distance": 0.8340247273445129
+        }
+      ]
+    },
+    {
+      "id": "SM-10",
+      "question": "How quickly must I report a lost or stolen company laptop?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 1.9769477844211458e-05,
+      "max_abs_distance_diff": 1.9769477844211458e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "similarity": 0.5753179788589478,
+          "distance": 0.42468202114105225
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "similarity": 0.4642997980117798,
+          "distance": 0.5357002019882202
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "policy_id": "IT-002",
+          "similarity": 0.38228023052215576,
+          "distance": 0.6177197694778442
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "policy_id": "IT-002",
+          "similarity": 0.3771101236343384,
+          "distance": 0.6228898763656616
+        }
+      ]
+    },
+    {
+      "id": "SM-11",
+      "question": "When I leave the company, how long do I have to return my company equipment?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.6415328979476644e-05,
+      "max_abs_distance_diff": 4.6415328979532156e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "similarity": 0.5782061815261841,
+          "distance": 0.4217938184738159
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.4550464153289795,
+          "distance": 0.5449535846710205
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "similarity": 0.423114538192749,
+          "distance": 0.576885461807251
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "similarity": 0.3629399538040161,
+          "distance": 0.6370600461959839
+        }
+      ]
+    },
+    {
+      "id": "SM-12",
+      "question": "Which mandatory training courses must new employees complete, and within how many days of joining?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 2.07827568053931e-05,
+      "max_abs_distance_diff": 2.07827568053931e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "answered",
+      "retrieved": [
+        {
+          "chunk_id": "HR-004-CH02",
+          "policy_id": "HR-004",
+          "similarity": 0.6822907328605652,
+          "distance": 0.3177092671394348
+        },
+        {
+          "chunk_id": "HR-004-CH03",
+          "policy_id": "HR-004",
+          "similarity": 0.5405988097190857,
+          "distance": 0.4594011902809143
+        },
+        {
+          "chunk_id": "HR-004-CH01",
+          "policy_id": "HR-004",
+          "similarity": 0.4080902338027954,
+          "distance": 0.5919097661972046
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "similarity": 0.3822792172431946,
+          "distance": 0.6177207827568054
+        }
+      ]
+    },
+    {
+      "id": "SM-13",
+      "question": "Does Brightlake Systems provide pet insurance for employees' pets?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.9917984008773786e-05,
+      "max_abs_distance_diff": 4.9917984008773786e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "refused",
+      "retrieved": [
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "similarity": 0.5202500820159912,
+          "distance": 0.4797499179840088
+        },
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "similarity": 0.47896838188171387,
+          "distance": 0.5210316181182861
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "similarity": 0.4745274782180786,
+          "distance": 0.5254725217819214
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "policy_id": "HR-003",
+          "similarity": 0.44210827350616455,
+          "distance": 0.5578917264938354
+        }
+      ]
+    },
+    {
+      "id": "SM-14",
+      "question": "How many stock options are granted to newly hired software engineers?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.213304519654071e-05,
+      "max_abs_distance_diff": 4.213304519651295e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "refused",
+      "retrieved": [
+        {
+          "chunk_id": "HR-004-CH02",
+          "policy_id": "HR-004",
+          "similarity": 0.30038928985595703,
+          "distance": 0.699610710144043
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "policy_id": "IT-002",
+          "similarity": 0.24784213304519653,
+          "distance": 0.7521578669548035
+        },
+        {
+          "chunk_id": "HR-004-CH01",
+          "policy_id": "HR-004",
+          "similarity": 0.22893160581588745,
+          "distance": 0.7710683941841125
+        },
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "similarity": 0.19366538524627686,
+          "distance": 0.8063346147537231
+        }
+      ]
+    },
+    {
+      "id": "SM-15",
+      "question": "What is the maximum amount the company reimburses for a gym membership?",
+      "ok": true,
+      "chunk_ids_and_order_equal": true,
+      "max_abs_similarity_diff": 4.7198486328114964e-05,
+      "max_abs_distance_diff": 4.7198486328170475e-05,
+      "chunks_with_exact_4dp_scores": 4,
+      "chunks_compared": 4,
+      "gate_passes": true,
+      "reference_gate_passes": true,
+      "reference_status": "refused",
+      "retrieved": [
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "similarity": 0.5064340829849243,
+          "distance": 0.4935659170150757
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "similarity": 0.49054014682769775,
+          "distance": 0.5094598531723022
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "policy_id": "HR-003",
+          "similarity": 0.4238471984863281,
+          "distance": 0.5761528015136719
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "similarity": 0.37355977296829224,
+          "distance": 0.6264402270317078
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+==============================================================================
+PHASE 1 - RAG v1 BASELINE REPRODUCTION (Day 13 copy vs Day 12 run 1)
+==============================================================================
+Run started (UTC) : 2026-11-26T15:29:41+00:00
+Python            : 3.12.16 | chromadb 1.5.9 | onnxruntime 1.32.0 | numpy 2.5.5
+Reference         : reference/day12-smoke-results-run1.json (Day 12 run 1, started 2026-11-26T10:09:00+00:00)
+Chroma directory  : .chroma (Day 13's own, not Day 12's)
+
+=== Ingestion summary ===
+  Source documents : 6
+  Chunks generated : 22
+    HR-001: 5 chunks
+    HR-002: 4 chunks
+    HR-003: 4 chunks
+    HR-004: 3 chunks
+    IT-001: 3 chunks
+    IT-002: 3 chunks
+  Chunking config  : chunk_size=800 chars, overlap=150 chars (paragraph-aware)
+  Embedding model  : all-MiniLM-L6-v2 (ONNX, run locally via ChromaDB) (384 dimensions)
+  Vector database  : ChromaDB (persistent, collection 'policy_chunks', cosine distance)
+  Chunks stored    : 22
+
+ID     IDs+order    max|Δsim|  max|Δdist|  gate   top-4 chunk IDs
+SM-01  same          4.63e-05    4.63e-05  pass   HR-001-CH02, HR-001-CH01, HR-001-CH03, HR-001-CH05
+SM-02  same          4.30e-05    4.30e-05  pass   HR-001-CH02, HR-001-CH05, HR-001-CH03, HR-001-CH04
+SM-03  same          2.92e-05    2.92e-05  pass   HR-001-CH03, HR-001-CH05, HR-001-CH02, HR-001-CH04
+SM-04  same          1.49e-05    1.49e-05  pass   HR-002-CH02, HR-002-CH03, HR-002-CH04, HR-002-CH01
+SM-05  same          4.62e-05    4.62e-05  pass   HR-002-CH03, HR-002-CH02, HR-002-CH04, HR-002-CH01
+SM-06  same          2.44e-05    2.44e-05  pass   HR-003-CH02, HR-003-CH01, IT-002-CH03, HR-003-CH03
+SM-07  same          4.67e-05    4.67e-05  pass   HR-003-CH03, HR-003-CH02, HR-003-CH04, HR-003-CH01
+SM-08  same          4.90e-05    4.90e-05  pass   IT-001-CH01, IT-001-CH02, IT-001-CH03, HR-001-CH02
+SM-09  same          4.98e-05    4.98e-05  pass   IT-001-CH02, IT-001-CH03, IT-001-CH01, IT-002-CH03
+SM-10  same          1.98e-05    1.98e-05  pass   IT-002-CH03, IT-001-CH03, IT-002-CH01, IT-002-CH02
+SM-11  same          4.64e-05    4.64e-05  pass   IT-002-CH03, HR-001-CH02, HR-001-CH05, HR-001-CH03
+SM-12  same          2.08e-05    2.08e-05  pass   HR-004-CH02, HR-004-CH03, HR-004-CH01, HR-001-CH02
+SM-13  same          4.99e-05    4.99e-05  pass   HR-003-CH01, HR-001-CH01, HR-002-CH01, HR-003-CH04
+SM-14  same          4.21e-05    4.21e-05  pass   HR-004-CH02, IT-002-CH02, HR-004-CH01, HR-001-CH01
+SM-15  same          4.72e-05    4.72e-05  pass   HR-003-CH02, HR-003-CH03, HR-003-CH04, HR-003-CH01
+
+CHECKS
+  [PASS] config top_k / min_similarity equal run 1: top_k=4 (ref 4), min_similarity=0.25 (ref 0.25), chunk_size=800, overlap=150
+  [PASS] 15 smoke questions identical to run 1: 15 questions
+  [PASS] ingestion: documents / chunks / chunks per policy: 6 docs, 22 chunks (ref 6 docs, 22 chunks); per policy {'HR-001': 5, 'HR-002': 4, 'HR-003': 4, 'HR-004': 3, 'IT-001': 3, 'IT-002': 3}
+  [PASS] retrieval: top-4 chunk IDs and order identical: 15/15 questions
+  [PASS] retrieval: scores within 5.1e-05 of saved values: max |Δsimilarity| = 4.99e-05, max |Δdistance| = 4.99e-05
+  [PASS] refusal gate (similarity >= 0.25) same decision as run 1: gate passes for 15/15; run 1 had 0 no-context refusals
+
+v1 chunk-index fingerprint (SHA-256): b00e0446692ffdd8455c337b160963bec0b4064024be0cd3d252f97422cd794d
+Not reproduced (not claimed): LLM answers - need GROQ_API_KEY and are not bit-for-bit deterministic.
+OVERALL: PASS (15/15 questions reproduced)
+Saved: results/phase1-v1-baseline-reproduction.json

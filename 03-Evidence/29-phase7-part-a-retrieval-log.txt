@@ -1,0 +1,19 @@
+v1_paragraph_800_150+dense               Hit@3 1.00 MRR@3 0.98 Cov@3 0.98 ctx-cov 1.00
+v1_paragraph_800_150+dense+rerank        Hit@3 1.00 MRR@3 1.00 Cov@3 0.98 ctx-cov 1.00
+v1_paragraph_800_150+bm25                Hit@3 0.96 MRR@3 0.94 Cov@3 0.94 ctx-cov 0.94
+v1_paragraph_800_150+bm25+rerank         Hit@3 1.00 MRR@3 1.00 Cov@3 0.98 ctx-cov 1.00
+v1_paragraph_800_150+hybrid              Hit@3 0.96 MRR@3 0.96 Cov@3 0.94 ctx-cov 0.94
+v1_paragraph_800_150+hybrid+rerank       Hit@3 1.00 MRR@3 1.00 Cov@3 0.98 ctx-cov 1.00
+fixed_500+dense                          Hit@3 0.88 MRR@3 0.80 Cov@3 0.84 ctx-cov 0.84
+fixed_500+dense+rerank                   Hit@3 0.88 MRR@3 0.86 Cov@3 0.82 ctx-cov 0.84
+fixed_500+bm25                           Hit@3 0.88 MRR@3 0.79 Cov@3 0.84 ctx-cov 0.84
+fixed_500+bm25+rerank                    Hit@3 0.88 MRR@3 0.86 Cov@3 0.82 ctx-cov 0.86
+fixed_500+hybrid                         Hit@3 0.88 MRR@3 0.82 Cov@3 0.84 ctx-cov 0.86
+fixed_500+hybrid+rerank                  Hit@3 0.88 MRR@3 0.86 Cov@3 0.82 ctx-cov 0.84
+recursive_800_100+dense                  Hit@3 1.00 MRR@3 0.95 Cov@3 1.00 ctx-cov 1.00
+recursive_800_100+dense+rerank           Hit@3 1.00 MRR@3 1.00 Cov@3 1.00 ctx-cov 1.00
+recursive_800_100+bm25                   Hit@3 0.96 MRR@3 0.94 Cov@3 0.94 ctx-cov 0.94
+recursive_800_100+bm25+rerank            Hit@3 1.00 MRR@3 1.00 Cov@3 1.00 ctx-cov 1.00
+recursive_800_100+hybrid                 Hit@3 0.96 MRR@3 0.96 Cov@3 0.94 ctx-cov 1.00
+recursive_800_100+hybrid+rerank          Hit@3 1.00 MRR@3 1.00 Cov@3 1.00 ctx-cov 1.00
+saved /Users/vamsi/Documents/AI-Engineering-Training/Day-13/01-Code/policy-qa-rag-v2/results/phase7/retrieval.json

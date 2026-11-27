@@ -1,0 +1,23 @@
+{
+  "dataset": "evaluation/datasets/eval_queries_v1_1.json",
+  "version": "1.1",
+  "sha256": "e860b7294c57c2275c8d9a886b39fb55470158be103ca3288d478cdad73e39ca",
+  "frozen_utc": "2026-11-26T17:00:48+00:00",
+  "supersedes": {
+    "version": "1.0",
+    "sha256": "c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb"
+  },
+  "removed": [
+    "EV-06 (exposed in Phase 6)"
+  ],
+  "added": [
+    "EV-31"
+  ],
+  "exposure_record": "evaluation/datasets/eval_queries_exposed.json",
+  "exposure_record_sha256": "2c078822bb05da74fe93b31c880711ce00b1db420a4cb1e703ff9d2017d79ae6",
+  "queries": 30,
+  "answerable": 25,
+  "unanswerable": 5,
+  "validation": "PASS (scripts/validate_eval_dataset_v1_1.py)",
+  "retrieval_or_generation_run_on_EV-31": "none"
+}

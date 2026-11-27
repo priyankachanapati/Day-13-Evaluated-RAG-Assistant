@@ -1,0 +1,30 @@
+== Day 13 environment verification (2026-11-26T15:26:38Z) ==
+macOS 26.6.2 arm64 | uv 0.13.9 (6b2d39dcc 2026-11-17 aarch64-apple-darwin)
+Interpreter: Python 3.12.16 at .venv/bin/python
+
+-- uv pip check (dependency consistency)
+Checked 109 packages in 2ms
+All installed packages are compatible
+
+-- Installed packages vs requirements.txt lock
+   PASS: 109 installed == 109 locked
+
+-- Day 12 packages unchanged in Day 13 venv
+   PASS: all 91 Day 12 package versions identical
+
+-- Import smoke test
+W1126 20:57:13.666000 59368 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+   OK  chromadb               1.5.9      import   4.06s
+   OK  groq                   1.7.0      import   0.05s
+   OK  python-dotenv          1.2.4      import   0.00s
+   OK  rank-bm25              0.2.2      import   0.00s
+   OK  torch                  2.15.0     import   6.30s
+   OK  transformers           5.24.1     import   1.54s
+   OK  sentence-transformers  6.3.0      import  24.63s
+   OK  onnxruntime            1.32.0     import   0.71s
+   OK  numpy                  2.5.5      import   0.00s
+   torch: CPU threads=4, MPS available=True
+
+-- Disk usage
+   1.2G	.venv
+   610M	.venv/lib/python3.12/site-packages/torch

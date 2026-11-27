@@ -1,0 +1,1028 @@
+{
+  "version": "1.0",
+  "description": "Canonical evidence units: one per sentence of every numbered policy section.",
+  "corpus_manifest_sha256": "4394c1c94d216ae8d1a2080e3564f4d9754bb36c3e8cd4223fd3e4dbc27938c2",
+  "unit_count": 102,
+  "units": [
+    {
+      "evidence_id": "HR-001-S01-E01",
+      "policy_id": "HR-001",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy explains the types of leave available to permanent full-time employees of Brightlake Systems and how leave is requested and approved.",
+      "start": 225,
+      "end": 370
+    },
+    {
+      "evidence_id": "HR-001-S01-E02",
+      "policy_id": "HR-001",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 2,
+      "text": "Part-time employees receive leave on a pro-rata basis.",
+      "start": 371,
+      "end": 425
+    },
+    {
+      "evidence_id": "HR-001-S01-E03",
+      "policy_id": "HR-001",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 3,
+      "text": "Contractors are not covered by this policy.",
+      "start": 426,
+      "end": 469
+    },
+    {
+      "evidence_id": "HR-001-S02-E01",
+      "policy_id": "HR-001",
+      "section_number": 2,
+      "section_title": "2. Annual Leave",
+      "sentence_index": 1,
+      "text": "Full-time employees receive 20 days of paid annual leave per calendar year.",
+      "start": 491,
+      "end": 566
+    },
+    {
+      "evidence_id": "HR-001-S02-E02",
+      "policy_id": "HR-001",
+      "section_number": 2,
+      "section_title": "2. Annual Leave",
+      "sentence_index": 2,
+      "text": "Annual leave accrues at 1.67 days per completed month of service.",
+      "start": 567,
+      "end": 632
+    },
+    {
+      "evidence_id": "HR-001-S02-E03",
+      "policy_id": "HR-001",
+      "section_number": 2,
+      "section_title": "2. Annual Leave",
+      "sentence_index": 3,
+      "text": "Employees must submit annual leave requests through the HR Portal at least 7 calendar days before the first day of leave.",
+      "start": 634,
+      "end": 755
+    },
+    {
+      "evidence_id": "HR-001-S02-E04",
+      "policy_id": "HR-001",
+      "section_number": 2,
+      "section_title": "2. Annual Leave",
+      "sentence_index": 4,
+      "text": "Requests for 5 or more consecutive working days must be submitted at least 21 calendar days in advance.",
+      "start": 756,
+      "end": 859
+    },
+    {
+      "evidence_id": "HR-001-S02-E05",
+      "policy_id": "HR-001",
+      "section_number": 2,
+      "section_title": "2. Annual Leave",
+      "sentence_index": 5,
+      "text": "All annual leave requires approval from the employee's line manager.",
+      "start": 860,
+      "end": 928
+    },
+    {
+      "evidence_id": "HR-001-S03-E01",
+      "policy_id": "HR-001",
+      "section_number": 3,
+      "section_title": "3. Carry-Forward of Annual Leave",
+      "sentence_index": 1,
+      "text": "A maximum of 5 unused annual leave days may be carried forward into the next calendar year.",
+      "start": 967,
+      "end": 1058
+    },
+    {
+      "evidence_id": "HR-001-S03-E02",
+      "policy_id": "HR-001",
+      "section_number": 3,
+      "section_title": "3. Carry-Forward of Annual Leave",
+      "sentence_index": 2,
+      "text": "Carried-forward days must be used by 31 March of the following year; any carried-forward days not used by that date expire.",
+      "start": 1059,
+      "end": 1182
+    },
+    {
+      "evidence_id": "HR-001-S03-E03",
+      "policy_id": "HR-001",
+      "section_number": 3,
+      "section_title": "3. Carry-Forward of Annual Leave",
+      "sentence_index": 3,
+      "text": "Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.",
+      "start": 1183,
+      "end": 1304
+    },
+    {
+      "evidence_id": "HR-001-S04-E01",
+      "policy_id": "HR-001",
+      "section_number": 4,
+      "section_title": "4. Sick Leave",
+      "sentence_index": 1,
+      "text": "Employees receive 10 days of paid sick leave per calendar year.",
+      "start": 1324,
+      "end": 1387
+    },
+    {
+      "evidence_id": "HR-001-S04-E02",
+      "policy_id": "HR-001",
+      "section_number": 4,
+      "section_title": "4. Sick Leave",
+      "sentence_index": 2,
+      "text": "Sick leave does not carry forward.",
+      "start": 1388,
+      "end": 1422
+    },
+    {
+      "evidence_id": "HR-001-S04-E03",
+      "policy_id": "HR-001",
+      "section_number": 4,
+      "section_title": "4. Sick Leave",
+      "sentence_index": 3,
+      "text": "Employees must notify their line manager before 10:00 on the first day of absence.",
+      "start": 1423,
+      "end": 1505
+    },
+    {
+      "evidence_id": "HR-001-S04-E04",
+      "policy_id": "HR-001",
+      "section_number": 4,
+      "section_title": "4. Sick Leave",
+      "sentence_index": 4,
+      "text": "A medical certificate from a registered doctor is required for any sick absence longer than 2 consecutive working days.",
+      "start": 1506,
+      "end": 1625
+    },
+    {
+      "evidence_id": "HR-001-S05-E01",
+      "policy_id": "HR-001",
+      "section_number": 5,
+      "section_title": "5. Parental Leave",
+      "sentence_index": 1,
+      "text": "Birth mothers are entitled to 26 weeks of paid maternity leave.",
+      "start": 1649,
+      "end": 1712
+    },
+    {
+      "evidence_id": "HR-001-S05-E02",
+      "policy_id": "HR-001",
+      "section_number": 5,
+      "section_title": "5. Parental Leave",
+      "sentence_index": 2,
+      "text": "Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible.",
+      "start": 1713,
+      "end": 1837
+    },
+    {
+      "evidence_id": "HR-001-S05-E03",
+      "policy_id": "HR-001",
+      "section_number": 5,
+      "section_title": "5. Parental Leave",
+      "sentence_index": 3,
+      "text": "Fathers and secondary caregivers are entitled to 10 working days of paid paternity leave, which must be taken within 3 months of the child's birth.",
+      "start": 1839,
+      "end": 1986
+    },
+    {
+      "evidence_id": "HR-001-S06-E01",
+      "policy_id": "HR-001",
+      "section_number": 6,
+      "section_title": "6. Bereavement Leave",
+      "sentence_index": 1,
+      "text": "Employees may take up to 5 working days of paid bereavement leave following the death of an immediate family member (spouse or partner, child, parent, sibling, or grandparent).",
+      "start": 2013,
+      "end": 2189
+    },
+    {
+      "evidence_id": "HR-001-S07-E01",
+      "policy_id": "HR-001",
+      "section_number": 7,
+      "section_title": "7. Public Holidays",
+      "sentence_index": 1,
+      "text": "Brightlake Systems publishes a list of 12 public holidays each December for the following calendar year.",
+      "start": 2214,
+      "end": 2318
+    },
+    {
+      "evidence_id": "HR-001-S07-E02",
+      "policy_id": "HR-001",
+      "section_number": 7,
+      "section_title": "7. Public Holidays",
+      "sentence_index": 2,
+      "text": "Employees required to work on a public holiday receive one compensatory day off, which must be taken within 60 days.",
+      "start": 2319,
+      "end": 2435
+    },
+    {
+      "evidence_id": "HR-001-S08-E01",
+      "policy_id": "HR-001",
+      "section_number": 8,
+      "section_title": "8. Contact",
+      "sentence_index": 1,
+      "text": "Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example.",
+      "start": 2452,
+      "end": 2554
+    },
+    {
+      "evidence_id": "HR-002-S01-E01",
+      "policy_id": "HR-002",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy sets out when and how employees of Brightlake Systems may work from home.",
+      "start": 225,
+      "end": 310
+    },
+    {
+      "evidence_id": "HR-002-S01-E02",
+      "policy_id": "HR-002",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 2,
+      "text": "It applies to all permanent employees whose role has been designated \"hybrid-eligible\" by their department head.",
+      "start": 311,
+      "end": 423
+    },
+    {
+      "evidence_id": "HR-002-S02-E01",
+      "policy_id": "HR-002",
+      "section_number": 2,
+      "section_title": "2. Eligibility",
+      "sentence_index": 1,
+      "text": "Employees become eligible to work from home after successfully completing their probation period.",
+      "start": 444,
+      "end": 541
+    },
+    {
+      "evidence_id": "HR-002-S02-E02",
+      "policy_id": "HR-002",
+      "section_number": 2,
+      "section_title": "2. Eligibility",
+      "sentence_index": 2,
+      "text": "Employees still on probation must work from the office unless their department head grants a written exception.",
+      "start": 542,
+      "end": 653
+    },
+    {
+      "evidence_id": "HR-002-S03-E01",
+      "policy_id": "HR-002",
+      "section_number": 3,
+      "section_title": "3. Number of Work-From-Home Days",
+      "sentence_index": 1,
+      "text": "Eligible employees may work from home for up to 2 days per week.",
+      "start": 692,
+      "end": 756
+    },
+    {
+      "evidence_id": "HR-002-S03-E02",
+      "policy_id": "HR-002",
+      "section_number": 3,
+      "section_title": "3. Number of Work-From-Home Days",
+      "sentence_index": 2,
+      "text": "Work-from-home days cannot be accumulated or carried over to a later week.",
+      "start": 757,
+      "end": 831
+    },
+    {
+      "evidence_id": "HR-002-S04-E01",
+      "policy_id": "HR-002",
+      "section_number": 4,
+      "section_title": "4. Requesting Work-From-Home Days",
+      "sentence_index": 1,
+      "text": "Work-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week.",
+      "start": 871,
+      "end": 971
+    },
+    {
+      "evidence_id": "HR-002-S04-E02",
+      "policy_id": "HR-002",
+      "section_number": 4,
+      "section_title": "4. Requesting Work-From-Home Days",
+      "sentence_index": 2,
+      "text": "The line manager approves or declines each request.",
+      "start": 972,
+      "end": 1023
+    },
+    {
+      "evidence_id": "HR-002-S04-E03",
+      "policy_id": "HR-002",
+      "section_number": 4,
+      "section_title": "4. Requesting Work-From-Home Days",
+      "sentence_index": 3,
+      "text": "Managers may decline requests during critical project phases, client visits, or mandatory in-office events.",
+      "start": 1024,
+      "end": 1131
+    },
+    {
+      "evidence_id": "HR-002-S05-E01",
+      "policy_id": "HR-002",
+      "section_number": 5,
+      "section_title": "5. Core Working Hours",
+      "sentence_index": 1,
+      "text": "Employees working from home must be available online between the core hours of 10:00 and 16:00 local time.",
+      "start": 1159,
+      "end": 1265
+    },
+    {
+      "evidence_id": "HR-002-S05-E02",
+      "policy_id": "HR-002",
+      "section_number": 5,
+      "section_title": "5. Core Working Hours",
+      "sentence_index": 2,
+      "text": "During core hours employees must respond to messages within 30 minutes and keep their calendar status up to date.",
+      "start": 1266,
+      "end": 1379
+    },
+    {
+      "evidence_id": "HR-002-S06-E01",
+      "policy_id": "HR-002",
+      "section_number": 6,
+      "section_title": "6. Home Workspace and Security",
+      "sentence_index": 1,
+      "text": "Employees must work from a quiet, private space where confidential information cannot be seen or overheard.",
+      "start": 1416,
+      "end": 1523
+    },
+    {
+      "evidence_id": "HR-002-S06-E02",
+      "policy_id": "HR-002",
+      "section_number": 6,
+      "section_title": "6. Home Workspace and Security",
+      "sentence_index": 2,
+      "text": "Employees must connect to company systems through the company VPN at all times when working from home.",
+      "start": 1524,
+      "end": 1626
+    },
+    {
+      "evidence_id": "HR-002-S06-E03",
+      "policy_id": "HR-002",
+      "section_number": 6,
+      "section_title": "6. Home Workspace and Security",
+      "sentence_index": 3,
+      "text": "Use of public Wi-Fi networks for work is permitted only when connected through the company VPN.",
+      "start": 1627,
+      "end": 1722
+    },
+    {
+      "evidence_id": "HR-002-S07-E01",
+      "policy_id": "HR-002",
+      "section_number": 7,
+      "section_title": "7. Internet Allowance",
+      "sentence_index": 1,
+      "text": "Hybrid-eligible employees receive a monthly internet allowance of USD 40, paid automatically through payroll.",
+      "start": 1750,
+      "end": 1859
+    },
+    {
+      "evidence_id": "HR-002-S07-E02",
+      "policy_id": "HR-002",
+      "section_number": 7,
+      "section_title": "7. Internet Allowance",
+      "sentence_index": 2,
+      "text": "No receipts are required for the internet allowance.",
+      "start": 1860,
+      "end": 1912
+    },
+    {
+      "evidence_id": "HR-002-S08-E01",
+      "policy_id": "HR-002",
+      "section_number": 8,
+      "section_title": "8. Working From Another Country",
+      "sentence_index": 1,
+      "text": "Working remotely from a country other than the employee's country of employment requires prior written approval from HR and is limited to a maximum of 30 calendar days per calendar year.",
+      "start": 1950,
+      "end": 2136
+    },
+    {
+      "evidence_id": "HR-002-S09-E01",
+      "policy_id": "HR-002",
+      "section_number": 9,
+      "section_title": "9. Contact",
+      "sentence_index": 1,
+      "text": "Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example.",
+      "start": 2153,
+      "end": 2255
+    },
+    {
+      "evidence_id": "HR-003-S01-E01",
+      "policy_id": "HR-003",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy explains which business expenses Brightlake Systems reimburses and how employees submit expense claims.",
+      "start": 233,
+      "end": 348
+    },
+    {
+      "evidence_id": "HR-003-S01-E02",
+      "policy_id": "HR-003",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 2,
+      "text": "It applies to all permanent employees and interns.",
+      "start": 349,
+      "end": 399
+    },
+    {
+      "evidence_id": "HR-003-S02-E01",
+      "policy_id": "HR-003",
+      "section_number": 2,
+      "section_title": "2. Submitting a Claim",
+      "sentence_index": 1,
+      "text": "Expense claims must be submitted through the Expense Portal within 30 calendar days of the date the expense was incurred.",
+      "start": 427,
+      "end": 548
+    },
+    {
+      "evidence_id": "HR-003-S02-E02",
+      "policy_id": "HR-003",
+      "section_number": 2,
+      "section_title": "2. Submitting a Claim",
+      "sentence_index": 2,
+      "text": "Claims submitted after 30 days will be rejected unless the Finance Controller approves a late submission.",
+      "start": 549,
+      "end": 654
+    },
+    {
+      "evidence_id": "HR-003-S02-E03",
+      "policy_id": "HR-003",
+      "section_number": 2,
+      "section_title": "2. Submitting a Claim",
+      "sentence_index": 3,
+      "text": "An itemised receipt is required for every individual expense above USD 25.",
+      "start": 656,
+      "end": 730
+    },
+    {
+      "evidence_id": "HR-003-S02-E04",
+      "policy_id": "HR-003",
+      "section_number": 2,
+      "section_title": "2. Submitting a Claim",
+      "sentence_index": 4,
+      "text": "Expenses of USD 25 or less may be claimed without a receipt, provided a description of the expense is entered.",
+      "start": 731,
+      "end": 841
+    },
+    {
+      "evidence_id": "HR-003-S03-E01",
+      "policy_id": "HR-003",
+      "section_number": 3,
+      "section_title": "3. Approval and Payment",
+      "sentence_index": 1,
+      "text": "All expense claims must be approved by the employee's line manager.",
+      "start": 871,
+      "end": 938
+    },
+    {
+      "evidence_id": "HR-003-S03-E02",
+      "policy_id": "HR-003",
+      "section_number": 3,
+      "section_title": "3. Approval and Payment",
+      "sentence_index": 2,
+      "text": "Claims above USD 1,000 also require approval from the department head.",
+      "start": 939,
+      "end": 1009
+    },
+    {
+      "evidence_id": "HR-003-S03-E03",
+      "policy_id": "HR-003",
+      "section_number": 3,
+      "section_title": "3. Approval and Payment",
+      "sentence_index": 3,
+      "text": "Approved claims are paid with the next monthly payroll cycle.",
+      "start": 1010,
+      "end": 1071
+    },
+    {
+      "evidence_id": "HR-003-S04-E01",
+      "policy_id": "HR-003",
+      "section_number": 4,
+      "section_title": "4. Business Travel - Flights and Accommodation",
+      "sentence_index": 1,
+      "text": "Flights must be booked in economy class for journeys under 6 hours.",
+      "start": 1124,
+      "end": 1191
+    },
+    {
+      "evidence_id": "HR-003-S04-E02",
+      "policy_id": "HR-003",
+      "section_number": 4,
+      "section_title": "4. Business Travel - Flights and Accommodation",
+      "sentence_index": 2,
+      "text": "Premium economy may be booked for journeys of 6 hours or longer.",
+      "start": 1192,
+      "end": 1256
+    },
+    {
+      "evidence_id": "HR-003-S04-E03",
+      "policy_id": "HR-003",
+      "section_number": 4,
+      "section_title": "4. Business Travel - Flights and Accommodation",
+      "sentence_index": 3,
+      "text": "Hotel accommodation is reimbursed up to USD 180 per night.",
+      "start": 1257,
+      "end": 1315
+    },
+    {
+      "evidence_id": "HR-003-S05-E01",
+      "policy_id": "HR-003",
+      "section_number": 5,
+      "section_title": "5. Business Travel - Meals",
+      "sentence_index": 1,
+      "text": "Meals during business travel are reimbursed up to USD 60 per day.",
+      "start": 1348,
+      "end": 1413
+    },
+    {
+      "evidence_id": "HR-003-S05-E02",
+      "policy_id": "HR-003",
+      "section_number": 5,
+      "section_title": "5. Business Travel - Meals",
+      "sentence_index": 2,
+      "text": "Alcoholic beverages are not reimbursable under any circumstances.",
+      "start": 1414,
+      "end": 1479
+    },
+    {
+      "evidence_id": "HR-003-S06-E01",
+      "policy_id": "HR-003",
+      "section_number": 6,
+      "section_title": "6. Use of a Personal Vehicle",
+      "sentence_index": 1,
+      "text": "Employees who use their personal vehicle for approved business travel are reimbursed at USD 0.40 per kilometre.",
+      "start": 1514,
+      "end": 1625
+    },
+    {
+      "evidence_id": "HR-003-S06-E02",
+      "policy_id": "HR-003",
+      "section_number": 6,
+      "section_title": "6. Use of a Personal Vehicle",
+      "sentence_index": 2,
+      "text": "Fuel receipts are not required for mileage claims, but the start point, destination and distance must be recorded in the claim.",
+      "start": 1626,
+      "end": 1753
+    },
+    {
+      "evidence_id": "HR-003-S07-E01",
+      "policy_id": "HR-003",
+      "section_number": 7,
+      "section_title": "7. Non-Reimbursable Expenses",
+      "sentence_index": 1,
+      "text": "The following are not reimbursable: alcoholic beverages, traffic or parking fines, personal entertainment, in-flight purchases, and expenses for family members accompanying the employee.",
+      "start": 1788,
+      "end": 1974
+    },
+    {
+      "evidence_id": "HR-003-S08-E01",
+      "policy_id": "HR-003",
+      "section_number": 8,
+      "section_title": "8. Contact",
+      "sentence_index": 1,
+      "text": "Questions about this policy should be directed to the Finance team at expenses@brightlake.example.",
+      "start": 1991,
+      "end": 2089
+    },
+    {
+      "evidence_id": "HR-004-S01-E01",
+      "policy_id": "HR-004",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy describes the onboarding process for new permanent employees joining Brightlake Systems, from before their first day until the end of their probation period.",
+      "start": 230,
+      "end": 399
+    },
+    {
+      "evidence_id": "HR-004-S02-E01",
+      "policy_id": "HR-004",
+      "section_number": 2,
+      "section_title": "2. Before the First Day",
+      "sentence_index": 1,
+      "text": "New employees must submit the following documents through the HR Portal before their joining date: a government-issued photo ID, bank account details for payroll, and the signed offer letter.",
+      "start": 429,
+      "end": 620
+    },
+    {
+      "evidence_id": "HR-004-S02-E02",
+      "policy_id": "HR-004",
+      "section_number": 2,
+      "section_title": "2. Before the First Day",
+      "sentence_index": 2,
+      "text": "HR sends a welcome email with first-day instructions 5 working days before the joining date.",
+      "start": 621,
+      "end": 713
+    },
+    {
+      "evidence_id": "HR-004-S03-E01",
+      "policy_id": "HR-004",
+      "section_number": 3,
+      "section_title": "3. First Day",
+      "sentence_index": 1,
+      "text": "New employees attend an orientation session that starts at 09:30 on their first day.",
+      "start": 732,
+      "end": 816
+    },
+    {
+      "evidence_id": "HR-004-S03-E02",
+      "policy_id": "HR-004",
+      "section_number": 3,
+      "section_title": "3. First Day",
+      "sentence_index": 2,
+      "text": "During orientation they receive their company laptop, ID badge, and system accounts.",
+      "start": 817,
+      "end": 901
+    },
+    {
+      "evidence_id": "HR-004-S04-E01",
+      "policy_id": "HR-004",
+      "section_number": 4,
+      "section_title": "4. Onboarding Buddy",
+      "sentence_index": 1,
+      "text": "Every new employee is assigned an onboarding buddy from their team.",
+      "start": 927,
+      "end": 994
+    },
+    {
+      "evidence_id": "HR-004-S04-E02",
+      "policy_id": "HR-004",
+      "section_number": 4,
+      "section_title": "4. Onboarding Buddy",
+      "sentence_index": 2,
+      "text": "The buddy supports the new employee for their first 90 days.",
+      "start": 995,
+      "end": 1055
+    },
+    {
+      "evidence_id": "HR-004-S05-E01",
+      "policy_id": "HR-004",
+      "section_number": 5,
+      "section_title": "5. Mandatory Training",
+      "sentence_index": 1,
+      "text": "New employees must complete two mandatory training courses within 14 calendar days of joining: Security Awareness Training and Code of Conduct Training.",
+      "start": 1083,
+      "end": 1235
+    },
+    {
+      "evidence_id": "HR-004-S05-E02",
+      "policy_id": "HR-004",
+      "section_number": 5,
+      "section_title": "5. Mandatory Training",
+      "sentence_index": 2,
+      "text": "Both courses are completed through the Learning Portal.",
+      "start": 1236,
+      "end": 1291
+    },
+    {
+      "evidence_id": "HR-004-S06-E01",
+      "policy_id": "HR-004",
+      "section_number": 6,
+      "section_title": "6. Probation Period",
+      "sentence_index": 1,
+      "text": "The probation period for new employees is 6 months.",
+      "start": 1317,
+      "end": 1368
+    },
+    {
+      "evidence_id": "HR-004-S06-E02",
+      "policy_id": "HR-004",
+      "section_number": 6,
+      "section_title": "6. Probation Period",
+      "sentence_index": 2,
+      "text": "Line managers hold structured check-in meetings with new employees at 30, 60, and 90 days after joining.",
+      "start": 1369,
+      "end": 1473
+    },
+    {
+      "evidence_id": "HR-004-S06-E03",
+      "policy_id": "HR-004",
+      "section_number": 6,
+      "section_title": "6. Probation Period",
+      "sentence_index": 3,
+      "text": "Confirmation of employment is communicated in writing at the end of the probation period.",
+      "start": 1474,
+      "end": 1563
+    },
+    {
+      "evidence_id": "HR-004-S07-E01",
+      "policy_id": "HR-004",
+      "section_number": 7,
+      "section_title": "7. Contact",
+      "sentence_index": 1,
+      "text": "Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example.",
+      "start": 1580,
+      "end": 1682
+    },
+    {
+      "evidence_id": "IT-001-S01-E01",
+      "policy_id": "IT-001",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy defines the minimum requirements for passwords and account security for every Brightlake Systems user account, including employees, interns and contractors.",
+      "start": 240,
+      "end": 408
+    },
+    {
+      "evidence_id": "IT-001-S02-E01",
+      "policy_id": "IT-001",
+      "section_number": 2,
+      "section_title": "2. Password Requirements",
+      "sentence_index": 1,
+      "text": "Passwords must be at least 14 characters long.",
+      "start": 439,
+      "end": 485
+    },
+    {
+      "evidence_id": "IT-001-S02-E02",
+      "policy_id": "IT-001",
+      "section_number": 2,
+      "section_title": "2. Password Requirements",
+      "sentence_index": 2,
+      "text": "Passwords must not contain the user's name, username, or the word \"Brightlake\".",
+      "start": 486,
+      "end": 565
+    },
+    {
+      "evidence_id": "IT-001-S02-E03",
+      "policy_id": "IT-001",
+      "section_number": 2,
+      "section_title": "2. Password Requirements",
+      "sentence_index": 3,
+      "text": "Users must not reuse any of their previous 10 passwords.",
+      "start": 566,
+      "end": 622
+    },
+    {
+      "evidence_id": "IT-001-S02-E04",
+      "policy_id": "IT-001",
+      "section_number": 2,
+      "section_title": "2. Password Requirements",
+      "sentence_index": 4,
+      "text": "Passwords must be changed every 180 days, and immediately if there is any suspicion that a password has been compromised.",
+      "start": 624,
+      "end": 745
+    },
+    {
+      "evidence_id": "IT-001-S03-E01",
+      "policy_id": "IT-001",
+      "section_number": 3,
+      "section_title": "3. Multi-Factor Authentication",
+      "sentence_index": 1,
+      "text": "Multi-factor authentication (MFA) is mandatory for all accounts.",
+      "start": 782,
+      "end": 846
+    },
+    {
+      "evidence_id": "IT-001-S03-E02",
+      "policy_id": "IT-001",
+      "section_number": 3,
+      "section_title": "3. Multi-Factor Authentication",
+      "sentence_index": 2,
+      "text": "Users must use the Brightlake Authenticator mobile app as their second factor.",
+      "start": 847,
+      "end": 925
+    },
+    {
+      "evidence_id": "IT-001-S03-E03",
+      "policy_id": "IT-001",
+      "section_number": 3,
+      "section_title": "3. Multi-Factor Authentication",
+      "sentence_index": 3,
+      "text": "SMS codes are not an approved MFA method.",
+      "start": 926,
+      "end": 967
+    },
+    {
+      "evidence_id": "IT-001-S04-E01",
+      "policy_id": "IT-001",
+      "section_number": 4,
+      "section_title": "4. Account Lockout",
+      "sentence_index": 1,
+      "text": "An account is automatically locked for 15 minutes after 5 consecutive failed sign-in attempts.",
+      "start": 992,
+      "end": 1086
+    },
+    {
+      "evidence_id": "IT-001-S04-E02",
+      "policy_id": "IT-001",
+      "section_number": 4,
+      "section_title": "4. Account Lockout",
+      "sentence_index": 2,
+      "text": "If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk.",
+      "start": 1087,
+      "end": 1197
+    },
+    {
+      "evidence_id": "IT-001-S05-E01",
+      "policy_id": "IT-001",
+      "section_number": 5,
+      "section_title": "5. Password Storage and Sharing",
+      "sentence_index": 1,
+      "text": "Passwords must never be shared with anyone, including colleagues, managers, or IT staff.",
+      "start": 1235,
+      "end": 1323
+    },
+    {
+      "evidence_id": "IT-001-S05-E02",
+      "policy_id": "IT-001",
+      "section_number": 5,
+      "section_title": "5. Password Storage and Sharing",
+      "sentence_index": 2,
+      "text": "Passwords must not be written down or stored in plain-text files.",
+      "start": 1324,
+      "end": 1389
+    },
+    {
+      "evidence_id": "IT-001-S05-E03",
+      "policy_id": "IT-001",
+      "section_number": 5,
+      "section_title": "5. Password Storage and Sharing",
+      "sentence_index": 3,
+      "text": "The only approved password manager is KeyVault, which is installed on all company laptops.",
+      "start": 1390,
+      "end": 1480
+    },
+    {
+      "evidence_id": "IT-001-S06-E01",
+      "policy_id": "IT-001",
+      "section_number": 6,
+      "section_title": "6. Reporting a Compromised Account",
+      "sentence_index": 1,
+      "text": "If a user suspects that their password or account has been compromised, they must report it to the IT Service Desk within 1 hour of noticing the issue.",
+      "start": 1521,
+      "end": 1672
+    },
+    {
+      "evidence_id": "IT-001-S06-E02",
+      "policy_id": "IT-001",
+      "section_number": 6,
+      "section_title": "6. Reporting a Compromised Account",
+      "sentence_index": 2,
+      "text": "The IT Service Desk can be reached on internal extension 4357 or at servicedesk@brightlake.example.",
+      "start": 1673,
+      "end": 1772
+    },
+    {
+      "evidence_id": "IT-001-S07-E01",
+      "policy_id": "IT-001",
+      "section_number": 7,
+      "section_title": "7. Enforcement",
+      "sentence_index": 1,
+      "text": "Violations of this policy may result in suspension of system access and disciplinary action.",
+      "start": 1793,
+      "end": 1885
+    },
+    {
+      "evidence_id": "IT-002-S01-E01",
+      "policy_id": "IT-002",
+      "section_number": 1,
+      "section_title": "1. Purpose and Scope",
+      "sentence_index": 1,
+      "text": "This policy explains how company-issued IT equipment, such as laptops, monitors, headsets and mobile phones, must be used, protected, and returned.",
+      "start": 229,
+      "end": 376
+    },
+    {
+      "evidence_id": "IT-002-S02-E01",
+      "policy_id": "IT-002",
+      "section_number": 2,
+      "section_title": "2. Issued Equipment",
+      "sentence_index": 1,
+      "text": "Every employee is issued a company laptop on or before their first working day.",
+      "start": 402,
+      "end": 481
+    },
+    {
+      "evidence_id": "IT-002-S02-E02",
+      "policy_id": "IT-002",
+      "section_number": 2,
+      "section_title": "2. Issued Equipment",
+      "sentence_index": 2,
+      "text": "Laptops are replaced on a standard refresh cycle of every 4 years, or earlier if the device is faulty and cannot be repaired.",
+      "start": 482,
+      "end": 607
+    },
+    {
+      "evidence_id": "IT-002-S02-E03",
+      "policy_id": "IT-002",
+      "section_number": 2,
+      "section_title": "2. Issued Equipment",
+      "sentence_index": 3,
+      "text": "All company laptops use full-disk encryption, which must never be disabled.",
+      "start": 609,
+      "end": 684
+    },
+    {
+      "evidence_id": "IT-002-S03-E01",
+      "policy_id": "IT-002",
+      "section_number": 3,
+      "section_title": "3. Acceptable Use",
+      "sentence_index": 1,
+      "text": "Company equipment is provided for business use.",
+      "start": 708,
+      "end": 755
+    },
+    {
+      "evidence_id": "IT-002-S03-E02",
+      "policy_id": "IT-002",
+      "section_number": 3,
+      "section_title": "3. Acceptable Use",
+      "sentence_index": 2,
+      "text": "Limited personal use, such as reading personal email during breaks, is permitted provided it does not interfere with work or breach any company policy.",
+      "start": 756,
+      "end": 907
+    },
+    {
+      "evidence_id": "IT-002-S04-E01",
+      "policy_id": "IT-002",
+      "section_number": 4,
+      "section_title": "4. Software Installation",
+      "sentence_index": 1,
+      "text": "Employees may install software only from the Brightlake Software Centre.",
+      "start": 938,
+      "end": 1010
+    },
+    {
+      "evidence_id": "IT-002-S04-E02",
+      "policy_id": "IT-002",
+      "section_number": 4,
+      "section_title": "4. Software Installation",
+      "sentence_index": 2,
+      "text": "Installing any other software requires prior approval from IT through a request raised in TechDesk, the IT ticketing system.",
+      "start": 1011,
+      "end": 1135
+    },
+    {
+      "evidence_id": "IT-002-S05-E01",
+      "policy_id": "IT-002",
+      "section_number": 5,
+      "section_title": "5. Removable Storage",
+      "sentence_index": 1,
+      "text": "USB storage devices are blocked on company laptops by default.",
+      "start": 1162,
+      "end": 1224
+    },
+    {
+      "evidence_id": "IT-002-S05-E02",
+      "policy_id": "IT-002",
+      "section_number": 5,
+      "section_title": "5. Removable Storage",
+      "sentence_index": 2,
+      "text": "Only encrypted USB drives issued by the IT department may be used.",
+      "start": 1225,
+      "end": 1291
+    },
+    {
+      "evidence_id": "IT-002-S06-E01",
+      "policy_id": "IT-002",
+      "section_number": 6,
+      "section_title": "6. Lost or Stolen Equipment",
+      "sentence_index": 1,
+      "text": "Lost or stolen equipment must be reported to the IT Service Desk within 24 hours of discovering the loss.",
+      "start": 1325,
+      "end": 1430
+    },
+    {
+      "evidence_id": "IT-002-S06-E02",
+      "policy_id": "IT-002",
+      "section_number": 6,
+      "section_title": "6. Lost or Stolen Equipment",
+      "sentence_index": 2,
+      "text": "If a device is stolen, the employee must also file a police report and attach the report reference to the TechDesk ticket.",
+      "start": 1431,
+      "end": 1553
+    },
+    {
+      "evidence_id": "IT-002-S07-E01",
+      "policy_id": "IT-002",
+      "section_number": 7,
+      "section_title": "7. Returning Equipment",
+      "sentence_index": 1,
+      "text": "When an employee leaves Brightlake Systems, all company equipment must be returned within 5 working days of the last working day.",
+      "start": 1582,
+      "end": 1711
+    },
+    {
+      "evidence_id": "IT-002-S07-E02",
+      "policy_id": "IT-002",
+      "section_number": 7,
+      "section_title": "7. Returning Equipment",
+      "sentence_index": 2,
+      "text": "The cost of unreturned equipment may be deducted from the employee's final settlement.",
+      "start": 1712,
+      "end": 1798
+    },
+    {
+      "evidence_id": "IT-002-S08-E01",
+      "policy_id": "IT-002",
+      "section_number": 8,
+      "section_title": "8. Contact",
+      "sentence_index": 1,
+      "text": "Questions about this policy should be directed to the IT Service Desk on internal extension 4357.",
+      "start": 1815,
+      "end": 1912
+    }
+  ]
+}

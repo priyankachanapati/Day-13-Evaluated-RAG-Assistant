@@ -1,0 +1,18 @@
+[project]
+name = "policy-qa-rag-v2"
+version = "0.1.0"
+description = "Policy Q&A RAG v2 - evaluated, improved RAG (Day 13 / AI05); src/ is the frozen RAG v1 baseline"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+# src/ and tests/ are the frozen v1 baseline copied verbatim from Day 12; they are never reformatted.
+extend-exclude = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "rag_v2", "evaluation"]

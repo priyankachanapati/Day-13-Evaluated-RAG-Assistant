@@ -1,0 +1,30 @@
+Run mock-all-18-configs: 18 configs x 8 queries, LLM mock-llm (MOCK - not a real model); 0 already done
+  v1_paragraph_800_150+dense                 DEV-01  answered                    not correct
+  v1_paragraph_800_150+dense                 DEV-02  answered                    not correct
+  v1_paragraph_800_150+dense                 DEV-03  answered                    not correct
+  v1_paragraph_800_150+dense                 DEV-04  answered                    not correct
+  v1_paragraph_800_150+dense                 DEV-05  answered                    not correct
+  v1_paragraph_800_150+dense                 SM-13   answered                    not correct
+  v1_paragraph_800_150+dense                 SM-14   answered                    not correct
+  v1_paragraph_800_150+dense                 SM-15   answered                    not correct
+  v1_paragraph_800_150+dense+rerank          DEV-01  answered                    not correct
+  v1_paragraph_800_150+dense+rerank          DEV-02  answered                    not correct
+  v1_paragraph_800_150+dense+rerank          DEV-03  answered                    not correct
+  v1_paragraph_800_150+dense+rerank          DEV-04  answered                    not correct
+  v1_paragraph_800_150+dense+rerank          DEV-05  answered                    not correct
+  v1_paragraph_800_150+dense+rerank          SM-13   answered                    not correct
+  v1_paragraph_800_150+dense+rerank          SM-14   answered                    not correct
+  v1_paragraph_800_150+dense+rerank          SM-15   answered                    not correct
+  v1_paragraph_800_150+bm25                  DEV-01  answered                    not correct
+  v1_paragraph_800_150+bm25                  DEV-02  answered                    not correct
+  v1_paragraph_800_150+bm25                  DEV-03  answered                    not correct
+  v1_paragraph_800_150+bm25                  DEV-04  answered                    not correct
+  v1_paragraph_800_150+bm25                  DEV-05  answered                    not correct
+  v1_paragraph_800_150+bm25                  SM-13   answered                    not correct
+  v1_paragraph_800_150+bm25                  SM-14   refused_no_context          correct
+  v1_paragraph_800_150+bm25                  SM-15   answered                    not correct
+  v1_paragraph_800_150+bm25+rerank           DEV-01  answered                    not correct
+  v1_paragraph_800_150+bm25+rerank           DEV-02  answered                    not correct
+  v1_paragraph_800_150+bm25+rerank           DEV-03  answered                    not correct
+Status: incomplete: --max-llm-calls 20 reached | real LLM calls this invocation: 20 | cache hits: 6
+Saved: /Users/vamsi/Documents/AI-Engineering-Training/Day-13/01-Code/policy-qa-rag-v2/results/dev-answer-eval/mock-all-18-configs/records.jsonl, summary.json, summary.md

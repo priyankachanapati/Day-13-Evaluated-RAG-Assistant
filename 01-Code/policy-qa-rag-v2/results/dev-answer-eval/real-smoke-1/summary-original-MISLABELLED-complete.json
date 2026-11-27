@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "run_name": "real-smoke-1",
+    "started_utc": "2026-11-26T17:01:30+00:00",
+    "llm_model": "openai/gpt-oss-120b",
+    "llm_kind": "real",
+    "temperature": 0.0,
+    "min_similarity": 0.25,
+    "configs": [
+      {
+        "chunking": "v1_paragraph_800_150",
+        "retrieval": "dense",
+        "rerank": false,
+        "context_k": 4,
+        "candidates": 10,
+        "rrf_k": 60,
+        "name": "v1_paragraph_800_150+dense"
+      },
+      {
+        "chunking": "v1_paragraph_800_150",
+        "retrieval": "hybrid",
+        "rerank": true,
+        "context_k": 4,
+        "candidates": 10,
+        "rrf_k": 60,
+        "name": "v1_paragraph_800_150+hybrid+rerank"
+      }
+    ],
+    "integrity": "10 manifests PASS",
+    "status": "complete",
+    "one_time_ms": {
+      "v1_paragraph_800_150+dense": {
+        "dense index build": 639.0880830585957
+      },
+      "v1_paragraph_800_150+hybrid+rerank": {
+        "dense index build": 481.0368330217898,
+        "BM25 index build": 1.8552499823272228,
+        "cross-encoder load": 3125.3539582248777
+      }
+    },
+    "llm_real_calls_this_invocation": 0,
+    "llm_cache_hits_this_invocation": 0
+  },
+  "summary": {
+    "v1_paragraph_800_150+dense": {
+      "answerable_n": 0,
+      "unanswerable_n": 0,
+      "errors": 8,
+      "correct": 0,
+      "status_answered": 0,
+      "answer_term_coverage_mean": null,
+      "citations_valid": 0,
+      "cites_expected_policy": 0,
+      "citation_support_all": 0,
+      "cited_fact_coverage_mean": null,
+      "context_fact_coverage_mean": null,
+      "unsupported_numbers_total": 0,
+      "invalid_citations_total": 0,
+      "refusal_correct": 0,
+      "dropped_by_dense_filter_total": 0,
+      "llm_calls_real": 0,
+      "llm_cache_hits": 0,
+      "llm_not_called": 0,
+      "prompt_tokens_total": 0,
+      "completion_tokens_total": 0,
+      "estimated_cost_usd_total": 0,
+      "median_ms": {
+        "query_embedding": null,
+        "vector_search": null,
+        "bm25": null,
+        "fusion": null,
+        "rerank": null,
+        "retrieval_total": null,
+        "generation (real calls only)": null,
+        "total (real calls only)": null
+      }
+    },
+    "v1_paragraph_800_150+hybrid+rerank": {
+      "answerable_n": 0,
+      "unanswerable_n": 0,
+      "errors": 8,
+      "correct": 0,
+      "status_answered": 0,
+      "answer_term_coverage_mean": null,
+      "citations_valid": 0,
+      "cites_expected_policy": 0,
+      "citation_support_all": 0,
+      "cited_fact_coverage_mean": null,
+      "context_fact_coverage_mean": null,
+      "unsupported_numbers_total": 0,
+      "invalid_citations_total": 0,
+      "refusal_correct": 0,
+      "dropped_by_dense_filter_total": 0,
+      "llm_calls_real": 0,
+      "llm_cache_hits": 0,
+      "llm_not_called": 0,
+      "prompt_tokens_total": 0,
+      "completion_tokens_total": 0,
+      "estimated_cost_usd_total": 0,
+      "median_ms": {
+        "query_embedding": null,
+        "vector_search": null,
+        "bm25": null,
+        "fusion": null,
+        "rerank": null,
+        "retrieval_total": null,
+        "generation (real calls only)": null,
+        "total (real calls only)": null
+      }
+    }
+  }
+}

@@ -1,0 +1,3375 @@
+{
+  "run": {
+    "started_utc": "2026-11-26T15:51:19+00:00",
+    "python": "3.12.16",
+    "chromadb": "1.5.9",
+    "onnxruntime": "1.32.0"
+  },
+  "results_sha256": "0c6e3c18ab2564b8831a175d2aa2db89eaa40757f36671dd5b7499ebcaddb8b8",
+  "inputs": {
+    "corpus_manifest_sha256": "4394c1c94d216ae8d1a2080e3564f4d9754bb36c3e8cd4223fd3e4dbc27938c2",
+    "evidence_catalog_sha256": "2504912c1fe8c01444cad08933764f4a781b88b29252b0134304397d90d0a581",
+    "dev_queries_sha256": "9408567ad9fe2cb8b8d0d5007f9fc006bf837001d6706603dc606888d37bc34d",
+    "top_k": 3
+  },
+  "integrity_checks": [
+    {
+      "name": "corpus matches manifests/corpus.sha256",
+      "pass": true,
+      "detail": "6 policy files"
+    },
+    {
+      "name": "evidence catalog matches frozen hash",
+      "pass": true,
+      "detail": "2504912c1fe8c014…"
+    },
+    {
+      "name": "dev queries match frozen hash",
+      "pass": true,
+      "detail": "9408567ad9fe2cb8…"
+    },
+    {
+      "name": "evidence catalog == rebuild from corpus",
+      "pass": true,
+      "detail": "102 units"
+    },
+    {
+      "name": "v1 strategy == frozen v1 chunk_documents(800, 150)",
+      "pass": true,
+      "detail": "22 chunks"
+    }
+  ],
+  "v1_index_reproduces_day12": {
+    "pass": true,
+    "detail": "15/15 smoke questions: top-3 IDs and 4-dp scores equal Day 12 run 1"
+  },
+  "strategies": {
+    "v1_paragraph_800_150": {
+      "family": "document-specific (paragraph/Markdown-aware)",
+      "chunk_size": 800,
+      "chunk_overlap": 150,
+      "fingerprint": "aea8688f232c6d11b7e4207c60c13973be098361c656897a5819a2836615b569",
+      "lengths": {
+        "chunk_count": 22,
+        "chunks_per_policy": {
+          "HR-001": 5,
+          "HR-002": 4,
+          "HR-003": 4,
+          "HR-004": 3,
+          "IT-001": 3,
+          "IT-002": 3
+        },
+        "mean_chars": 639.4,
+        "median_chars": 676.0,
+        "min_chars": 235,
+        "max_chars": 798,
+        "total_chars": 14066
+      },
+      "boundaries": {
+        "chunks": 22,
+        "starts_mid_sentence": 1,
+        "ends_mid_sentence": 0,
+        "mid_word_cuts": 0,
+        "broken_headings": 0,
+        "trailing_headings": 0,
+        "multi_section_chunks": 20,
+        "per_chunk": [
+          {
+            "chunk_id": "HR-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-001-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-001-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH05",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 1
+          },
+          {
+            "chunk_id": "HR-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-002-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-002-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH04",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 1
+          },
+          {
+            "chunk_id": "HR-004-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-004-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-004-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-001-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-001-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          }
+        ]
+      },
+      "overlap": {
+        "boundaries": 16,
+        "with_overlap": 16,
+        "mean_overlap_chars": 105.6,
+        "min_overlap_chars": 55,
+        "max_overlap_chars": 140
+      },
+      "evidence": {
+        "evidence_units": 102,
+        "intact": 102,
+        "split": 0,
+        "split_ids": [],
+        "duplicated": 17,
+        "duplicated_ids": [
+          "HR-001-S02-E02",
+          "HR-001-S03-E03",
+          "HR-001-S05-E02",
+          "HR-001-S07-E02",
+          "HR-002-S02-E02",
+          "HR-002-S04-E03",
+          "HR-002-S06-E03",
+          "HR-003-S02-E02",
+          "HR-003-S04-E02",
+          "HR-003-S04-E03",
+          "HR-004-S02-E02",
+          "HR-004-S05-E02",
+          "IT-001-S02-E04",
+          "IT-001-S04-E02",
+          "IT-002-S02-E03",
+          "IT-002-S05-E01",
+          "IT-002-S05-E02"
+        ],
+        "containing_chunks": {
+          "HR-001-S01-E01": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E02": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E03": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E01": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E02": [
+            "HR-001-CH01",
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E03": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E04": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E05": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E01": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E02": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E03": [
+            "HR-001-CH02",
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E01": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E02": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E03": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E04": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S05-E01": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S05-E02": [
+            "HR-001-CH03",
+            "HR-001-CH04"
+          ],
+          "HR-001-S05-E03": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S06-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S07-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S07-E02": [
+            "HR-001-CH04",
+            "HR-001-CH05"
+          ],
+          "HR-001-S08-E01": [
+            "HR-001-CH05"
+          ],
+          "HR-002-S01-E01": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S01-E02": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S02-E01": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S02-E02": [
+            "HR-002-CH01",
+            "HR-002-CH02"
+          ],
+          "HR-002-S03-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S03-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E03": [
+            "HR-002-CH02",
+            "HR-002-CH03"
+          ],
+          "HR-002-S05-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S05-E02": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E02": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E03": [
+            "HR-002-CH03",
+            "HR-002-CH04"
+          ],
+          "HR-002-S07-E01": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S07-E02": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S08-E01": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S09-E01": [
+            "HR-002-CH04"
+          ],
+          "HR-003-S01-E01": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S01-E02": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E01": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E02": [
+            "HR-003-CH01",
+            "HR-003-CH02"
+          ],
+          "HR-003-S02-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S02-E04": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E01": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E02": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S04-E01": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S04-E02": [
+            "HR-003-CH02",
+            "HR-003-CH03"
+          ],
+          "HR-003-S04-E03": [
+            "HR-003-CH02",
+            "HR-003-CH03"
+          ],
+          "HR-003-S05-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S05-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S06-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S06-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S07-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S08-E01": [
+            "HR-003-CH04"
+          ],
+          "HR-004-S01-E01": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S02-E01": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S02-E02": [
+            "HR-004-CH01",
+            "HR-004-CH02"
+          ],
+          "HR-004-S03-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S03-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S05-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S05-E02": [
+            "HR-004-CH02",
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E01": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E02": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E03": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S07-E01": [
+            "HR-004-CH03"
+          ],
+          "IT-001-S01-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E02": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E03": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E04": [
+            "IT-001-CH01",
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E02": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E03": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S04-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S04-E02": [
+            "IT-001-CH02",
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E02": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E03": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S06-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S06-E02": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S07-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-002-S01-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E02": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E03": [
+            "IT-002-CH01",
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S04-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S04-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S05-E01": [
+            "IT-002-CH02",
+            "IT-002-CH03"
+          ],
+          "IT-002-S05-E02": [
+            "IT-002-CH02",
+            "IT-002-CH03"
+          ],
+          "IT-002-S06-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S06-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S07-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S07-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S08-E01": [
+            "IT-002-CH03"
+          ]
+        }
+      },
+      "chunks": [
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Annual Leave",
+          "start_char": 0,
+          "end_char": 632,
+          "char_count": 632,
+          "text": "# Employee Leave Policy (HR-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains the types of leave available to permanent full-time employees of Brightlake Systems and how leave is requested and approved. Part-time employees receive leave on a pro-rata basis. Contractors are not covered by this policy.\n\n## 2. Annual Leave\n\nFull-time employees receive 20 days of paid annual leave per calendar year. Annual leave accrues at 1.67 days per completed month of service."
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "section": "2. Annual Leave; 3. Carry-Forward of Annual Leave",
+          "start_char": 567,
+          "end_char": 1304,
+          "char_count": 737,
+          "text": "Annual leave accrues at 1.67 days per completed month of service.\n\nEmployees must submit annual leave requests through the HR Portal at least 7 calendar days before the first day of leave. Requests for 5 or more consecutive working days must be submitted at least 21 calendar days in advance. All annual leave requires approval from the employee's line manager.\n\n## 3. Carry-Forward of Annual Leave\n\nA maximum of 5 unused annual leave days may be carried forward into the next calendar year. Carried-forward days must be used by 31 March of the following year; any carried-forward days not used by that date expire. Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company."
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "section": "4. Sick Leave; 5. Parental Leave",
+          "start_char": 1183,
+          "end_char": 1837,
+          "char_count": 654,
+          "text": "Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.\n\n## 4. Sick Leave\n\nEmployees receive 10 days of paid sick leave per calendar year. Sick leave does not carry forward. Employees must notify their line manager before 10:00 on the first day of absence. A medical certificate from a registered doctor is required for any sick absence longer than 2 consecutive working days.\n\n## 5. Parental Leave\n\nBirth mothers are entitled to 26 weeks of paid maternity leave. Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible."
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "policy_id": "HR-001",
+          "section": "5. Parental Leave; 6. Bereavement Leave; 7. Public Holidays",
+          "start_char": 1713,
+          "end_char": 2435,
+          "char_count": 722,
+          "text": "Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible.\n\nFathers and secondary caregivers are entitled to 10 working days of paid paternity leave, which must be taken within 3 months of the child's birth.\n\n## 6. Bereavement Leave\n\nEmployees may take up to 5 working days of paid bereavement leave following the death of an immediate family member (spouse or partner, child, parent, sibling, or grandparent).\n\n## 7. Public Holidays\n\nBrightlake Systems publishes a list of 12 public holidays each December for the following calendar year. Employees required to work on a public holiday receive one compensatory day off, which must be taken within 60 days."
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "section": "8. Contact",
+          "start_char": 2319,
+          "end_char": 2554,
+          "char_count": 235,
+          "text": "Employees required to work on a public holiday receive one compensatory day off, which must be taken within 60 days.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Eligibility",
+          "start_char": 0,
+          "end_char": 653,
+          "char_count": 653,
+          "text": "# Work-From-Home Policy (HR-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy sets out when and how employees of Brightlake Systems may work from home. It applies to all permanent employees whose role has been designated \"hybrid-eligible\" by their department head.\n\n## 2. Eligibility\n\nEmployees become eligible to work from home after successfully completing their probation period. Employees still on probation must work from the office unless their department head grants a written exception."
+        },
+        {
+          "chunk_id": "HR-002-CH02",
+          "policy_id": "HR-002",
+          "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+          "start_char": 542,
+          "end_char": 1131,
+          "char_count": 589,
+          "text": "Employees still on probation must work from the office unless their department head grants a written exception.\n\n## 3. Number of Work-From-Home Days\n\nEligible employees may work from home for up to 2 days per week. Work-from-home days cannot be accumulated or carried over to a later week.\n\n## 4. Requesting Work-From-Home Days\n\nWork-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week. The line manager approves or declines each request. Managers may decline requests during critical project phases, client visits, or mandatory in-office events."
+        },
+        {
+          "chunk_id": "HR-002-CH03",
+          "policy_id": "HR-002",
+          "section": "5. Core Working Hours; 6. Home Workspace and Security",
+          "start_char": 1024,
+          "end_char": 1722,
+          "char_count": 698,
+          "text": "Managers may decline requests during critical project phases, client visits, or mandatory in-office events.\n\n## 5. Core Working Hours\n\nEmployees working from home must be available online between the core hours of 10:00 and 16:00 local time. During core hours employees must respond to messages within 30 minutes and keep their calendar status up to date.\n\n## 6. Home Workspace and Security\n\nEmployees must work from a quiet, private space where confidential information cannot be seen or overheard. Employees must connect to company systems through the company VPN at all times when working from home. Use of public Wi-Fi networks for work is permitted only when connected through the company VPN."
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "policy_id": "HR-002",
+          "section": "7. Internet Allowance; 8. Working From Another Country; 9. Contact",
+          "start_char": 1627,
+          "end_char": 2255,
+          "char_count": 628,
+          "text": "Use of public Wi-Fi networks for work is permitted only when connected through the company VPN.\n\n## 7. Internet Allowance\n\nHybrid-eligible employees receive a monthly internet allowance of USD 40, paid automatically through payroll. No receipts are required for the internet allowance.\n\n## 8. Working From Another Country\n\nWorking remotely from a country other than the employee's country of employment requires prior written approval from HR and is limited to a maximum of 30 calendar days per calendar year.\n\n## 9. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "section": "Introduction; 1. Purpose and Scope; 2. Submitting a Claim",
+          "start_char": 0,
+          "end_char": 654,
+          "char_count": 654,
+          "text": "# Employee Reimbursement Policy (HR-003)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains which business expenses Brightlake Systems reimburses and how employees submit expense claims. It applies to all permanent employees and interns.\n\n## 2. Submitting a Claim\n\nExpense claims must be submitted through the Expense Portal within 30 calendar days of the date the expense was incurred. Claims submitted after 30 days will be rejected unless the Finance Controller approves a late submission."
+        },
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "section": "2. Submitting a Claim; 3. Approval and Payment; 4. Business Travel - Flights and Accommodation",
+          "start_char": 549,
+          "end_char": 1315,
+          "char_count": 766,
+          "text": "Claims submitted after 30 days will be rejected unless the Finance Controller approves a late submission.\n\nAn itemised receipt is required for every individual expense above USD 25. Expenses of USD 25 or less may be claimed without a receipt, provided a description of the expense is entered.\n\n## 3. Approval and Payment\n\nAll expense claims must be approved by the employee's line manager. Claims above USD 1,000 also require approval from the department head. Approved claims are paid with the next monthly payroll cycle.\n\n## 4. Business Travel - Flights and Accommodation\n\nFlights must be booked in economy class for journeys under 6 hours. Premium economy may be booked for journeys of 6 hours or longer. Hotel accommodation is reimbursed up to USD 180 per night."
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "section": "5. Business Travel - Meals; 6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses",
+          "start_char": 1192,
+          "end_char": 1974,
+          "char_count": 782,
+          "text": "Premium economy may be booked for journeys of 6 hours or longer. Hotel accommodation is reimbursed up to USD 180 per night.\n\n## 5. Business Travel - Meals\n\nMeals during business travel are reimbursed up to USD 60 per day. Alcoholic beverages are not reimbursable under any circumstances.\n\n## 6. Use of a Personal Vehicle\n\nEmployees who use their personal vehicle for approved business travel are reimbursed at USD 0.40 per kilometre. Fuel receipts are not required for mileage claims, but the start point, destination and distance must be recorded in the claim.\n\n## 7. Non-Reimbursable Expenses\n\nThe following are not reimbursable: alcoholic beverages, traffic or parking fines, personal entertainment, in-flight purchases, and expenses for family members accompanying the employee."
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "policy_id": "HR-003",
+          "section": "8. Contact",
+          "start_char": 1834,
+          "end_char": 2089,
+          "char_count": 255,
+          "text": "beverages, traffic or parking fines, personal entertainment, in-flight purchases, and expenses for family members accompanying the employee.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the Finance team at expenses@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-004-CH01",
+          "policy_id": "HR-004",
+          "section": "Introduction; 1. Purpose and Scope; 2. Before the First Day",
+          "start_char": 0,
+          "end_char": 713,
+          "char_count": 713,
+          "text": "# Employee Onboarding Policy (HR-004)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy describes the onboarding process for new permanent employees joining Brightlake Systems, from before their first day until the end of their probation period.\n\n## 2. Before the First Day\n\nNew employees must submit the following documents through the HR Portal before their joining date: a government-issued photo ID, bank account details for payroll, and the signed offer letter. HR sends a welcome email with first-day instructions 5 working days before the joining date."
+        },
+        {
+          "chunk_id": "HR-004-CH02",
+          "policy_id": "HR-004",
+          "section": "3. First Day; 4. Onboarding Buddy; 5. Mandatory Training",
+          "start_char": 621,
+          "end_char": 1291,
+          "char_count": 670,
+          "text": "HR sends a welcome email with first-day instructions 5 working days before the joining date.\n\n## 3. First Day\n\nNew employees attend an orientation session that starts at 09:30 on their first day. During orientation they receive their company laptop, ID badge, and system accounts.\n\n## 4. Onboarding Buddy\n\nEvery new employee is assigned an onboarding buddy from their team. The buddy supports the new employee for their first 90 days.\n\n## 5. Mandatory Training\n\nNew employees must complete two mandatory training courses within 14 calendar days of joining: Security Awareness Training and Code of Conduct Training. Both courses are completed through the Learning Portal."
+        },
+        {
+          "chunk_id": "HR-004-CH03",
+          "policy_id": "HR-004",
+          "section": "6. Probation Period; 7. Contact",
+          "start_char": 1236,
+          "end_char": 1682,
+          "char_count": 446,
+          "text": "Both courses are completed through the Learning Portal.\n\n## 6. Probation Period\n\nThe probation period for new employees is 6 months. Line managers hold structured check-in meetings with new employees at 30, 60, and 90 days after joining. Confirmation of employment is communicated in writing at the end of the probation period.\n\n## 7. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "IT-001-CH01",
+          "policy_id": "IT-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements",
+          "start_char": 0,
+          "end_char": 745,
+          "char_count": 745,
+          "text": "# Password and Account Security Policy (IT-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy defines the minimum requirements for passwords and account security for every Brightlake Systems user account, including employees, interns and contractors.\n\n## 2. Password Requirements\n\nPasswords must be at least 14 characters long. Passwords must not contain the user's name, username, or the word \"Brightlake\". Users must not reuse any of their previous 10 passwords.\n\nPasswords must be changed every 180 days, and immediately if there is any suspicion that a password has been compromised."
+        },
+        {
+          "chunk_id": "IT-001-CH02",
+          "policy_id": "IT-001",
+          "section": "3. Multi-Factor Authentication; 4. Account Lockout",
+          "start_char": 624,
+          "end_char": 1197,
+          "char_count": 573,
+          "text": "Passwords must be changed every 180 days, and immediately if there is any suspicion that a password has been compromised.\n\n## 3. Multi-Factor Authentication\n\nMulti-factor authentication (MFA) is mandatory for all accounts. Users must use the Brightlake Authenticator mobile app as their second factor. SMS codes are not an approved MFA method.\n\n## 4. Account Lockout\n\nAn account is automatically locked for 15 minutes after 5 consecutive failed sign-in attempts. If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk."
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "section": "5. Password Storage and Sharing; 6. Reporting a Compromised Account; 7. Enforcement",
+          "start_char": 1087,
+          "end_char": 1885,
+          "char_count": 798,
+          "text": "If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk.\n\n## 5. Password Storage and Sharing\n\nPasswords must never be shared with anyone, including colleagues, managers, or IT staff. Passwords must not be written down or stored in plain-text files. The only approved password manager is KeyVault, which is installed on all company laptops.\n\n## 6. Reporting a Compromised Account\n\nIf a user suspects that their password or account has been compromised, they must report it to the IT Service Desk within 1 hour of noticing the issue. The IT Service Desk can be reached on internal extension 4357 or at servicedesk@brightlake.example.\n\n## 7. Enforcement\n\nViolations of this policy may result in suspension of system access and disciplinary action."
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "policy_id": "IT-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment",
+          "start_char": 0,
+          "end_char": 684,
+          "char_count": 684,
+          "text": "# IT Equipment Usage Policy (IT-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains how company-issued IT equipment, such as laptops, monitors, headsets and mobile phones, must be used, protected, and returned.\n\n## 2. Issued Equipment\n\nEvery employee is issued a company laptop on or before their first working day. Laptops are replaced on a standard refresh cycle of every 4 years, or earlier if the device is faulty and cannot be repaired.\n\nAll company laptops use full-disk encryption, which must never be disabled."
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "policy_id": "IT-002",
+          "section": "3. Acceptable Use; 4. Software Installation; 5. Removable Storage",
+          "start_char": 609,
+          "end_char": 1291,
+          "char_count": 682,
+          "text": "All company laptops use full-disk encryption, which must never be disabled.\n\n## 3. Acceptable Use\n\nCompany equipment is provided for business use. Limited personal use, such as reading personal email during breaks, is permitted provided it does not interfere with work or breach any company policy.\n\n## 4. Software Installation\n\nEmployees may install software only from the Brightlake Software Centre. Installing any other software requires prior approval from IT through a request raised in TechDesk, the IT ticketing system.\n\n## 5. Removable Storage\n\nUSB storage devices are blocked on company laptops by default. Only encrypted USB drives issued by the IT department may be used."
+        },
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+          "start_char": 1162,
+          "end_char": 1912,
+          "char_count": 750,
+          "text": "USB storage devices are blocked on company laptops by default. Only encrypted USB drives issued by the IT department may be used.\n\n## 6. Lost or Stolen Equipment\n\nLost or stolen equipment must be reported to the IT Service Desk within 24 hours of discovering the loss. If a device is stolen, the employee must also file a police report and attach the report reference to the TechDesk ticket.\n\n## 7. Returning Equipment\n\nWhen an employee leaves Brightlake Systems, all company equipment must be returned within 5 working days of the last working day. The cost of unreturned equipment may be deducted from the employee's final settlement.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the IT Service Desk on internal extension 4357."
+        }
+      ]
+    },
+    "fixed_500": {
+      "family": "character",
+      "chunk_size": 500,
+      "chunk_overlap": 0,
+      "fingerprint": "237079ce24206523c1319c616b438cc8835ad2029b037a9ae2eca7e0ea321da6",
+      "lengths": {
+        "chunk_count": 28,
+        "chunks_per_policy": {
+          "HR-001": 6,
+          "HR-002": 5,
+          "HR-003": 5,
+          "HR-004": 4,
+          "IT-001": 4,
+          "IT-002": 4
+        },
+        "mean_chars": 442.0,
+        "median_chars": 500.0,
+        "min_chars": 54,
+        "max_chars": 500,
+        "total_chars": 12377
+      },
+      "boundaries": {
+        "chunks": 28,
+        "starts_mid_sentence": 19,
+        "ends_mid_sentence": 19,
+        "mid_word_cuts": 22,
+        "broken_headings": 6,
+        "trailing_headings": 0,
+        "multi_section_chunks": 26,
+        "per_chunk": [
+          {
+            "chunk_id": "HR-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-001-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-001-CH04",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [
+              "## 6. Bereavement Leave"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH05",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [
+              "## 6. Bereavement Leave"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH06",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 1
+          },
+          {
+            "chunk_id": "HR-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH04",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH05",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-003-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "HR-003-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [
+              "## 6. Use of a Personal Vehicle"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-003-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [
+              "## 6. Use of a Personal Vehicle"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH05",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 1
+          },
+          {
+            "chunk_id": "HR-004-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-004-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-004-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-004-CH04",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-001-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-001-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [
+              "## 6. Reporting a Compromised Account"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-001-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [
+              "## 6. Reporting a Compromised Account"
+            ],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH02",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH03",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": true,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "IT-002-CH04",
+            "starts_mid_sentence": true,
+            "ends_mid_sentence": false,
+            "mid_word_cut": true,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          }
+        ]
+      },
+      "overlap": {
+        "boundaries": 22,
+        "with_overlap": 0,
+        "mean_overlap_chars": 0,
+        "min_overlap_chars": 0,
+        "max_overlap_chars": 0
+      },
+      "evidence": {
+        "evidence_units": 102,
+        "intact": 83,
+        "split": 19,
+        "split_ids": [
+          "HR-001-S02-E01",
+          "HR-001-S03-E01",
+          "HR-001-S04-E03",
+          "HR-001-S08-E01",
+          "HR-002-S02-E01",
+          "HR-002-S04-E02",
+          "HR-002-S06-E01",
+          "HR-002-S08-E01",
+          "HR-003-S02-E01",
+          "HR-003-S03-E02",
+          "HR-003-S08-E01",
+          "HR-004-S02-E01",
+          "HR-004-S04-E02",
+          "HR-004-S06-E03",
+          "IT-001-S02-E02",
+          "IT-001-S04-E01",
+          "IT-002-S02-E02",
+          "IT-002-S04-E01",
+          "IT-002-S06-E02"
+        ],
+        "duplicated": 0,
+        "duplicated_ids": [],
+        "containing_chunks": {
+          "HR-001-S01-E01": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E02": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E03": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E01": [],
+          "HR-001-S02-E02": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E03": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E04": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E05": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E01": [],
+          "HR-001-S03-E02": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S03-E03": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E01": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E02": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E03": [],
+          "HR-001-S04-E04": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S05-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S05-E02": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S05-E03": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S06-E01": [
+            "HR-001-CH05"
+          ],
+          "HR-001-S07-E01": [
+            "HR-001-CH05"
+          ],
+          "HR-001-S07-E02": [
+            "HR-001-CH05"
+          ],
+          "HR-001-S08-E01": [],
+          "HR-002-S01-E01": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S01-E02": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S02-E01": [],
+          "HR-002-S02-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S03-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S03-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E02": [],
+          "HR-002-S04-E03": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S05-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S05-E02": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E01": [],
+          "HR-002-S06-E02": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S06-E03": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S07-E01": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S07-E02": [
+            "HR-002-CH04"
+          ],
+          "HR-002-S08-E01": [],
+          "HR-002-S09-E01": [
+            "HR-002-CH05"
+          ],
+          "HR-003-S01-E01": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S01-E02": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E01": [],
+          "HR-003-S02-E02": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S02-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S02-E04": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E01": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E02": [],
+          "HR-003-S03-E03": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S04-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S04-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S04-E03": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S05-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S05-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S06-E01": [
+            "HR-003-CH04"
+          ],
+          "HR-003-S06-E02": [
+            "HR-003-CH04"
+          ],
+          "HR-003-S07-E01": [
+            "HR-003-CH04"
+          ],
+          "HR-003-S08-E01": [],
+          "HR-004-S01-E01": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S02-E01": [],
+          "HR-004-S02-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S03-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S03-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E02": [],
+          "HR-004-S05-E01": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S05-E02": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E01": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E02": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E03": [],
+          "HR-004-S07-E01": [
+            "HR-004-CH04"
+          ],
+          "IT-001-S01-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E02": [],
+          "IT-001-S02-E03": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S02-E04": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E02": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E03": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S04-E01": [],
+          "IT-001-S04-E02": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E02": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S05-E03": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S06-E01": [
+            "IT-001-CH04"
+          ],
+          "IT-001-S06-E02": [
+            "IT-001-CH04"
+          ],
+          "IT-001-S07-E01": [
+            "IT-001-CH04"
+          ],
+          "IT-002-S01-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E02": [],
+          "IT-002-S02-E03": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S04-E01": [],
+          "IT-002-S04-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S05-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S05-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S06-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S06-E02": [],
+          "IT-002-S07-E01": [
+            "IT-002-CH04"
+          ],
+          "IT-002-S07-E02": [
+            "IT-002-CH04"
+          ],
+          "IT-002-S08-E01": [
+            "IT-002-CH04"
+          ]
+        }
+      },
+      "chunks": [
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Annual Leave",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# Employee Leave Policy (HR-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains the types of leave available to permanent full-time employees of Brightlake Systems and how leave is requested and approved. Part-time employees receive leave on a pro-rata basis. Contractors are not covered by this policy.\n\n## 2. Annual Leave\n\nFull-time"
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "section": "2. Annual Leave; 3. Carry-Forward of Annual Leave",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": " employees receive 20 days of paid annual leave per calendar year. Annual leave accrues at 1.67 days per completed month of service.\n\nEmployees must submit annual leave requests through the HR Portal at least 7 calendar days before the first day of leave. Requests for 5 or more consecutive working days must be submitted at least 21 calendar days in advance. All annual leave requires approval from the employee's line manager.\n\n## 3. Carry-Forward of Annual Leave\n\nA maximum of 5 unused annual leav"
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "section": "3. Carry-Forward of Annual Leave; 4. Sick Leave",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": "e days may be carried forward into the next calendar year. Carried-forward days must be used by 31 March of the following year; any carried-forward days not used by that date expire. Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.\n\n## 4. Sick Leave\n\nEmployees receive 10 days of paid sick leave per calendar year. Sick leave does not carry forward. Employees must notify their line manager before 10:00 on the first day of abs"
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "policy_id": "HR-001",
+          "section": "4. Sick Leave; 5. Parental Leave; 6. Bereavement Leave",
+          "start_char": 1500,
+          "end_char": 2000,
+          "char_count": 500,
+          "text": "ence. A medical certificate from a registered doctor is required for any sick absence longer than 2 consecutive working days.\n\n## 5. Parental Leave\n\nBirth mothers are entitled to 26 weeks of paid maternity leave. Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible.\n\nFathers and secondary caregivers are entitled to 10 working days of paid paternity leave, which must be taken within 3 months of the child's birth.\n\n## 6. Bereav"
+        },
+        {
+          "chunk_id": "HR-001-CH05",
+          "policy_id": "HR-001",
+          "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+          "start_char": 2000,
+          "end_char": 2500,
+          "char_count": 500,
+          "text": "ement Leave\n\nEmployees may take up to 5 working days of paid bereavement leave following the death of an immediate family member (spouse or partner, child, parent, sibling, or grandparent).\n\n## 7. Public Holidays\n\nBrightlake Systems publishes a list of 12 public holidays each December for the following calendar year. Employees required to work on a public holiday receive one compensatory day off, which must be taken within 60 days.\n\n## 8. Contact\n\nQuestions about this policy should be directed t"
+        },
+        {
+          "chunk_id": "HR-001-CH06",
+          "policy_id": "HR-001",
+          "section": "8. Contact",
+          "start_char": 2500,
+          "end_char": 2554,
+          "char_count": 54,
+          "text": "o the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Eligibility",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# Work-From-Home Policy (HR-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy sets out when and how employees of Brightlake Systems may work from home. It applies to all permanent employees whose role has been designated \"hybrid-eligible\" by their department head.\n\n## 2. Eligibility\n\nEmployees become eligible to work from home after succes"
+        },
+        {
+          "chunk_id": "HR-002-CH02",
+          "policy_id": "HR-002",
+          "section": "2. Eligibility; 3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": "sfully completing their probation period. Employees still on probation must work from the office unless their department head grants a written exception.\n\n## 3. Number of Work-From-Home Days\n\nEligible employees may work from home for up to 2 days per week. Work-from-home days cannot be accumulated or carried over to a later week.\n\n## 4. Requesting Work-From-Home Days\n\nWork-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week. The line manager approves or"
+        },
+        {
+          "chunk_id": "HR-002-CH03",
+          "policy_id": "HR-002",
+          "section": "4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": " declines each request. Managers may decline requests during critical project phases, client visits, or mandatory in-office events.\n\n## 5. Core Working Hours\n\nEmployees working from home must be available online between the core hours of 10:00 and 16:00 local time. During core hours employees must respond to messages within 30 minutes and keep their calendar status up to date.\n\n## 6. Home Workspace and Security\n\nEmployees must work from a quiet, private space where confidential information canno"
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "policy_id": "HR-002",
+          "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country",
+          "start_char": 1500,
+          "end_char": 2000,
+          "char_count": 500,
+          "text": "t be seen or overheard. Employees must connect to company systems through the company VPN at all times when working from home. Use of public Wi-Fi networks for work is permitted only when connected through the company VPN.\n\n## 7. Internet Allowance\n\nHybrid-eligible employees receive a monthly internet allowance of USD 40, paid automatically through payroll. No receipts are required for the internet allowance.\n\n## 8. Working From Another Country\n\nWorking remotely from a country other than the emp"
+        },
+        {
+          "chunk_id": "HR-002-CH05",
+          "policy_id": "HR-002",
+          "section": "8. Working From Another Country; 9. Contact",
+          "start_char": 2000,
+          "end_char": 2255,
+          "char_count": 255,
+          "text": "loyee's country of employment requires prior written approval from HR and is limited to a maximum of 30 calendar days per calendar year.\n\n## 9. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "section": "Introduction; 1. Purpose and Scope; 2. Submitting a Claim",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# Employee Reimbursement Policy (HR-003)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains which business expenses Brightlake Systems reimburses and how employees submit expense claims. It applies to all permanent employees and interns.\n\n## 2. Submitting a Claim\n\nExpense claims must be submitted through the Expense Portal within 30 cal"
+        },
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "section": "2. Submitting a Claim; 3. Approval and Payment",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": "endar days of the date the expense was incurred. Claims submitted after 30 days will be rejected unless the Finance Controller approves a late submission.\n\nAn itemised receipt is required for every individual expense above USD 25. Expenses of USD 25 or less may be claimed without a receipt, provided a description of the expense is entered.\n\n## 3. Approval and Payment\n\nAll expense claims must be approved by the employee's line manager. Claims above USD 1,000 also require approval from the departm"
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "section": "3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals; 6. Use of a Personal Vehicle",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": "ent head. Approved claims are paid with the next monthly payroll cycle.\n\n## 4. Business Travel - Flights and Accommodation\n\nFlights must be booked in economy class for journeys under 6 hours. Premium economy may be booked for journeys of 6 hours or longer. Hotel accommodation is reimbursed up to USD 180 per night.\n\n## 5. Business Travel - Meals\n\nMeals during business travel are reimbursed up to USD 60 per day. Alcoholic beverages are not reimbursable under any circumstances.\n\n## 6. Use of a Pers"
+        },
+        {
+          "chunk_id": "HR-003-CH04",
+          "policy_id": "HR-003",
+          "section": "6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+          "start_char": 1500,
+          "end_char": 2000,
+          "char_count": 500,
+          "text": "onal Vehicle\n\nEmployees who use their personal vehicle for approved business travel are reimbursed at USD 0.40 per kilometre. Fuel receipts are not required for mileage claims, but the start point, destination and distance must be recorded in the claim.\n\n## 7. Non-Reimbursable Expenses\n\nThe following are not reimbursable: alcoholic beverages, traffic or parking fines, personal entertainment, in-flight purchases, and expenses for family members accompanying the employee.\n\n## 8. Contact\n\nQuestions"
+        },
+        {
+          "chunk_id": "HR-003-CH05",
+          "policy_id": "HR-003",
+          "section": "8. Contact",
+          "start_char": 2000,
+          "end_char": 2089,
+          "char_count": 89,
+          "text": " about this policy should be directed to the Finance team at expenses@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-004-CH01",
+          "policy_id": "HR-004",
+          "section": "Introduction; 1. Purpose and Scope; 2. Before the First Day",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# Employee Onboarding Policy (HR-004)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy describes the onboarding process for new permanent employees joining Brightlake Systems, from before their first day until the end of their probation period.\n\n## 2. Before the First Day\n\nNew employees must submit the following documents through the HR Portal"
+        },
+        {
+          "chunk_id": "HR-004-CH02",
+          "policy_id": "HR-004",
+          "section": "2. Before the First Day; 3. First Day; 4. Onboarding Buddy",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": " before their joining date: a government-issued photo ID, bank account details for payroll, and the signed offer letter. HR sends a welcome email with first-day instructions 5 working days before the joining date.\n\n## 3. First Day\n\nNew employees attend an orientation session that starts at 09:30 on their first day. During orientation they receive their company laptop, ID badge, and system accounts.\n\n## 4. Onboarding Buddy\n\nEvery new employee is assigned an onboarding buddy from their team. The b"
+        },
+        {
+          "chunk_id": "HR-004-CH03",
+          "policy_id": "HR-004",
+          "section": "4. Onboarding Buddy; 5. Mandatory Training; 6. Probation Period",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": "uddy supports the new employee for their first 90 days.\n\n## 5. Mandatory Training\n\nNew employees must complete two mandatory training courses within 14 calendar days of joining: Security Awareness Training and Code of Conduct Training. Both courses are completed through the Learning Portal.\n\n## 6. Probation Period\n\nThe probation period for new employees is 6 months. Line managers hold structured check-in meetings with new employees at 30, 60, and 90 days after joining. Confirmation of employment"
+        },
+        {
+          "chunk_id": "HR-004-CH04",
+          "policy_id": "HR-004",
+          "section": "6. Probation Period; 7. Contact",
+          "start_char": 1500,
+          "end_char": 1682,
+          "char_count": 182,
+          "text": " is communicated in writing at the end of the probation period.\n\n## 7. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "IT-001-CH01",
+          "policy_id": "IT-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# Password and Account Security Policy (IT-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy defines the minimum requirements for passwords and account security for every Brightlake Systems user account, including employees, interns and contractors.\n\n## 2. Password Requirements\n\nPasswords must be at least 14 characters long. Passwords must"
+        },
+        {
+          "chunk_id": "IT-001-CH02",
+          "policy_id": "IT-001",
+          "section": "2. Password Requirements; 3. Multi-Factor Authentication; 4. Account Lockout",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": " not contain the user's name, username, or the word \"Brightlake\". Users must not reuse any of their previous 10 passwords.\n\nPasswords must be changed every 180 days, and immediately if there is any suspicion that a password has been compromised.\n\n## 3. Multi-Factor Authentication\n\nMulti-factor authentication (MFA) is mandatory for all accounts. Users must use the Brightlake Authenticator mobile app as their second factor. SMS codes are not an approved MFA method.\n\n## 4. Account Lockout\n\nAn accou"
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "section": "4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": "nt is automatically locked for 15 minutes after 5 consecutive failed sign-in attempts. If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk.\n\n## 5. Password Storage and Sharing\n\nPasswords must never be shared with anyone, including colleagues, managers, or IT staff. Passwords must not be written down or stored in plain-text files. The only approved password manager is KeyVault, which is installed on all company laptops.\n\n## 6. Reporting a "
+        },
+        {
+          "chunk_id": "IT-001-CH04",
+          "policy_id": "IT-001",
+          "section": "6. Reporting a Compromised Account; 7. Enforcement",
+          "start_char": 1500,
+          "end_char": 1885,
+          "char_count": 385,
+          "text": "Compromised Account\n\nIf a user suspects that their password or account has been compromised, they must report it to the IT Service Desk within 1 hour of noticing the issue. The IT Service Desk can be reached on internal extension 4357 or at servicedesk@brightlake.example.\n\n## 7. Enforcement\n\nViolations of this policy may result in suspension of system access and disciplinary action."
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "policy_id": "IT-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment",
+          "start_char": 0,
+          "end_char": 500,
+          "char_count": 500,
+          "text": "# IT Equipment Usage Policy (IT-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains how company-issued IT equipment, such as laptops, monitors, headsets and mobile phones, must be used, protected, and returned.\n\n## 2. Issued Equipment\n\nEvery employee is issued a company laptop on or before their first working day. Laptops are replac"
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "policy_id": "IT-002",
+          "section": "2. Issued Equipment; 3. Acceptable Use; 4. Software Installation",
+          "start_char": 500,
+          "end_char": 1000,
+          "char_count": 500,
+          "text": "ed on a standard refresh cycle of every 4 years, or earlier if the device is faulty and cannot be repaired.\n\nAll company laptops use full-disk encryption, which must never be disabled.\n\n## 3. Acceptable Use\n\nCompany equipment is provided for business use. Limited personal use, such as reading personal email during breaks, is permitted provided it does not interfere with work or breach any company policy.\n\n## 4. Software Installation\n\nEmployees may install software only from the Brightlake Softwa"
+        },
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "section": "4. Software Installation; 5. Removable Storage; 6. Lost or Stolen Equipment",
+          "start_char": 1000,
+          "end_char": 1500,
+          "char_count": 500,
+          "text": "re Centre. Installing any other software requires prior approval from IT through a request raised in TechDesk, the IT ticketing system.\n\n## 5. Removable Storage\n\nUSB storage devices are blocked on company laptops by default. Only encrypted USB drives issued by the IT department may be used.\n\n## 6. Lost or Stolen Equipment\n\nLost or stolen equipment must be reported to the IT Service Desk within 24 hours of discovering the loss. If a device is stolen, the employee must also file a police report an"
+        },
+        {
+          "chunk_id": "IT-002-CH04",
+          "policy_id": "IT-002",
+          "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+          "start_char": 1500,
+          "end_char": 1912,
+          "char_count": 412,
+          "text": "d attach the report reference to the TechDesk ticket.\n\n## 7. Returning Equipment\n\nWhen an employee leaves Brightlake Systems, all company equipment must be returned within 5 working days of the last working day. The cost of unreturned equipment may be deducted from the employee's final settlement.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the IT Service Desk on internal extension 4357."
+        }
+      ]
+    },
+    "recursive_800_100": {
+      "family": "recursive character",
+      "chunk_size": 800,
+      "chunk_overlap": 100,
+      "fingerprint": "85321e2f3b2ae920db534bac8e8272a7dd8d537ccd5ac1031e0f12417c836523",
+      "lengths": {
+        "chunk_count": 20,
+        "chunks_per_policy": {
+          "HR-001": 4,
+          "HR-002": 4,
+          "HR-003": 3,
+          "HR-004": 3,
+          "IT-001": 3,
+          "IT-002": 3
+        },
+        "mean_chars": 637.8,
+        "median_chars": 690.0,
+        "min_chars": 117,
+        "max_chars": 780,
+        "total_chars": 12756
+      },
+      "boundaries": {
+        "chunks": 20,
+        "starts_mid_sentence": 0,
+        "ends_mid_sentence": 0,
+        "mid_word_cuts": 0,
+        "broken_headings": 0,
+        "trailing_headings": 12,
+        "multi_section_chunks": 19,
+        "per_chunk": [
+          {
+            "chunk_id": "HR-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 4. Sick Leave",
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 6. Bereavement Leave",
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-001-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 3. Number of Work-From-Home Days",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-002-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 6. Home Workspace and Security",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-002-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 9. Contact",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-002-CH04",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 1
+          },
+          {
+            "chunk_id": "HR-003-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          },
+          {
+            "chunk_id": "HR-003-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 5. Business Travel - Meals",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-003-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-004-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 3. First Day",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-004-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 6. Probation Period",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "HR-004-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-001-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 3. Multi-Factor Authentication",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "IT-001-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 6. Reporting a Compromised Account",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "IT-001-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 2
+          },
+          {
+            "chunk_id": "IT-002-CH01",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 3. Acceptable Use",
+            "sections_spanned": 4
+          },
+          {
+            "chunk_id": "IT-002-CH02",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": "## 6. Lost or Stolen Equipment",
+            "sections_spanned": 5
+          },
+          {
+            "chunk_id": "IT-002-CH03",
+            "starts_mid_sentence": false,
+            "ends_mid_sentence": false,
+            "mid_word_cut": false,
+            "broken_headings": [],
+            "trailing_heading": null,
+            "sections_spanned": 3
+          }
+        ]
+      },
+      "overlap": {
+        "boundaries": 14,
+        "with_overlap": 12,
+        "mean_overlap_chars": 27.4,
+        "min_overlap_chars": 0,
+        "max_overlap_chars": 97
+      },
+      "evidence": {
+        "evidence_units": 102,
+        "intact": 102,
+        "split": 0,
+        "split_ids": [],
+        "duplicated": 1,
+        "duplicated_ids": [
+          "IT-002-S02-E03"
+        ],
+        "containing_chunks": {
+          "HR-001-S01-E01": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E02": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S01-E03": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E01": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E02": [
+            "HR-001-CH01"
+          ],
+          "HR-001-S02-E03": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E04": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S02-E05": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E01": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E02": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S03-E03": [
+            "HR-001-CH02"
+          ],
+          "HR-001-S04-E01": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E02": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E03": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S04-E04": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S05-E01": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S05-E02": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S05-E03": [
+            "HR-001-CH03"
+          ],
+          "HR-001-S06-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S07-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S07-E02": [
+            "HR-001-CH04"
+          ],
+          "HR-001-S08-E01": [
+            "HR-001-CH04"
+          ],
+          "HR-002-S01-E01": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S01-E02": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S02-E01": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S02-E02": [
+            "HR-002-CH01"
+          ],
+          "HR-002-S03-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S03-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S04-E03": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S05-E01": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S05-E02": [
+            "HR-002-CH02"
+          ],
+          "HR-002-S06-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E02": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S06-E03": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S07-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S07-E02": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S08-E01": [
+            "HR-002-CH03"
+          ],
+          "HR-002-S09-E01": [
+            "HR-002-CH04"
+          ],
+          "HR-003-S01-E01": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S01-E02": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E01": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E02": [
+            "HR-003-CH01"
+          ],
+          "HR-003-S02-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S02-E04": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E01": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E02": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S03-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S04-E01": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S04-E02": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S04-E03": [
+            "HR-003-CH02"
+          ],
+          "HR-003-S05-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S05-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S06-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S06-E02": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S07-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-003-S08-E01": [
+            "HR-003-CH03"
+          ],
+          "HR-004-S01-E01": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S02-E01": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S02-E02": [
+            "HR-004-CH01"
+          ],
+          "HR-004-S03-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S03-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S04-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S05-E01": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S05-E02": [
+            "HR-004-CH02"
+          ],
+          "HR-004-S06-E01": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E02": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S06-E03": [
+            "HR-004-CH03"
+          ],
+          "HR-004-S07-E01": [
+            "HR-004-CH03"
+          ],
+          "IT-001-S01-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E01": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E02": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E03": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S02-E04": [
+            "IT-001-CH01"
+          ],
+          "IT-001-S03-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E02": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S03-E03": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S04-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S04-E02": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S05-E01": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S05-E02": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S05-E03": [
+            "IT-001-CH02"
+          ],
+          "IT-001-S06-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S06-E02": [
+            "IT-001-CH03"
+          ],
+          "IT-001-S07-E01": [
+            "IT-001-CH03"
+          ],
+          "IT-002-S01-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E01": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E02": [
+            "IT-002-CH01"
+          ],
+          "IT-002-S02-E03": [
+            "IT-002-CH01",
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S03-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S04-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S04-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S05-E01": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S05-E02": [
+            "IT-002-CH02"
+          ],
+          "IT-002-S06-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S06-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S07-E01": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S07-E02": [
+            "IT-002-CH03"
+          ],
+          "IT-002-S08-E01": [
+            "IT-002-CH03"
+          ]
+        }
+      },
+      "chunks": [
+        {
+          "chunk_id": "HR-001-CH01",
+          "policy_id": "HR-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Annual Leave",
+          "start_char": 0,
+          "end_char": 632,
+          "char_count": 632,
+          "text": "# Employee Leave Policy (HR-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains the types of leave available to permanent full-time employees of Brightlake Systems and how leave is requested and approved. Part-time employees receive leave on a pro-rata basis. Contractors are not covered by this policy.\n\n## 2. Annual Leave\n\nFull-time employees receive 20 days of paid annual leave per calendar year. Annual leave accrues at 1.67 days per completed month of service."
+        },
+        {
+          "chunk_id": "HR-001-CH02",
+          "policy_id": "HR-001",
+          "section": "2. Annual Leave; 3. Carry-Forward of Annual Leave; 4. Sick Leave",
+          "start_char": 634,
+          "end_char": 1322,
+          "char_count": 688,
+          "text": "Employees must submit annual leave requests through the HR Portal at least 7 calendar days before the first day of leave. Requests for 5 or more consecutive working days must be submitted at least 21 calendar days in advance. All annual leave requires approval from the employee's line manager.\n\n## 3. Carry-Forward of Annual Leave\n\nA maximum of 5 unused annual leave days may be carried forward into the next calendar year. Carried-forward days must be used by 31 March of the following year; any carried-forward days not used by that date expire. Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.\n\n## 4. Sick Leave"
+        },
+        {
+          "chunk_id": "HR-001-CH03",
+          "policy_id": "HR-001",
+          "section": "4. Sick Leave; 5. Parental Leave; 6. Bereavement Leave",
+          "start_char": 1306,
+          "end_char": 2011,
+          "char_count": 705,
+          "text": "## 4. Sick Leave\n\nEmployees receive 10 days of paid sick leave per calendar year. Sick leave does not carry forward. Employees must notify their line manager before 10:00 on the first day of absence. A medical certificate from a registered doctor is required for any sick absence longer than 2 consecutive working days.\n\n## 5. Parental Leave\n\nBirth mothers are entitled to 26 weeks of paid maternity leave. Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible.\n\nFathers and secondary caregivers are entitled to 10 working days of paid paternity leave, which must be taken within 3 months of the child's birth.\n\n## 6. Bereavement Leave"
+        },
+        {
+          "chunk_id": "HR-001-CH04",
+          "policy_id": "HR-001",
+          "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+          "start_char": 1988,
+          "end_char": 2554,
+          "char_count": 566,
+          "text": "## 6. Bereavement Leave\n\nEmployees may take up to 5 working days of paid bereavement leave following the death of an immediate family member (spouse or partner, child, parent, sibling, or grandparent).\n\n## 7. Public Holidays\n\nBrightlake Systems publishes a list of 12 public holidays each December for the following calendar year. Employees required to work on a public holiday receive one compensatory day off, which must be taken within 60 days.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-002-CH01",
+          "policy_id": "HR-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Eligibility; 3. Number of Work-From-Home Days",
+          "start_char": 0,
+          "end_char": 690,
+          "char_count": 690,
+          "text": "# Work-From-Home Policy (HR-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy sets out when and how employees of Brightlake Systems may work from home. It applies to all permanent employees whose role has been designated \"hybrid-eligible\" by their department head.\n\n## 2. Eligibility\n\nEmployees become eligible to work from home after successfully completing their probation period. Employees still on probation must work from the office unless their department head grants a written exception.\n\n## 3. Number of Work-From-Home Days"
+        },
+        {
+          "chunk_id": "HR-002-CH02",
+          "policy_id": "HR-002",
+          "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+          "start_char": 655,
+          "end_char": 1414,
+          "char_count": 759,
+          "text": "## 3. Number of Work-From-Home Days\n\nEligible employees may work from home for up to 2 days per week. Work-from-home days cannot be accumulated or carried over to a later week.\n\n## 4. Requesting Work-From-Home Days\n\nWork-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week. The line manager approves or declines each request. Managers may decline requests during critical project phases, client visits, or mandatory in-office events.\n\n## 5. Core Working Hours\n\nEmployees working from home must be available online between the core hours of 10:00 and 16:00 local time. During core hours employees must respond to messages within 30 minutes and keep their calendar status up to date.\n\n## 6. Home Workspace and Security"
+        },
+        {
+          "chunk_id": "HR-002-CH03",
+          "policy_id": "HR-002",
+          "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country; 9. Contact",
+          "start_char": 1381,
+          "end_char": 2151,
+          "char_count": 770,
+          "text": "## 6. Home Workspace and Security\n\nEmployees must work from a quiet, private space where confidential information cannot be seen or overheard. Employees must connect to company systems through the company VPN at all times when working from home. Use of public Wi-Fi networks for work is permitted only when connected through the company VPN.\n\n## 7. Internet Allowance\n\nHybrid-eligible employees receive a monthly internet allowance of USD 40, paid automatically through payroll. No receipts are required for the internet allowance.\n\n## 8. Working From Another Country\n\nWorking remotely from a country other than the employee's country of employment requires prior written approval from HR and is limited to a maximum of 30 calendar days per calendar year.\n\n## 9. Contact"
+        },
+        {
+          "chunk_id": "HR-002-CH04",
+          "policy_id": "HR-002",
+          "section": "9. Contact",
+          "start_char": 2138,
+          "end_char": 2255,
+          "char_count": 117,
+          "text": "## 9. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-003-CH01",
+          "policy_id": "HR-003",
+          "section": "Introduction; 1. Purpose and Scope; 2. Submitting a Claim",
+          "start_char": 0,
+          "end_char": 654,
+          "char_count": 654,
+          "text": "# Employee Reimbursement Policy (HR-003)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains which business expenses Brightlake Systems reimburses and how employees submit expense claims. It applies to all permanent employees and interns.\n\n## 2. Submitting a Claim\n\nExpense claims must be submitted through the Expense Portal within 30 calendar days of the date the expense was incurred. Claims submitted after 30 days will be rejected unless the Finance Controller approves a late submission."
+        },
+        {
+          "chunk_id": "HR-003-CH02",
+          "policy_id": "HR-003",
+          "section": "2. Submitting a Claim; 3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals",
+          "start_char": 656,
+          "end_char": 1346,
+          "char_count": 690,
+          "text": "An itemised receipt is required for every individual expense above USD 25. Expenses of USD 25 or less may be claimed without a receipt, provided a description of the expense is entered.\n\n## 3. Approval and Payment\n\nAll expense claims must be approved by the employee's line manager. Claims above USD 1,000 also require approval from the department head. Approved claims are paid with the next monthly payroll cycle.\n\n## 4. Business Travel - Flights and Accommodation\n\nFlights must be booked in economy class for journeys under 6 hours. Premium economy may be booked for journeys of 6 hours or longer. Hotel accommodation is reimbursed up to USD 180 per night.\n\n## 5. Business Travel - Meals"
+        },
+        {
+          "chunk_id": "HR-003-CH03",
+          "policy_id": "HR-003",
+          "section": "5. Business Travel - Meals; 6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+          "start_char": 1317,
+          "end_char": 2089,
+          "char_count": 772,
+          "text": "## 5. Business Travel - Meals\n\nMeals during business travel are reimbursed up to USD 60 per day. Alcoholic beverages are not reimbursable under any circumstances.\n\n## 6. Use of a Personal Vehicle\n\nEmployees who use their personal vehicle for approved business travel are reimbursed at USD 0.40 per kilometre. Fuel receipts are not required for mileage claims, but the start point, destination and distance must be recorded in the claim.\n\n## 7. Non-Reimbursable Expenses\n\nThe following are not reimbursable: alcoholic beverages, traffic or parking fines, personal entertainment, in-flight purchases, and expenses for family members accompanying the employee.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the Finance team at expenses@brightlake.example."
+        },
+        {
+          "chunk_id": "HR-004-CH01",
+          "policy_id": "HR-004",
+          "section": "Introduction; 1. Purpose and Scope; 2. Before the First Day; 3. First Day",
+          "start_char": 0,
+          "end_char": 730,
+          "char_count": 730,
+          "text": "# Employee Onboarding Policy (HR-004)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy describes the onboarding process for new permanent employees joining Brightlake Systems, from before their first day until the end of their probation period.\n\n## 2. Before the First Day\n\nNew employees must submit the following documents through the HR Portal before their joining date: a government-issued photo ID, bank account details for payroll, and the signed offer letter. HR sends a welcome email with first-day instructions 5 working days before the joining date.\n\n## 3. First Day"
+        },
+        {
+          "chunk_id": "HR-004-CH02",
+          "policy_id": "HR-004",
+          "section": "3. First Day; 4. Onboarding Buddy; 5. Mandatory Training; 6. Probation Period",
+          "start_char": 715,
+          "end_char": 1315,
+          "char_count": 600,
+          "text": "## 3. First Day\n\nNew employees attend an orientation session that starts at 09:30 on their first day. During orientation they receive their company laptop, ID badge, and system accounts.\n\n## 4. Onboarding Buddy\n\nEvery new employee is assigned an onboarding buddy from their team. The buddy supports the new employee for their first 90 days.\n\n## 5. Mandatory Training\n\nNew employees must complete two mandatory training courses within 14 calendar days of joining: Security Awareness Training and Code of Conduct Training. Both courses are completed through the Learning Portal.\n\n## 6. Probation Period"
+        },
+        {
+          "chunk_id": "HR-004-CH03",
+          "policy_id": "HR-004",
+          "section": "6. Probation Period; 7. Contact",
+          "start_char": 1293,
+          "end_char": 1682,
+          "char_count": 389,
+          "text": "## 6. Probation Period\n\nThe probation period for new employees is 6 months. Line managers hold structured check-in meetings with new employees at 30, 60, and 90 days after joining. Confirmation of employment is communicated in writing at the end of the probation period.\n\n## 7. Contact\n\nQuestions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example."
+        },
+        {
+          "chunk_id": "IT-001-CH01",
+          "policy_id": "IT-001",
+          "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements; 3. Multi-Factor Authentication",
+          "start_char": 0,
+          "end_char": 780,
+          "char_count": 780,
+          "text": "# Password and Account Security Policy (IT-001)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy defines the minimum requirements for passwords and account security for every Brightlake Systems user account, including employees, interns and contractors.\n\n## 2. Password Requirements\n\nPasswords must be at least 14 characters long. Passwords must not contain the user's name, username, or the word \"Brightlake\". Users must not reuse any of their previous 10 passwords.\n\nPasswords must be changed every 180 days, and immediately if there is any suspicion that a password has been compromised.\n\n## 3. Multi-Factor Authentication"
+        },
+        {
+          "chunk_id": "IT-001-CH02",
+          "policy_id": "IT-001",
+          "section": "3. Multi-Factor Authentication; 4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+          "start_char": 747,
+          "end_char": 1519,
+          "char_count": 772,
+          "text": "## 3. Multi-Factor Authentication\n\nMulti-factor authentication (MFA) is mandatory for all accounts. Users must use the Brightlake Authenticator mobile app as their second factor. SMS codes are not an approved MFA method.\n\n## 4. Account Lockout\n\nAn account is automatically locked for 15 minutes after 5 consecutive failed sign-in attempts. If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk.\n\n## 5. Password Storage and Sharing\n\nPasswords must never be shared with anyone, including colleagues, managers, or IT staff. Passwords must not be written down or stored in plain-text files. The only approved password manager is KeyVault, which is installed on all company laptops.\n\n## 6. Reporting a Compromised Account"
+        },
+        {
+          "chunk_id": "IT-001-CH03",
+          "policy_id": "IT-001",
+          "section": "6. Reporting a Compromised Account; 7. Enforcement",
+          "start_char": 1482,
+          "end_char": 1885,
+          "char_count": 403,
+          "text": "## 6. Reporting a Compromised Account\n\nIf a user suspects that their password or account has been compromised, they must report it to the IT Service Desk within 1 hour of noticing the issue. The IT Service Desk can be reached on internal extension 4357 or at servicedesk@brightlake.example.\n\n## 7. Enforcement\n\nViolations of this policy may result in suspension of system access and disciplinary action."
+        },
+        {
+          "chunk_id": "IT-002-CH01",
+          "policy_id": "IT-002",
+          "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment; 3. Acceptable Use",
+          "start_char": 0,
+          "end_char": 706,
+          "char_count": 706,
+          "text": "# IT Equipment Usage Policy (IT-002)\n\n> SYNTHETIC SAMPLE POLICY. Brightlake Systems is a fictional company. This document was created for a training exercise and does not describe any real organisation.\n\n## 1. Purpose and Scope\n\nThis policy explains how company-issued IT equipment, such as laptops, monitors, headsets and mobile phones, must be used, protected, and returned.\n\n## 2. Issued Equipment\n\nEvery employee is issued a company laptop on or before their first working day. Laptops are replaced on a standard refresh cycle of every 4 years, or earlier if the device is faulty and cannot be repaired.\n\nAll company laptops use full-disk encryption, which must never be disabled.\n\n## 3. Acceptable Use"
+        },
+        {
+          "chunk_id": "IT-002-CH02",
+          "policy_id": "IT-002",
+          "section": "2. Issued Equipment; 3. Acceptable Use; 4. Software Installation; 5. Removable Storage; 6. Lost or Stolen Equipment",
+          "start_char": 609,
+          "end_char": 1323,
+          "char_count": 714,
+          "text": "All company laptops use full-disk encryption, which must never be disabled.\n\n## 3. Acceptable Use\n\nCompany equipment is provided for business use. Limited personal use, such as reading personal email during breaks, is permitted provided it does not interfere with work or breach any company policy.\n\n## 4. Software Installation\n\nEmployees may install software only from the Brightlake Software Centre. Installing any other software requires prior approval from IT through a request raised in TechDesk, the IT ticketing system.\n\n## 5. Removable Storage\n\nUSB storage devices are blocked on company laptops by default. Only encrypted USB drives issued by the IT department may be used.\n\n## 6. Lost or Stolen Equipment"
+        },
+        {
+          "chunk_id": "IT-002-CH03",
+          "policy_id": "IT-002",
+          "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+          "start_char": 1293,
+          "end_char": 1912,
+          "char_count": 619,
+          "text": "## 6. Lost or Stolen Equipment\n\nLost or stolen equipment must be reported to the IT Service Desk within 24 hours of discovering the loss. If a device is stolen, the employee must also file a police report and attach the report reference to the TechDesk ticket.\n\n## 7. Returning Equipment\n\nWhen an employee leaves Brightlake Systems, all company equipment must be returned within 5 working days of the last working day. The cost of unreturned equipment may be deducted from the employee's final settlement.\n\n## 8. Contact\n\nQuestions about this policy should be directed to the IT Service Desk on internal extension 4357."
+        }
+      ]
+    }
+  },
+  "dev_queries": [
+    {
+      "id": "DEV-01",
+      "query": "How far in advance do I have to request a two-week holiday?",
+      "category": "paraphrase / vocabulary mismatch",
+      "expected_policy_id": "HR-001",
+      "required_evidence": [
+        [
+          "HR-001-S02-E04"
+        ]
+      ],
+      "note": "'holiday' and 'two-week' vs the policy's 'annual leave' and '5 or more consecutive working days'.",
+      "acceptable_policies": [
+        "HR-001"
+      ],
+      "results": {
+        "v1_paragraph_800_150": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-001-CH05",
+              "policy_id": "HR-001",
+              "similarity": 0.467896044254303,
+              "section": "8. Contact",
+              "evidence": [
+                "HR-001-S07-E02",
+                "HR-001-S08-E01"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-001-CH04",
+              "policy_id": "HR-001",
+              "similarity": 0.4544045329093933,
+              "section": "5. Parental Leave; 6. Bereavement Leave; 7. Public Holidays",
+              "evidence": [
+                "HR-001-S05-E02",
+                "HR-001-S05-E03",
+                "HR-001-S06-E01",
+                "HR-001-S07-E01",
+                "HR-001-S07-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.4173765182495117,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "evidence": [
+                "HR-002-S02-E02",
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01",
+                "HR-002-S04-E02",
+                "HR-002-S04-E03"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": false,
+          "groups_satisfied": 0,
+          "groups_total": 1,
+          "first_evidence_rank": null,
+          "dense_gate_passes": true
+        },
+        "fixed_500": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-001-CH05",
+              "policy_id": "HR-001",
+              "similarity": 0.4075855612754822,
+              "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+              "evidence": [
+                "HR-001-S06-E01",
+                "HR-001-S07-E01",
+                "HR-001-S07-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.3982921838760376,
+              "section": "2. Eligibility; 3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "evidence": [
+                "HR-002-S02-E02",
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-001-CH03",
+              "policy_id": "HR-001",
+              "similarity": 0.3965487480163574,
+              "section": "3. Carry-Forward of Annual Leave; 4. Sick Leave",
+              "evidence": [
+                "HR-001-S03-E02",
+                "HR-001-S03-E03",
+                "HR-001-S04-E01",
+                "HR-001-S04-E02"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": false,
+          "groups_satisfied": 0,
+          "groups_total": 1,
+          "first_evidence_rank": null,
+          "dense_gate_passes": true
+        },
+        "recursive_800_100": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-001-CH02",
+              "policy_id": "HR-001",
+              "similarity": 0.4372406005859375,
+              "section": "2. Annual Leave; 3. Carry-Forward of Annual Leave; 4. Sick Leave",
+              "evidence": [
+                "HR-001-S02-E03",
+                "HR-001-S02-E04",
+                "HR-001-S02-E05",
+                "HR-001-S03-E01",
+                "HR-001-S03-E02",
+                "HR-001-S03-E03"
+              ],
+              "required_evidence_found": [
+                "HR-001-S02-E04"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.4284626841545105,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "evidence": [
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01",
+                "HR-002-S04-E02",
+                "HR-002-S04-E03",
+                "HR-002-S05-E01",
+                "HR-002-S05-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-001-CH04",
+              "policy_id": "HR-001",
+              "similarity": 0.38850438594818115,
+              "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+              "evidence": [
+                "HR-001-S06-E01",
+                "HR-001-S07-E01",
+                "HR-001-S07-E02",
+                "HR-001-S08-E01"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        }
+      }
+    },
+    {
+      "id": "DEV-02",
+      "query": "What is KeyVault?",
+      "category": "exact keyword / named entity",
+      "expected_policy_id": "IT-001",
+      "required_evidence": [
+        [
+          "IT-001-S05-E03"
+        ]
+      ],
+      "note": "Rare proper noun appearing once in the corpus; short query with little semantic content.",
+      "acceptable_policies": [
+        "IT-001"
+      ],
+      "results": {
+        "v1_paragraph_800_150": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH03",
+              "policy_id": "IT-001",
+              "similarity": 0.2950226068496704,
+              "section": "5. Password Storage and Sharing; 6. Reporting a Compromised Account; 7. Enforcement",
+              "evidence": [
+                "IT-001-S04-E02",
+                "IT-001-S05-E01",
+                "IT-001-S05-E02",
+                "IT-001-S05-E03",
+                "IT-001-S06-E01",
+                "IT-001-S06-E02",
+                "IT-001-S07-E01"
+              ],
+              "required_evidence_found": [
+                "IT-001-S05-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH02",
+              "policy_id": "IT-001",
+              "similarity": 0.23716527223587036,
+              "section": "3. Multi-Factor Authentication; 4. Account Lockout",
+              "evidence": [
+                "IT-001-S02-E04",
+                "IT-001-S03-E01",
+                "IT-001-S03-E02",
+                "IT-001-S03-E03",
+                "IT-001-S04-E01",
+                "IT-001-S04-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-001-CH01",
+              "policy_id": "IT-001",
+              "similarity": 0.17905426025390625,
+              "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements",
+              "evidence": [
+                "IT-001-S01-E01",
+                "IT-001-S02-E01",
+                "IT-001-S02-E02",
+                "IT-001-S02-E03",
+                "IT-001-S02-E04"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "fixed_500": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH03",
+              "policy_id": "IT-001",
+              "similarity": 0.34687578678131104,
+              "section": "4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+              "evidence": [
+                "IT-001-S04-E02",
+                "IT-001-S05-E01",
+                "IT-001-S05-E02",
+                "IT-001-S05-E03"
+              ],
+              "required_evidence_found": [
+                "IT-001-S05-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH02",
+              "policy_id": "IT-001",
+              "similarity": 0.2382270097732544,
+              "section": "2. Password Requirements; 3. Multi-Factor Authentication; 4. Account Lockout",
+              "evidence": [
+                "IT-001-S02-E03",
+                "IT-001-S02-E04",
+                "IT-001-S03-E01",
+                "IT-001-S03-E02",
+                "IT-001-S03-E03"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-001-CH01",
+              "policy_id": "IT-001",
+              "similarity": 0.16894692182540894,
+              "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements",
+              "evidence": [
+                "IT-001-S01-E01",
+                "IT-001-S02-E01"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "recursive_800_100": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH02",
+              "policy_id": "IT-001",
+              "similarity": 0.3742605447769165,
+              "section": "3. Multi-Factor Authentication; 4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+              "evidence": [
+                "IT-001-S03-E01",
+                "IT-001-S03-E02",
+                "IT-001-S03-E03",
+                "IT-001-S04-E01",
+                "IT-001-S04-E02",
+                "IT-001-S05-E01",
+                "IT-001-S05-E02",
+                "IT-001-S05-E03"
+              ],
+              "required_evidence_found": [
+                "IT-001-S05-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH01",
+              "policy_id": "IT-001",
+              "similarity": 0.2085149884223938,
+              "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements; 3. Multi-Factor Authentication",
+              "evidence": [
+                "IT-001-S01-E01",
+                "IT-001-S02-E01",
+                "IT-001-S02-E02",
+                "IT-001-S02-E03",
+                "IT-001-S02-E04"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH01",
+              "policy_id": "IT-002",
+              "similarity": 0.16389381885528564,
+              "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment; 3. Acceptable Use",
+              "evidence": [
+                "IT-002-S01-E01",
+                "IT-002-S02-E01",
+                "IT-002-S02-E02",
+                "IT-002-S02-E03"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        }
+      }
+    },
+    {
+      "id": "DEV-03",
+      "query": "What is the IT Service Desk's internal extension number?",
+      "category": "identifier / number lookup",
+      "expected_policy_id": "IT-001",
+      "required_evidence": [
+        [
+          "IT-001-S06-E02",
+          "IT-002-S08-E01"
+        ]
+      ],
+      "note": "The extension (4357) is stated in two policies; either sentence answers the question.",
+      "acceptable_policies": [
+        "IT-001",
+        "IT-002"
+      ],
+      "results": {
+        "v1_paragraph_800_150": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-002-CH03",
+              "policy_id": "IT-002",
+              "similarity": 0.43399786949157715,
+              "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+              "evidence": [
+                "IT-002-S05-E01",
+                "IT-002-S05-E02",
+                "IT-002-S06-E01",
+                "IT-002-S06-E02",
+                "IT-002-S07-E01",
+                "IT-002-S07-E02",
+                "IT-002-S08-E01"
+              ],
+              "required_evidence_found": [
+                "IT-002-S08-E01"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH03",
+              "policy_id": "IT-001",
+              "similarity": 0.4035741090774536,
+              "section": "5. Password Storage and Sharing; 6. Reporting a Compromised Account; 7. Enforcement",
+              "evidence": [
+                "IT-001-S04-E02",
+                "IT-001-S05-E01",
+                "IT-001-S05-E02",
+                "IT-001-S05-E03",
+                "IT-001-S06-E01",
+                "IT-001-S06-E02",
+                "IT-001-S07-E01"
+              ],
+              "required_evidence_found": [
+                "IT-001-S06-E02"
+              ]
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH01",
+              "policy_id": "IT-002",
+              "similarity": 0.3584113121032715,
+              "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment",
+              "evidence": [
+                "IT-002-S01-E01",
+                "IT-002-S02-E01",
+                "IT-002-S02-E02",
+                "IT-002-S02-E03"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "fixed_500": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH04",
+              "policy_id": "IT-001",
+              "similarity": 0.48981261253356934,
+              "section": "6. Reporting a Compromised Account; 7. Enforcement",
+              "evidence": [
+                "IT-001-S06-E01",
+                "IT-001-S06-E02",
+                "IT-001-S07-E01"
+              ],
+              "required_evidence_found": [
+                "IT-001-S06-E02"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-002-CH03",
+              "policy_id": "IT-002",
+              "similarity": 0.4248490333557129,
+              "section": "4. Software Installation; 5. Removable Storage; 6. Lost or Stolen Equipment",
+              "evidence": [
+                "IT-002-S04-E02",
+                "IT-002-S05-E01",
+                "IT-002-S05-E02",
+                "IT-002-S06-E01"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH04",
+              "policy_id": "IT-002",
+              "similarity": 0.3934430480003357,
+              "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+              "evidence": [
+                "IT-002-S07-E01",
+                "IT-002-S07-E02",
+                "IT-002-S08-E01"
+              ],
+              "required_evidence_found": [
+                "IT-002-S08-E01"
+              ]
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "recursive_800_100": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH03",
+              "policy_id": "IT-001",
+              "similarity": 0.47394847869873047,
+              "section": "6. Reporting a Compromised Account; 7. Enforcement",
+              "evidence": [
+                "IT-001-S06-E01",
+                "IT-001-S06-E02",
+                "IT-001-S07-E01"
+              ],
+              "required_evidence_found": [
+                "IT-001-S06-E02"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-002-CH03",
+              "policy_id": "IT-002",
+              "similarity": 0.4429861307144165,
+              "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+              "evidence": [
+                "IT-002-S06-E01",
+                "IT-002-S06-E02",
+                "IT-002-S07-E01",
+                "IT-002-S07-E02",
+                "IT-002-S08-E01"
+              ],
+              "required_evidence_found": [
+                "IT-002-S08-E01"
+              ]
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH01",
+              "policy_id": "IT-002",
+              "similarity": 0.3401995301246643,
+              "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment; 3. Acceptable Use",
+              "evidence": [
+                "IT-002-S01-E01",
+                "IT-002-S02-E01",
+                "IT-002-S02-E02",
+                "IT-002-S02-E03"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 1,
+          "groups_total": 1,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        }
+      }
+    },
+    {
+      "id": "DEV-04",
+      "query": "Can I use public Wi-Fi when working from home, and do I always need the VPN?",
+      "category": "multi-fact, same section",
+      "expected_policy_id": "HR-002",
+      "required_evidence": [
+        [
+          "HR-002-S06-E03"
+        ],
+        [
+          "HR-002-S06-E02"
+        ]
+      ],
+      "note": "Public Wi-Fi rule and the VPN-at-all-times rule are adjacent sentences.",
+      "acceptable_policies": [
+        "HR-002"
+      ],
+      "results": {
+        "v1_paragraph_800_150": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-002-CH03",
+              "policy_id": "HR-002",
+              "similarity": 0.6373116970062256,
+              "section": "5. Core Working Hours; 6. Home Workspace and Security",
+              "evidence": [
+                "HR-002-S04-E03",
+                "HR-002-S05-E01",
+                "HR-002-S05-E02",
+                "HR-002-S06-E01",
+                "HR-002-S06-E02",
+                "HR-002-S06-E03"
+              ],
+              "required_evidence_found": [
+                "HR-002-S06-E02",
+                "HR-002-S06-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH04",
+              "policy_id": "HR-002",
+              "similarity": 0.551247775554657,
+              "section": "7. Internet Allowance; 8. Working From Another Country; 9. Contact",
+              "evidence": [
+                "HR-002-S06-E03",
+                "HR-002-S07-E01",
+                "HR-002-S07-E02",
+                "HR-002-S08-E01",
+                "HR-002-S09-E01"
+              ],
+              "required_evidence_found": [
+                "HR-002-S06-E03"
+              ]
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.3520374298095703,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "evidence": [
+                "HR-002-S02-E02",
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01",
+                "HR-002-S04-E02",
+                "HR-002-S04-E03"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "fixed_500": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-002-CH04",
+              "policy_id": "HR-002",
+              "similarity": 0.656481921672821,
+              "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country",
+              "evidence": [
+                "HR-002-S06-E02",
+                "HR-002-S06-E03",
+                "HR-002-S07-E01",
+                "HR-002-S07-E02"
+              ],
+              "required_evidence_found": [
+                "HR-002-S06-E02",
+                "HR-002-S06-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH03",
+              "policy_id": "HR-002",
+              "similarity": 0.3745959997177124,
+              "section": "4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "evidence": [
+                "HR-002-S04-E03",
+                "HR-002-S05-E01",
+                "HR-002-S05-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.3329535126686096,
+              "section": "2. Eligibility; 3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "evidence": [
+                "HR-002-S02-E02",
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "recursive_800_100": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-002-CH03",
+              "policy_id": "HR-002",
+              "similarity": 0.5944819450378418,
+              "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country; 9. Contact",
+              "evidence": [
+                "HR-002-S06-E01",
+                "HR-002-S06-E02",
+                "HR-002-S06-E03",
+                "HR-002-S07-E01",
+                "HR-002-S07-E02",
+                "HR-002-S08-E01"
+              ],
+              "required_evidence_found": [
+                "HR-002-S06-E02",
+                "HR-002-S06-E03"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.3544917106628418,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "evidence": [
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01",
+                "HR-002-S04-E02",
+                "HR-002-S04-E03",
+                "HR-002-S05-E01",
+                "HR-002-S05-E02"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH01",
+              "policy_id": "HR-002",
+              "similarity": 0.2628818154335022,
+              "section": "Introduction; 1. Purpose and Scope; 2. Eligibility; 3. Number of Work-From-Home Days",
+              "evidence": [
+                "HR-002-S01-E01",
+                "HR-002-S01-E02",
+                "HR-002-S02-E01",
+                "HR-002-S02-E02"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        }
+      }
+    },
+    {
+      "id": "DEV-05",
+      "query": "On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?",
+      "category": "multi-fact, cross-section",
+      "expected_policy_id": "HR-003",
+      "required_evidence": [
+        [
+          "HR-003-S04-E02"
+        ],
+        [
+          "HR-003-S05-E01"
+        ]
+      ],
+      "note": "Facts are in two different sections (4. Flights and Accommodation, 5. Meals).",
+      "acceptable_policies": [
+        "HR-003"
+      ],
+      "results": {
+        "v1_paragraph_800_150": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-003-CH02",
+              "policy_id": "HR-003",
+              "similarity": 0.5597546696662903,
+              "section": "2. Submitting a Claim; 3. Approval and Payment; 4. Business Travel - Flights and Accommodation",
+              "evidence": [
+                "HR-003-S02-E02",
+                "HR-003-S02-E03",
+                "HR-003-S02-E04",
+                "HR-003-S03-E01",
+                "HR-003-S03-E02",
+                "HR-003-S03-E03",
+                "HR-003-S04-E01",
+                "HR-003-S04-E02",
+                "HR-003-S04-E03"
+              ],
+              "required_evidence_found": [
+                "HR-003-S04-E02"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-003-CH03",
+              "policy_id": "HR-003",
+              "similarity": 0.5116960406303406,
+              "section": "5. Business Travel - Meals; 6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses",
+              "evidence": [
+                "HR-003-S04-E02",
+                "HR-003-S04-E03",
+                "HR-003-S05-E01",
+                "HR-003-S05-E02",
+                "HR-003-S06-E01",
+                "HR-003-S06-E02",
+                "HR-003-S07-E01"
+              ],
+              "required_evidence_found": [
+                "HR-003-S04-E02",
+                "HR-003-S05-E01"
+              ]
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-003-CH04",
+              "policy_id": "HR-003",
+              "similarity": 0.2486436367034912,
+              "section": "8. Contact",
+              "evidence": [
+                "HR-003-S08-E01"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "fixed_500": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-003-CH03",
+              "policy_id": "HR-003",
+              "similarity": 0.5775542855262756,
+              "section": "3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals; 6. Use of a Personal Vehicle",
+              "evidence": [
+                "HR-003-S03-E03",
+                "HR-003-S04-E01",
+                "HR-003-S04-E02",
+                "HR-003-S04-E03",
+                "HR-003-S05-E01",
+                "HR-003-S05-E02"
+              ],
+              "required_evidence_found": [
+                "HR-003-S04-E02",
+                "HR-003-S05-E01"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-003-CH04",
+              "policy_id": "HR-003",
+              "similarity": 0.282551646232605,
+              "section": "6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+              "evidence": [
+                "HR-003-S06-E01",
+                "HR-003-S06-E02",
+                "HR-003-S07-E01"
+              ],
+              "required_evidence_found": []
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-003-CH02",
+              "policy_id": "HR-003",
+              "similarity": 0.23367804288864136,
+              "section": "2. Submitting a Claim; 3. Approval and Payment",
+              "evidence": [
+                "HR-003-S02-E02",
+                "HR-003-S02-E03",
+                "HR-003-S02-E04",
+                "HR-003-S03-E01"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        },
+        "recursive_800_100": {
+          "top": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-003-CH02",
+              "policy_id": "HR-003",
+              "similarity": 0.5440223813056946,
+              "section": "2. Submitting a Claim; 3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals",
+              "evidence": [
+                "HR-003-S02-E03",
+                "HR-003-S02-E04",
+                "HR-003-S03-E01",
+                "HR-003-S03-E02",
+                "HR-003-S03-E03",
+                "HR-003-S04-E01",
+                "HR-003-S04-E02",
+                "HR-003-S04-E03"
+              ],
+              "required_evidence_found": [
+                "HR-003-S04-E02"
+              ]
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-003-CH03",
+              "policy_id": "HR-003",
+              "similarity": 0.4532299041748047,
+              "section": "5. Business Travel - Meals; 6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+              "evidence": [
+                "HR-003-S05-E01",
+                "HR-003-S05-E02",
+                "HR-003-S06-E01",
+                "HR-003-S06-E02",
+                "HR-003-S07-E01",
+                "HR-003-S08-E01"
+              ],
+              "required_evidence_found": [
+                "HR-003-S05-E01"
+              ]
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "policy_id": "HR-002",
+              "similarity": 0.2355729341506958,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "evidence": [
+                "HR-002-S03-E01",
+                "HR-002-S03-E02",
+                "HR-002-S04-E01",
+                "HR-002-S04-E02",
+                "HR-002-S04-E03",
+                "HR-002-S05-E01",
+                "HR-002-S05-E02"
+              ],
+              "required_evidence_found": []
+            }
+          ],
+          "policy_match": true,
+          "evidence_hit": true,
+          "groups_satisfied": 2,
+          "groups_total": 2,
+          "first_evidence_rank": 1,
+          "dense_gate_passes": true
+        }
+      }
+    }
+  ]
+}

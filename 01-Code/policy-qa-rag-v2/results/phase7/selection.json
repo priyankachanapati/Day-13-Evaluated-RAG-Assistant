@@ -1,0 +1,35 @@
+{
+  "selection_applicable": true,
+  "ranking": [
+    "v1_paragraph_800_150+hybrid+rerank",
+    "v1_paragraph_800_150+dense",
+    "recursive_800_100+hybrid+rerank"
+  ],
+  "scores": {
+    "v1_paragraph_800_150+dense": {
+      "score": 27,
+      "correct": 22,
+      "refused": 5,
+      "items": 30,
+      "ctx": 1.0,
+      "latency": 1913.0134375300258
+    },
+    "v1_paragraph_800_150+hybrid+rerank": {
+      "score": 27,
+      "correct": 22,
+      "refused": 5,
+      "items": 30,
+      "ctx": 1.0,
+      "latency": 1412.2143748681992
+    },
+    "recursive_800_100+hybrid+rerank": {
+      "score": 24,
+      "correct": 19,
+      "refused": 5,
+      "items": 30,
+      "ctx": 1.0,
+      "latency": 5284.72370817326
+    }
+  },
+  "answer_status": "complete"
+}

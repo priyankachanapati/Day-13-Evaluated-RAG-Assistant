@@ -1,0 +1,163 @@
+== Label review sheet: frozen eval dataset v1.0 (SHA-256 c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb) ==
+Each question with its required canonical facts (verbatim policy text), answer terms and reference answer.
+Produced from the dataset + evidence catalog only (no retrieval system involved).
+
+EV-01 [paraphrase / synonym | easy | answerable] How much time off for being ill do I get each year?
+   fact group 1 (any of): HR-001-S04-E01: Employees receive 10 days of paid sick leave per calendar year.
+   answer terms: [['10 days', 'ten days']]
+   reference: Employees receive 10 days of paid sick leave per calendar year.
+   notes: 'time off for being ill' paraphrases 'sick leave'; annual leave (20 days) in the same policy is a numeric distractor.
+EV-02 [paraphrase / synonym | medium | answerable] If a close family member dies, how many paid days off am I allowed?
+   fact group 1 (any of): HR-001-S06-E01: Employees may take up to 5 working days of paid bereavement leave following the death of an immediate family member (spouse or partner, child, parent, sibling, or grandparent).
+   answer terms: [['5 working days', 'five working days']]
+   reference: Up to 5 working days of paid bereavement leave following the death of an immediate family member.
+   notes: The word 'bereavement' is not in the question.
+EV-03 [paraphrase / synonym | medium | answerable] Can I get paid out in cash for vacation days I never used?
+   fact group 1 (any of): HR-001-S03-E03: Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.
+   answer terms: [['cannot be exchanged for cash', 'not be exchanged for cash', 'cannot be cashed', "can't be cashed", 'not be paid out'], ['final settlement']]
+   reference: No. Unused annual leave cannot be exchanged for cash, except as part of final settlement when an employee leaves the company.
+   notes: 'vacation days' vs 'annual leave'. The carry-forward rules (same section) are near-topic.
+EV-04 [paraphrase / synonym | medium | answerable] How fast do I have to reply to messages when I am working remotely?
+   fact group 1 (any of): HR-002-S05-E02: During core hours employees must respond to messages within 30 minutes and keep their calendar status up to date.
+   answer terms: [['30 minutes', 'thirty minutes']]
+   reference: During core hours, employees working from home must respond to messages within 30 minutes.
+   notes: 'working remotely' vs 'working from home'; HR-002 section 8 (another country) also says 'remotely'.
+EV-05 [paraphrase / synonym | easy | answerable] Am I allowed to read my personal email on my company laptop?
+   fact group 1 (any of): IT-002-S03-E02: Limited personal use, such as reading personal email during breaks, is permitted provided it does not interfere with work or breach any company policy.
+   answer terms: [['personal use', 'permitted']]
+   reference: Yes, limited personal use such as reading personal email during breaks is permitted, provided it does not interfere with work or breach any company policy.
+   notes: Answer is permission with conditions.
+EV-06 [exact keyword / identifier | medium | answerable] What is TechDesk?
+   fact group 1 (any of): IT-002-S04-E02: Installing any other software requires prior approval from IT through a request raised in TechDesk, the IT ticketing system.
+   answer terms: [['ticketing system', 'ticketing']]
+   reference: TechDesk is the IT ticketing system, used for example to request approval to install other software.
+   notes: Rare product name; also mentioned in IT-002 section 6 (police report reference attached to the TechDesk ticket), which does not define it.
+EV-07 [exact keyword / identifier | easy | answerable] Do I have to use the Brightlake Authenticator app for MFA?
+   fact group 1 (any of): IT-001-S03-E02: Users must use the Brightlake Authenticator mobile app as their second factor.
+   answer terms: [['Brightlake Authenticator']]
+   reference: Yes. Users must use the Brightlake Authenticator mobile app as their second factor.
+   notes: Acronym 'MFA' and product name.
+EV-08 [exact keyword / identifier | easy | answerable] According to HR-004, how long is the probation period?
+   fact group 1 (any of): HR-004-S06-E01: The probation period for new employees is 6 months.
+   answer terms: [['6 months', 'six months']]
+   reference: The probation period for new employees is 6 months.
+   notes: Policy-code query. HR-002 section 2 mentions probation (eligibility to work from home) but not its length.
+EV-09 [exact keyword / identifier | medium | answerable] Under IT-002, can I plug in my own USB stick?
+   fact group 1 (any of): IT-002-S05-E01: USB storage devices are blocked on company laptops by default.
+   fact group 2 (any of): IT-002-S05-E02: Only encrypted USB drives issued by the IT department may be used.
+   answer terms: [['blocked'], ['encrypted']]
+   reference: No. USB storage devices are blocked on company laptops by default; only encrypted USB drives issued by the IT department may be used.
+   notes: Policy code plus 'USB'; two adjacent sentences are needed for a complete answer.
+EV-10 [numerical / date | easy | answerable] By what date do carried-over leave days have to be used?
+   fact group 1 (any of): HR-001-S03-E02: Carried-forward days must be used by 31 March of the following year; any carried-forward days not used by that date expire.
+   answer terms: [['31 March', 'March 31']]
+   reference: Carried-forward days must be used by 31 March of the following year; unused ones expire.
+   notes: Overlaps a fact of Day 12 smoke question SM-02 (different wording).
+EV-11 [numerical / date | easy | answerable] What is the deadline for requesting work-from-home days?
+   fact group 1 (any of): HR-002-S04-E01: Work-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week.
+   answer terms: [['17:00', '5 pm', '5pm', '5:00 pm'], ['Friday']]
+   reference: Work-from-home days must be requested in the HR Portal by 17:00 on the Friday of the preceding week.
+   notes: HR-001 leave-request notice periods (7 / 21 days) are near-topic distractors.
+EV-12 [numerical / date | easy | answerable] What mileage rate is paid when I use my own car for business travel?
+   fact group 1 (any of): HR-003-S06-E01: Employees who use their personal vehicle for approved business travel are reimbursed at USD 0.40 per kilometre.
+   answer terms: [['0.40']]
+   reference: USD 0.40 per kilometre.
+   notes: 'own car' vs 'personal vehicle'.
+EV-13 [numerical / date | easy | answerable] Above what amount does an expense claim also need the department head's approval?
+   fact group 1 (any of): HR-003-S03-E02: Claims above USD 1,000 also require approval from the department head.
+   answer terms: [['1,000', '1000']]
+   reference: Claims above USD 1,000 also require approval from the department head.
+   notes: The USD 25 receipt threshold in section 2 is a numeric distractor.
+EV-14 [numerical / date | easy | answerable] How many of my previous passwords am I not allowed to reuse?
+   fact group 1 (any of): IT-001-S02-E03: Users must not reuse any of their previous 10 passwords.
+   answer terms: [['10 passwords', 'ten passwords', '10 previous', 'previous 10']]
+   reference: Users must not reuse any of their previous 10 passwords.
+   notes: Same section contains other numbers (14 characters, 180 days).
+EV-15 [numerical / date | easy | answerable] How many public holidays are there and when is the list published?
+   fact group 1 (any of): HR-001-S07-E01: Brightlake Systems publishes a list of 12 public holidays each December for the following calendar year.
+   answer terms: [['12 public holidays', '12 holidays', 'twelve public holidays'], ['December']]
+   reference: Brightlake Systems publishes a list of 12 public holidays each December for the following calendar year.
+   notes: Two facts in one sentence.
+EV-16 [multi-fact | medium | answerable] How long is paid maternity leave, and how much prior service do I need to be eligible?
+   fact group 1 (any of): HR-001-S05-E01: Birth mothers are entitled to 26 weeks of paid maternity leave.
+   fact group 2 (any of): HR-001-S05-E02: Employees must have completed at least 80 days of service in the 12 months before the expected delivery date to be eligible.
+   answer terms: [['26 weeks', 'twenty-six weeks'], ['80 days', 'eighty days']]
+   reference: 26 weeks of paid maternity leave; the employee must have completed at least 80 days of service in the 12 months before the expected delivery date.
+   notes: Paternity leave (same section) is a near-topic distractor.
+EV-17 [multi-fact | medium | answerable] What happens after five wrong sign-in attempts, and what if my account gets locked again the same day?
+   fact group 1 (any of): IT-001-S04-E01: An account is automatically locked for 15 minutes after 5 consecutive failed sign-in attempts.
+   fact group 2 (any of): IT-001-S04-E02: If the account is locked again within 24 hours, it remains locked until it is unlocked by the IT Service Desk.
+   answer terms: [['15 minutes', 'fifteen minutes', '15-minute'], ['IT Service Desk', 'Service Desk']]
+   reference: The account is locked for 15 minutes after 5 consecutive failed sign-in attempts; if it is locked again within 24 hours it stays locked until the IT Service Desk unlocks it.
+   notes: IT-001-S04-E01 is split by fixed_500 chunking (Phase 2), so that strategy cannot deliver it intact. Overlaps Day 12 smoke SM-09.
+EV-18 [multi-fact | medium | answerable] When I leave the company, how soon must I hand back my equipment, and what happens if I don't?
+   fact group 1 (any of): IT-002-S07-E01: When an employee leaves Brightlake Systems, all company equipment must be returned within 5 working days of the last working day.
+   fact group 2 (any of): IT-002-S07-E02: The cost of unreturned equipment may be deducted from the employee's final settlement.
+   answer terms: [['5 working days', 'five working days'], ['deducted']]
+   reference: All company equipment must be returned within 5 working days of the last working day; the cost of unreturned equipment may be deducted from the final settlement.
+   notes: HR-001 final settlement (leave cash-out) is near-topic. Overlaps Day 12 smoke SM-11.
+EV-19 [multi-fact | medium | answerable] By when must I tell my manager that I am sick, and when do I need a doctor's note?
+   fact group 1 (any of): HR-001-S04-E03: Employees must notify their line manager before 10:00 on the first day of absence.
+   fact group 2 (any of): HR-001-S04-E04: A medical certificate from a registered doctor is required for any sick absence longer than 2 consecutive working days.
+   answer terms: [['10:00', '10 am', '10am'], ['2 consecutive', 'two consecutive', 'more than 2', 'more than two', 'longer than 2', 'longer than two']]
+   reference: Notify the line manager before 10:00 on the first day of absence; a medical certificate is required for any sick absence longer than 2 consecutive working days.
+   notes: 'doctor's note' vs 'medical certificate'. HR-001-S04-E03 is split by fixed_500 chunking (Phase 2). Overlaps Day 12 smoke SM-03.
+EV-20 [multi-fact, cross-section | medium | answerable] As a hybrid-eligible employee, what internet allowance do I get and how many days a week can I work from home?
+   fact group 1 (any of): HR-002-S07-E01: Hybrid-eligible employees receive a monthly internet allowance of USD 40, paid automatically through payroll.
+   fact group 2 (any of): HR-002-S03-E01: Eligible employees may work from home for up to 2 days per week.
+   answer terms: [['USD 40', '$40', '40 per month', '40 a month'], ['2 days', 'two days']]
+   reference: A monthly internet allowance of USD 40 paid through payroll, and up to 2 work-from-home days per week.
+   notes: Facts in sections 3 and 7 of HR-002. Overlaps Day 12 smoke SM-04.
+EV-21 [multi-fact, cross-section | medium | answerable] How long must my password be, and are SMS codes accepted as a second factor?
+   fact group 1 (any of): IT-001-S02-E01: Passwords must be at least 14 characters long.
+   fact group 2 (any of): IT-001-S03-E03: SMS codes are not an approved MFA method.
+   answer terms: [['14 characters', 'fourteen characters'], ['not an approved', 'not approved', 'not accepted', 'not allowed']]
+   reference: Passwords must be at least 14 characters long; SMS codes are not an approved MFA method.
+   notes: Facts in sections 2 and 3 of IT-001. Overlaps Day 12 smoke SM-08.
+EV-22 [multi-fact, cross-section | hard | answerable] What happens on a new employee's first day, and which courses must they finish within their first two weeks?
+   fact group 1 (any of): HR-004-S03-E01: New employees attend an orientation session that starts at 09:30 on their first day.
+   fact group 2 (any of): HR-004-S05-E01: New employees must complete two mandatory training courses within 14 calendar days of joining: Security Awareness Training and Code of Conduct Training.
+   answer terms: [['orientation'], ['Security Awareness'], ['Code of Conduct']]
+   reference: On their first day new employees attend an orientation session that starts at 09:30; within 14 calendar days of joining they must complete Security Awareness Training and Code of Conduct Training.
+   notes: 'two weeks' vs '14 calendar days'. HR-004-S03-E02 (laptop, badge, accounts) is not an alternative because the sentence alone does not say 'first day'. IT-002 (laptop on or before the first working day) is near-topic. Overlaps Day 12 smoke SM-12.
+EV-23 [multi-fact, cross-policy | hard | answerable] What email address should I use for HR questions, and where do I submit expense claims?
+   fact group 1 (any of): HR-001-S08-E01: Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example. | HR-002-S09-E01: Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example. | HR-004-S07-E01: Questions about this policy should be directed to the HR Operations team at hr-ops@brightlake.example.
+   fact group 2 (any of): HR-003-S02-E01: Expense claims must be submitted through the Expense Portal within 30 calendar days of the date the expense was incurred.
+   answer terms: [['hr-ops@brightlake.example'], ['Expense Portal']]
+   reference: HR questions go to the HR Operations team at hr-ops@brightlake.example; expense claims are submitted through the Expense Portal (within 30 calendar days of the expense).
+   notes: The HR contact sentence appears in three policies (any one satisfies group 1); the Expense Portal is only in HR-003. HR-003's own contact (Finance team, expenses@brightlake.example) is a distractor for the e-mail part.
+EV-24 [near-topic distractor | hard | answerable] Do I need to submit receipts to get the internet allowance?
+   fact group 1 (any of): HR-002-S07-E02: No receipts are required for the internet allowance.
+   answer terms: [['No receipts', 'no receipt', 'not required']]
+   reference: No. No receipts are required for the internet allowance.
+   notes: Strong distractor: HR-003 receipt rules (receipt above USD 25; fuel receipts) use the same word 'receipt'.
+EV-25 [near-topic distractor | hard | answerable] For how long does my onboarding buddy support me?
+   fact group 1 (any of): HR-004-S04-E02: The buddy supports the new employee for their first 90 days.
+   answer terms: [['90 days', 'ninety days']]
+   reference: The buddy supports the new employee for their first 90 days.
+   notes: Distractor in the same policy: probation check-ins at 30, 60 and 90 days (HR-004 section 6) also say '90 days'.
+EV-26 [unanswerable (near-topic) | hard | UNANSWERABLE] How many days of paid leave do I get for jury duty?
+   absent terms (verified not in corpus): ['jury'] | distractor policies: ['HR-001']
+   answer terms: []
+   reference: Refusal: no policy covers jury duty leave.
+   notes: HR-001 lists many leave types with day counts - a tempting but wrong source.
+EV-27 [unanswerable (near-topic) | hard | UNANSWERABLE] What is the maximum reimbursement for taxi fares on business trips?
+   absent terms (verified not in corpus): ['taxi', 'cab'] | distractor policies: ['HR-003']
+   answer terms: []
+   reference: Refusal: the reimbursement policy does not mention taxis.
+   notes: HR-003 has travel limits (hotel USD 180, meals USD 60, mileage USD 0.40) that could be misapplied.
+EV-28 [unanswerable (near-topic) | hard | UNANSWERABLE] Does the company pay a monthly allowance for my mobile phone bill?
+   absent terms (verified not in corpus): ['phone allowance', 'mobile allowance', 'phone bill'] | distractor policies: ['HR-002', 'IT-002']
+   answer terms: []
+   reference: Refusal: no policy describes a mobile phone allowance (only an internet allowance and company-issued equipment).
+   notes: HR-002 internet allowance (USD 40 monthly) and IT-002 'mobile phones' are strong distractors.
+EV-29 [unanswerable (off-topic) | easy | UNANSWERABLE] What dental insurance coverage do employees receive?
+   absent terms (verified not in corpus): ['dental', 'insurance'] | distractor policies: []
+   answer terms: []
+   reference: Refusal: no policy covers insurance benefits.
+   notes: Benefits topic not covered by any policy.
+EV-30 [unanswerable (off-topic) | easy | UNANSWERABLE] Can I bring my dog to the office?
+   absent terms (verified not in corpus): ['dog', 'pet'] | distractor policies: []
+   answer terms: []
+   reference: Refusal: no policy covers pets or animals at the office.
+   notes: Off-topic; no office-rules policy exists in this corpus.

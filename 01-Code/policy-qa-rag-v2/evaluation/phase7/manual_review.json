@@ -1,0 +1,102 @@
+{
+  "note": "Post-hoc manual review of answers marked 'not correct' by the deterministic checks (pre-registered). It does NOT change any deterministic metric; it classifies failures for interpretation only. Extended 2026-11-27 after the answer run completed (all 3 configurations 30/30); earlier items kept unchanged.",
+  "reviewed_utc": "2026-11-26",
+  "items": [
+    {
+      "config": "v1_paragraph_800_150+dense",
+      "id": "EV-09",
+      "class": "genuine omission (minor)",
+      "detail": "Says only encrypted IT-issued USB drives are permitted (correct, cited) but omits that USB storage is blocked by default."
+    },
+    {
+      "config": "v1_paragraph_800_150+hybrid+rerank",
+      "id": "EV-09",
+      "class": "genuine omission (minor)",
+      "detail": "Identical answer text to the v1 baseline; same omission."
+    },
+    {
+      "config": "v1_paragraph_800_150+dense",
+      "id": "EV-24",
+      "class": "evaluator false negative",
+      "detail": "Answer 'receipts are not required' is correct; citation-support check requires the same phrase in the cited chunk, which says 'No receipts are required'."
+    },
+    {
+      "config": "v1_paragraph_800_150+dense",
+      "id": "EV-31",
+      "class": "evaluator false negative",
+      "detail": "Answer writes '30‐day' with a Unicode hyphen (U+2010); the answer term '30-day' does not match after NFKC normalisation."
+    },
+    {
+      "config": "v1_paragraph_800_150+hybrid+rerank",
+      "id": "EV-24",
+      "class": "evaluator false negative",
+      "detail": "Same answer text as v1; same citation-support phrasing mismatch."
+    },
+    {
+      "config": "v1_paragraph_800_150+hybrid+rerank",
+      "id": "EV-31",
+      "class": "evaluator false negative",
+      "detail": "Same answer text as v1; Unicode hyphen in '30‐day'."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-03",
+      "class": "evaluator false negative",
+      "detail": "Correct ('cannot be paid out in cash, except as part of a final settlement'); answer term 'not be paid out' is not in the cited chunk, which says 'exchanged for cash', so citation support fails."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-05",
+      "class": "evaluator false negative",
+      "detail": "Correct ('Yes - during breaks, as long as it does not interfere with work'), but uses neither 'personal use' nor 'permitted'."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-09",
+      "class": "genuine omission (minor)",
+      "detail": "Same omission as the other configurations ('blocked by default' not stated)."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-19",
+      "class": "evaluator false negative",
+      "detail": "Correct; answer says 'longer than two consecutive', cited chunk says 'longer than 2 consecutive', so citation support fails on the word/digit form."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-24",
+      "class": "evaluator false negative",
+      "detail": "Same phrasing mismatch as the other configurations."
+    },
+    {
+      "config": "recursive_800_100+hybrid+rerank",
+      "id": "EV-31",
+      "class": "evaluator false negative",
+      "detail": "Correct ('late expense-claim submission filed after the 30-day deadline'); Unicode hyphens and 'late expense‐claim submission' miss both answer terms."
+    }
+  ],
+  "summary": {
+    "v1_paragraph_800_150+dense": {
+      "deterministic_score": "27/30 (22/25 + 5/5)",
+      "manually_reviewed_score": "29/30 (24/25 + 5/5)",
+      "genuine_failures": [
+        "EV-09"
+      ]
+    },
+    "v1_paragraph_800_150+hybrid+rerank": {
+      "deterministic_score": "27/30 (22/25 + 5/5)",
+      "manually_reviewed_score": "29/30 (24/25 + 5/5)",
+      "genuine_failures": [
+        "EV-09"
+      ]
+    },
+    "recursive_800_100+hybrid+rerank": {
+      "deterministic_score": "24/30 (19/25 + 5/5)",
+      "manually_reviewed_score": "29/30 (24/25 + 5/5)",
+      "genuine_failures": [
+        "EV-09"
+      ]
+    },
+    "conclusion": "After manual review the three configurations are equal (29/30); every deterministic difference between them is an evaluator false negative. The pre-registered selection uses the deterministic scores only."
+  }
+}

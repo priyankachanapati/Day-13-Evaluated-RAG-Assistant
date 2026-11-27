@@ -1,0 +1,57 @@
+== Phase 2 regression checks (2026-11-26T15:51:33Z) ==
+
+-- 1. Frozen v1 tests + new v2 tests: .venv/bin/python -m pytest tests tests_v2 -m 'not integration' -v
+tests_v2/test_chunking.py::test_fixed_toy_example PASSED                 [ 64%]
+tests_v2/test_chunking.py::test_recursive_toy_example_with_overlap PASSED [ 65%]
+tests_v2/test_chunking.py::test_recursive_overlap_is_whole_pieces_only PASSED [ 67%]
+tests_v2/test_chunking.py::test_recursive_prefers_paragraph_separator PASSED [ 68%]
+tests_v2/test_chunking.py::test_recursive_splits_oversized_piece_with_next_separator PASSED [ 70%]
+tests_v2/test_chunking.py::test_invalid_parameters_rejected PASSED       [ 71%]
+tests_v2/test_chunking.py::test_sections_for_span PASSED                 [ 73%]
+tests_v2/test_chunking.py::test_fixed_500_is_lossless_and_sized PASSED   [ 74%]
+tests_v2/test_chunking.py::test_recursive_800_100_sizes_overlap_and_coverage PASSED [ 76%]
+tests_v2/test_chunking.py::test_chunks_are_body_substrings_with_v1_compatible_ids_and_metadata[v1_paragraph_800_150] PASSED [ 77%]
+tests_v2/test_chunking.py::test_chunks_are_body_substrings_with_v1_compatible_ids_and_metadata[fixed_500] PASSED [ 79%]
+tests_v2/test_chunking.py::test_chunks_are_body_substrings_with_v1_compatible_ids_and_metadata[recursive_800_100] PASSED [ 80%]
+tests_v2/test_chunking.py::test_v1_strategy_is_exactly_the_frozen_v1_chunker PASSED [ 82%]
+tests_v2/test_chunking.py::test_chunking_is_deterministic PASSED         [ 83%]
+tests_v2/test_evidence_and_analysis.py::test_catalog_matches_frozen_hash_and_rebuild PASSED [ 85%]
+tests_v2/test_evidence_and_analysis.py::test_units_are_verbatim_sentences_with_offsets PASSED [ 86%]
+tests_v2/test_evidence_and_analysis.py::test_unit_ids_follow_section_numbers PASSED [ 88%]
+tests_v2/test_evidence_and_analysis.py::test_span_containment_is_whole_sentence_only PASSED [ 89%]
+tests_v2/test_evidence_and_analysis.py::test_satisfied_groups_any_of_alternatives PASSED [ 91%]
+tests_v2/test_evidence_and_analysis.py::test_offset_containment_agrees_with_text_containment[v1_paragraph_800_150] PASSED [ 92%]
+tests_v2/test_evidence_and_analysis.py::test_offset_containment_agrees_with_text_containment[fixed_500] PASSED [ 94%]
+tests_v2/test_evidence_and_analysis.py::test_offset_containment_agrees_with_text_containment[recursive_800_100] PASSED [ 95%]
+tests_v2/test_evidence_and_analysis.py::test_dev_queries_frozen_and_labels_valid PASSED [ 97%]
+tests_v2/test_evidence_and_analysis.py::test_boundary_report_detects_mid_sentence_word_cut_and_trailing_heading PASSED [ 98%]
+tests_v2/test_evidence_and_analysis.py::test_evidence_integrity_split_and_duplicated PASSED [100%]
+======================= 67 passed, 2 deselected in 1.44s =======================
+
+-- 2. Lint (new code only; frozen src/ and tests/ excluded by pyproject)
+All checks passed!
+20 files already formatted
+
+-- 3. Frozen baseline manifests
+   PASS (20 files)
+   PASS
+   PASS
+   PASS (6 files)
+   PASS
+   PASS
+   PASS  reference/day12-smoke-results-run1.json
+   PASS  reference/day12-smoke-test-log-run1.txt
+OVERALL: PASS
+
+-- 4. Evidence catalog rebuild check
+Evidence units: 102 | per policy: {'HR-001': 22, 'HR-002': 18, 'HR-003': 18, 'HR-004': 13, 'IT-001': 16, 'IT-002': 15}
+Corpus manifest SHA-256: 4394c1c94d216ae8d1a2080e3564f4d9754bb36c3e8cd4223fd3e4dbc27938c2
+Saved catalog identical to rebuild: PASS
+
+-- 5. Phase 1 v1 baseline reproduction (v1 .chroma untouched by Phase 2)
+  [PASS] retrieval: scores rounded to 4 dp exactly equal saved values (strict): 60/60 chunks (similarity and distance both exact)
+v1 chunk-index fingerprint (SHA-256): b00e0446692ffdd8455c337b160963bec0b4064024be0cd3d252f97422cd794d
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 6. Day 12 git working tree changes: 0
+-- 7. .env present: no

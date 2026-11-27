@@ -1,0 +1,60 @@
+== Phase 7 Part B (answers) start 2026-11-26T17:22:48Z ==
+[retry] 429 rate limit; waiting 3s before attempt 2/5
+[retry] 429 rate limit; waiting 7s before attempt 2/5
+[retry] 429 rate limit; waiting 6s before attempt 2/5
+[retry] 429 rate limit; waiting 7s before attempt 2/5
+[retry] 429 rate limit; waiting 4s before attempt 2/5
+[retry] 429 rate limit; waiting 2s before attempt 2/5
+[retry] 429 rate limit; waiting 6s before attempt 2/5
+[retry] 429 rate limit; waiting 6s before attempt 2/5
+[retry] 429 rate limit; waiting 3s before attempt 2/5
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+[retry] 429 rate limit; waiting 2s before attempt 2/5
+[retry] 429 rate limit; waiting 3s before attempt 2/5
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+[retry] 429 rate limit; waiting 3s before attempt 2/5
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+  v1_paragraph_800_150+dense               EV-01  answered                    correct
+  v1_paragraph_800_150+dense               EV-02  answered                    correct
+  v1_paragraph_800_150+dense               EV-03  answered                    correct
+  v1_paragraph_800_150+dense               EV-04  answered                    correct
+  v1_paragraph_800_150+dense               EV-05  answered                    correct
+  v1_paragraph_800_150+dense               EV-07  answered                    correct
+  v1_paragraph_800_150+dense               EV-08  answered                    correct
+  v1_paragraph_800_150+dense               EV-09  answered                    not correct
+  v1_paragraph_800_150+dense               EV-10  answered                    correct
+  v1_paragraph_800_150+dense               EV-11  answered                    correct
+  v1_paragraph_800_150+dense               EV-12  answered                    correct
+  v1_paragraph_800_150+dense               EV-13  answered                    correct
+  v1_paragraph_800_150+dense               EV-14  answered                    correct
+  v1_paragraph_800_150+dense               EV-15  answered                    correct
+  v1_paragraph_800_150+dense               EV-16  answered                    correct
+  v1_paragraph_800_150+dense               EV-17  answered                    correct
+  v1_paragraph_800_150+dense               EV-18  answered                    correct
+  v1_paragraph_800_150+dense               EV-19  answered                    correct
+  v1_paragraph_800_150+dense               EV-20  answered                    correct
+  v1_paragraph_800_150+dense               EV-21  answered                    correct
+  v1_paragraph_800_150+dense               EV-22  answered                    correct
+  v1_paragraph_800_150+dense               EV-23  answered                    correct
+  v1_paragraph_800_150+dense               EV-24  answered                    not correct
+  v1_paragraph_800_150+dense               EV-25  answered                    correct
+  v1_paragraph_800_150+dense               EV-26  refused                     correct
+  v1_paragraph_800_150+dense               EV-27  refused                     correct
+  v1_paragraph_800_150+dense               EV-28  refused                     correct
+  v1_paragraph_800_150+dense               EV-29  refused                     correct
+  v1_paragraph_800_150+dense               EV-30  refused                     correct
+  v1_paragraph_800_150+dense               EV-31  answered                    not correct
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+[retry] 429 rate limit; waiting 5s before attempt 2/5
+  v1_paragraph_800_150+hybrid+rerank       EV-01  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-02  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-03  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-04  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-05  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-07  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-08  answered                    correct
+  v1_paragraph_800_150+hybrid+rerank       EV-09  answered                    not correct
+  v1_paragraph_800_150+hybrid+rerank       EV-10  answered                    correct
+Status: incomplete: provider quota exhausted (Groq quota exhausted: Rate limit reached for model `openai/gpt-oss-120b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199071, Requested 1506. Please try again in 4m9.264s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing) | real calls 35 | cache hits 4
+exit code: 2 | end 2026-11-26T17:26:42Z

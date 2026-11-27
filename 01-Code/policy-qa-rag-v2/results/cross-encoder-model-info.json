@@ -1,0 +1,66 @@
+{
+  "requested_model_id": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "canonical_model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "hub_last_modified": "2026-08-09 15:22:24+00:00",
+  "license_tags": [
+    "license:apache-2.0"
+  ],
+  "pipeline_tag": "text-ranking",
+  "files": {
+    "README.md": {
+      "hub_size": 3673,
+      "local_size": 3673,
+      "match": true
+    },
+    "config.json": {
+      "hub_size": 794,
+      "local_size": 794,
+      "match": true
+    },
+    "model.safetensors": {
+      "hub_size": 90870598,
+      "local_size": 90870598,
+      "match": true
+    },
+    "special_tokens_map.json": {
+      "hub_size": 132,
+      "local_size": 132,
+      "match": true
+    },
+    "tokenizer.json": {
+      "hub_size": 711396,
+      "local_size": 711396,
+      "match": true
+    },
+    "tokenizer_config.json": {
+      "hub_size": 1330,
+      "local_size": 1330,
+      "match": true
+    },
+    "vocab.txt": {
+      "hub_size": 231508,
+      "local_size": 231508,
+      "match": true
+    }
+  },
+  "download_bytes": 91819431,
+  "download_seconds_this_run": 26.844,
+  "note": "download_seconds is ~0 when the files were already in the local Hugging Face cache",
+  "config": {
+    "architectures": [
+      "BertForSequenceClassification"
+    ],
+    "model_type": "bert",
+    "num_hidden_layers": 6,
+    "hidden_size": 384,
+    "num_attention_heads": 12,
+    "max_position_embeddings": 512,
+    "id2label": {
+      "0": "LABEL_0"
+    }
+  },
+  "local_snapshot": "/Users/vamsi/.cache/huggingface/hub/models--cross-encoder--ms-marco-MiniLM-L6-v2/snapshots/233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "huggingface_hub": "2.4.0",
+  "recorded_utc": "2026-11-26T16:11:59+00:00"
+}

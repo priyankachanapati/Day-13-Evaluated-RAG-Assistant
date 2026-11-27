@@ -1,0 +1,13 @@
+== Cross-check: rag_v2 recursive_800_100 vs LangChain RecursiveCharacterTextSplitter (2026-11-26T15:50:34Z) ==
+Method: our chunks exported from the project venv; LangChain run in a separate throwaway venv (scratchpad, NOT a project dependency):
+  langchain-text-splitters 1.2.0, RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100), library default separators
+Input: the 6 document bodies from the frozen v1 loader (src.ingestion.load_documents)
+
+LangChain separators: ['\n\n', '\n', ' ', '']
+HR-001: langchain 4 chunks, ours 4 chunks, byte-identical: True
+HR-002: langchain 4 chunks, ours 4 chunks, byte-identical: True
+HR-003: langchain 3 chunks, ours 3 chunks, byte-identical: True
+HR-004: langchain 3 chunks, ours 3 chunks, byte-identical: True
+IT-001: langchain 3 chunks, ours 3 chunks, byte-identical: True
+IT-002: langchain 3 chunks, ours 3 chunks, byte-identical: True
+RESULT: 6/6 documents byte-identical -> PASS

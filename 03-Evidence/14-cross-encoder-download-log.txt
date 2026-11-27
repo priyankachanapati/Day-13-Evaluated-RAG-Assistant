@@ -1,0 +1,14 @@
+Requested ID : cross-encoder/ms-marco-MiniLM-L-6-v2 -> resolves to cross-encoder/ms-marco-MiniLM-L6-v2 @ 233902d25c440f23af6f7d6e94d2946bac0bee0a
+Pinned       : cross-encoder/ms-marco-MiniLM-L6-v2 @ 233902d25c440f23af6f7d6e94d2946bac0bee0a
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:03,  1.89it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:02,  2.34it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:01<00:00,  4.51it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:01<00:00,  6.91it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:20<00:00,  6.91it/s]Fetching 7 files: 100%|██████████| 7/7 [00:26<00:00,  6.51s/it]Fetching 7 files: 100%|██████████| 7/7 [00:26<00:00,  3.79s/it]
+  OK  README.md                  hub        3,673  local        3,673
+  OK  config.json                hub          794  local          794
+  OK  model.safetensors          hub   90,870,598  local   90,870,598
+  OK  special_tokens_map.json    hub          132  local          132
+  OK  tokenizer.json             hub      711,396  local      711,396
+  OK  tokenizer_config.json      hub        1,330  local        1,330
+  OK  vocab.txt                  hub      231,508  local      231,508
+Download time (this run): 26.84 s for 91,819,431 bytes
+Config: {'architectures': ['BertForSequenceClassification'], 'model_type': 'bert', 'num_hidden_layers': 6, 'hidden_size': 384, 'num_attention_heads': 12, 'max_position_embeddings': 512, 'id2label': {'0': 'LABEL_0'}}
+Saved results/cross-encoder-model-info.json | size check: PASS

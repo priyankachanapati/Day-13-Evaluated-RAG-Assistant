@@ -1,0 +1,10 @@
+== Final checks (2026-11-27T03:03:53Z); no LLM/API calls ==
+tests: ====================== 193 passed, 2 deselected in 19.10s ======================
+lint: All checks passed! | 70 files already formatted
+v1 baseline + corpus: OVERALL: PASS
+frozen manifests (Phases 2-6, datasets v1.0/v1.1 + exposure record, dev, answer keys, catalog, pre-registration, final Phase 7 records): PASS
+partial-run records preserved as prefix (first 39 lines): PASS; retrieval.json + smoke records unchanged: PASS
+dataset validators: v1.0 VALIDATION: PASS, v1.1 VALIDATION: PASS
+Phase 1 v1 reproduction: OVERALL: PASS (15/15 questions reproduced)
+secret scan (excl. git-ignored .env): 0 files | .env.example placeholder: True
+Day 12 git working tree changes: 0

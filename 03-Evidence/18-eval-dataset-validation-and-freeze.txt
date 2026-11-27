@@ -1,0 +1,22 @@
+== Evaluation dataset validation ==
+Dataset: evaluation/datasets/eval_queries_30.json
+  [PASS] version present: 1.0
+  [PASS] 30 queries: 30
+  [PASS] IDs EV-01..EV-30, unique, in order
+  [PASS] every query has all required fields: all fields present
+  [PASS] 25 answerable / 5 unanswerable: 25 / 5
+  [PASS] category mixture meets minimums: exact keyword / identifier: 4; multi-fact: 4; multi-fact, cross-policy: 1; multi-fact, cross-section: 3; near-topic distractor: 2; numerical / date: 6; paraphrase / synonym: 5; unanswerable (near-topic): 3; unanswerable (off-topic): 2
+  [PASS] questions unique
+  [PASS] difficulty labels valid: {'easy': 12, 'medium': 11, 'hard': 7}
+  [PASS] answerable labels: evidence IDs exist, policies match, answer terms occur in evidence: 25 queries, 34 fact groups, 36 distinct evidence IDs
+  [PASS] unanswerable labels: no evidence, absent topic terms not in corpus: EV-26: ['jury'], EV-27: ['taxi', 'cab'], EV-28: ['phone allowance', 'mobile allowance', 'phone bill'], EV-29: ['dental', 'insurance'], EV-30: ['dog', 'pet']
+  [PASS] distractor policy IDs valid
+  [PASS] no evidence fact shared with the 5 dev queries: 0 shared
+  [PASS] no near-duplicate of a dev question (word Jaccard < 0.6): max 0.50 (EV-06 vs DEV-02)
+  [PASS] no near-duplicate of a Day 12 smoke question (word Jaccard < 0.6): max 0.45 (EV-20 vs SM-04)
+  Policies covered (answerable): {'HR-001': 8, 'HR-002': 5, 'IT-002': 4, 'IT-001': 4, 'HR-004': 4, 'HR-003': 3}
+  Difficulty: {'easy': 12, 'medium': 11, 'hard': 7}
+  Facts shared with Day 12 smoke questions (informational): {'EV-10': ['SM-02'], 'EV-17': ['SM-09'], 'EV-18': ['SM-11'], 'EV-19': ['SM-03'], 'EV-20': ['SM-04'], 'EV-22': ['SM-12'], 'EV-23': ['SM-06']}
+Dataset SHA-256: c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb
+VALIDATION: PASS
+FROZEN: version 1.0 at 2026-11-26T16:26:53+00:00 -> evaluation/datasets/eval_dataset_freeze.json, manifests/eval-dataset.sha256

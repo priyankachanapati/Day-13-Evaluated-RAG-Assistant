@@ -1,0 +1,18 @@
+# Direct dependencies of Policy Q&A RAG v2 (Day 13).
+# Compile the lock file with:
+#   uv pip compile requirements.in -c constraints/day12-v1-environment.txt -o requirements.txt
+# The constraints file is Day 12's exact environment (uv pip freeze), so every package
+# shared with RAG v1 keeps the same version and the v1 baseline behaves identically.
+
+# --- RAG v1 (same pins as Day 12) ---
+chromadb==1.5.9        # vector database + local ONNX all-MiniLM-L6-v2 embeddings
+groq==1.7.0            # LLM API client
+python-dotenv==1.2.4   # loads .env
+
+# --- New for Day 13 (Activities B and C) ---
+rank-bm25              # BM25 keyword retrieval
+sentence-transformers  # cross-encoder reranking (pulls in torch + transformers)
+
+# --- Development / testing ---
+pytest==9.2.0
+ruff==0.17.6

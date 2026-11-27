@@ -1,0 +1,27 @@
+{
+  "dataset": "evaluation/datasets/eval_queries_30.json",
+  "version": "1.0",
+  "sha256": "c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb",
+  "frozen_utc": "2026-11-26T16:26:53+00:00",
+  "queries": 30,
+  "answerable": 25,
+  "unanswerable": 5,
+  "categories": {
+    "paraphrase / synonym": 5,
+    "exact keyword / identifier": 4,
+    "numerical / date": 6,
+    "multi-fact": 4,
+    "multi-fact, cross-section": 3,
+    "multi-fact, cross-policy": 1,
+    "near-topic distractor": 2,
+    "unanswerable (near-topic)": 3,
+    "unanswerable (off-topic)": 2
+  },
+  "difficulty": {
+    "easy": 12,
+    "medium": 11,
+    "hard": 7
+  },
+  "validation": "PASS (scripts/validate_eval_dataset.py)",
+  "retrieval_systems_run_on_dataset_before_freeze": "none"
+}

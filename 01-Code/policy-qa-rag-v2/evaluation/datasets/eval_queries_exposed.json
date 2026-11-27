@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "description": "Evaluation queries excluded from the clean Phase 7 set because they were exposed to the system before evaluation.",
+  "queries": [
+    {
+      "query": {
+        "id": "EV-06",
+        "question": "What is TechDesk?",
+        "answerable": true,
+        "category": "exact keyword / identifier",
+        "difficulty": "medium",
+        "expected_policy_ids": [
+          "IT-002"
+        ],
+        "required_evidence": [
+          [
+            "IT-002-S04-E02"
+          ]
+        ],
+        "answer_terms": [
+          [
+            "ticketing system",
+            "ticketing"
+          ]
+        ],
+        "reference_answer": "TechDesk is the IT ticketing system, used for example to request approval to install other software.",
+        "distractor_policy_ids": [],
+        "notes": "Rare product name; also mentioned in IT-002 section 6 (police report reference attached to the TechDesk ticket), which does not define it."
+      },
+      "source": {
+        "dataset_version": "1.0",
+        "file": "evaluation/datasets/eval_queries_30.json",
+        "sha256": "c9677c0fe123a97ff65bf462bd3655fe0aed2717b2e58c1e49ae3322750046bb"
+      },
+      "exposure": {
+        "phase": "Phase 6 (2026-11-26)",
+        "what": [
+          "CLI `ask` (retrieval ran, generation stopped: no credentials) and CLI `retrieve` with v1_paragraph_800_150+hybrid+rerank",
+          "two mocked unit tests in tests_v2/test_pipeline_v2.py (no assertions on its ranking; since replaced by DEV-02)"
+        ],
+        "observed_output": "03-Evidence/23a-missing-credentials-and-cli-log-ACCIDENTAL-HELD-OUT-QUERY-EV-06.txt",
+        "llm_answer_generated": false,
+        "labels_or_configuration_changed": false
+      },
+      "use": "Not part of the clean Phase 7 set. May be reported separately as a sensitivity analysis, clearly labelled as exposed."
+    }
+  ]
+}

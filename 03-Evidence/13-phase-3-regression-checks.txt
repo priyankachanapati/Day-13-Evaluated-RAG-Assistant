@@ -1,0 +1,55 @@
+== Phase 3 regression checks (2026-11-26T16:05:09Z) ==
+
+-- 1. Frozen v1 tests + all v2 tests
+.....................................                                    [100%]
+109 passed, 2 deselected in 3.19s
+   per file:
+     11 tests_v2/test_bm25_fusion.py
+     14 tests_v2/test_chunking.py
+     11 tests_v2/test_evidence_and_analysis.py
+      8 tests_v2/test_hybrid.py
+      7 tests_v2/test_metrics.py
+     16 tests_v2/test_tokenizer.py
+      9 tests/test_citations.py
+      2 tests/test_generation_retry.py
+     10 tests/test_ingestion.py
+      6 tests/test_refusal.py
+     11 tests/test_retrieval.py
+      4 tests/test_smoke.py
+
+-- 2. Lint + format (new code; frozen src/ tests/ excluded)
+All checks passed!
+32 files already formatted
+
+-- 3. Frozen v1 baseline + corpus manifests
+OVERALL: PASS
+
+-- 4. Phase 2 artifacts unchanged
+   rag_v2/__init__.py: OK
+   rag_v2/chunking.py: OK
+   rag_v2/indexing.py: OK
+   rag_v2/chunk_analysis.py: OK
+   evaluation/__init__.py: OK
+   evaluation/evidence.py: OK
+   evaluation/datasets/evidence_catalog.json: OK
+   evaluation/datasets/dev_queries.json: OK
+   scripts/build_evidence_catalog.py: OK
+   activities/a-chunking-strategies/compare_chunking.py: OK
+   activities/a-chunking-strategies/results/chunking-comparison.json: OK
+   activities/a-chunking-strategies/results/chunking-comparison-report.md: OK
+   tests_v2/test_chunking.py: OK
+   tests_v2/test_evidence_and_analysis.py: OK
+
+-- 5. Evidence catalog rebuild
+Saved catalog identical to rebuild: PASS
+
+-- 6. Phase 1 v1 baseline reproduction
+  [PASS] retrieval: scores rounded to 4 dp exactly equal saved values (strict): 60/60 chunks (similarity and distance both exact)
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 7. Activity B run 3 (after ruff formatting) - results hash must equal runs 1 and 2 (db9a570e...)
+Results SHA-256 (everything except run metadata and latency): db9a570ed4a3f153135f2749c6886991ad46d133587161938d8847bc97046f17
+OVERALL: PASS (integrity and Phase 2 consistency checks)
+
+-- 8. Day 12 git working tree changes: 0
+-- 9. .env present: no

@@ -1,0 +1,14 @@
+== Relabel real-smoke-1 from its records (no API call) (2026-11-26T17:04:39Z) ==
+Bug: the runner labelled a run whose 16 items all failed as 'complete' (exit 0). The original summary is kept as
+summary-original-MISLABELLED-complete.{json,md}. Runner fixed (status, auth fail-fast, resume retries errors,
+--summarize-only); summary rebuilt from records.jsonl without creating any LLM client.
+
+Status: incomplete: authentication failed (Groq rejected the API key) | rebuilt from 16 records (no API call)
+exit code: 2
+
+status: incomplete: authentication failed (Groq rejected the API key)
+LLM: openai/gpt-oss-120b | real | run started (UTC): 2026-11-26T17:01:30+00:00
+  v1_paragraph_800_150+dense: items 8, errors 8, answers evaluated 0, successful LLM calls 0, prompt tokens 0, completion tokens 0, estimated cost USD 0
+  v1_paragraph_800_150+hybrid+rerank: items 8, errors 8, answers evaluated 0, successful LLM calls 0, prompt tokens 0, completion tokens 0, estimated cost USD 0
+error messages: {'Groq rejected the API key (authentication error).': 16}
+key-like strings in run directory: 0

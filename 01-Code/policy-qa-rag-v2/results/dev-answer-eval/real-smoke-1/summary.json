@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "run_name": "real-smoke-1",
+    "started_utc": "2026-11-26T17:13:15+00:00",
+    "llm_model": "openai/gpt-oss-120b",
+    "llm_kind": "real",
+    "temperature": 0.0,
+    "min_similarity": 0.25,
+    "configs": [
+      {
+        "chunking": "v1_paragraph_800_150",
+        "retrieval": "dense",
+        "rerank": false,
+        "context_k": 4,
+        "candidates": 10,
+        "rrf_k": 60,
+        "name": "v1_paragraph_800_150+dense"
+      },
+      {
+        "chunking": "v1_paragraph_800_150",
+        "retrieval": "hybrid",
+        "rerank": true,
+        "context_k": 4,
+        "candidates": 10,
+        "rrf_k": 60,
+        "name": "v1_paragraph_800_150+hybrid+rerank"
+      }
+    ],
+    "integrity": "10 manifests PASS",
+    "status": "complete",
+    "one_time_ms": {
+      "v1_paragraph_800_150+dense": {
+        "dense index build": 626.674166880548
+      },
+      "v1_paragraph_800_150+hybrid+rerank": {
+        "dense index build": 466.0477500874549,
+        "BM25 index build": 1.8880830612033606,
+        "cross-encoder load": 3150.1038749702275
+      }
+    },
+    "llm_real_calls_this_invocation": 14,
+    "llm_cache_hits_this_invocation": 2
+  },
+  "summary": {
+    "v1_paragraph_800_150+dense": {
+      "answerable_n": 5,
+      "unanswerable_n": 3,
+      "errors": 0,
+      "correct": 4,
+      "status_answered": 5,
+      "answer_term_coverage_mean": 0.8,
+      "citations_valid": 5,
+      "cites_expected_policy": 5,
+      "citation_support_all": 4,
+      "cited_fact_coverage_mean": 1.0,
+      "context_fact_coverage_mean": 1.0,
+      "unsupported_numbers_total": 0,
+      "invalid_citations_total": 0,
+      "refusal_correct": 3,
+      "dropped_by_dense_filter_total": 8,
+      "llm_calls_real": 8,
+      "llm_cache_hits": 0,
+      "llm_not_called": 0,
+      "prompt_tokens_total": 7653,
+      "completion_tokens_total": 1667,
+      "estimated_cost_usd_total": 0.00214815,
+      "median_ms": {
+        "query_embedding": 38.398021017201245,
+        "vector_search": 2.5659165112301707,
+        "bm25": null,
+        "fusion": null,
+        "rerank": null,
+        "retrieval_total": 41.162709007039666,
+        "generation (real calls only)": 974.8163539916277,
+        "total (real calls only)": 1016.1582499276847
+      }
+    },
+    "v1_paragraph_800_150+hybrid+rerank": {
+      "answerable_n": 5,
+      "unanswerable_n": 3,
+      "errors": 0,
+      "correct": 3,
+      "status_answered": 5,
+      "answer_term_coverage_mean": 0.7,
+      "citations_valid": 5,
+      "cites_expected_policy": 5,
+      "citation_support_all": 3,
+      "cited_fact_coverage_mean": 1.0,
+      "context_fact_coverage_mean": 1.0,
+      "unsupported_numbers_total": 0,
+      "invalid_citations_total": 0,
+      "refusal_correct": 3,
+      "dropped_by_dense_filter_total": 9,
+      "llm_calls_real": 6,
+      "llm_cache_hits": 2,
+      "llm_not_called": 0,
+      "prompt_tokens_total": 7559,
+      "completion_tokens_total": 1442,
+      "estimated_cost_usd_total": 0.00199905,
+      "median_ms": {
+        "query_embedding": 35.449458518996835,
+        "vector_search": 2.1774369524791837,
+        "bm25": 0.13229192700237036,
+        "fusion": 0.027521047741174698,
+        "rerank": 66.75118743441999,
+        "retrieval_total": 109.14750047959387,
+        "generation (real calls only)": 1058.6785834748298,
+        "total (real calls only)": 1186.3246255088598
+      }
+    }
+  }
+}

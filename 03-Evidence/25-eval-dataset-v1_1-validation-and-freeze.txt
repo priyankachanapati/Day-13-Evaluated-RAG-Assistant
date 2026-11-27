@@ -1,0 +1,22 @@
+== Evaluation dataset v1.1 validation ==
+  [PASS] v1.0 unchanged (matches manifests/eval-dataset.sha256): c9677c0fe123…
+  [PASS] version 1.1 and supersedes v1.0 by hash
+  [PASS] 30 queries: 30
+  [PASS] IDs = v1.0 IDs minus EV-06 plus EV-31: 30 unique
+  [PASS] 29 carried-over queries identical to v1.0 (field by field): 29/29
+  [PASS] EV-06 absent from the clean set
+  [PASS] exposure record holds EV-06 exactly as in v1.0
+  [PASS] 25 answerable / 5 unanswerable
+  [PASS] category mixture unchanged vs v1.0: exact keyword / identifier: 4
+  [PASS] EV-31 has all required fields
+  [PASS] EV-31 evidence IDs exist in the frozen catalog: HR-003-S02-E02
+  [PASS] EV-31 expected policies = evidence policies
+  [PASS] EV-31 every answer-term group occurs in the evidence text: [['late submission', 'late submissions', 'late claim', 'late claims'], ['30 days', '30-day', 'thirty days']]
+  [PASS] EV-31 evidence sentence occurs verbatim in the policy corpus
+  [PASS] EV-31 fact not used by dev queries
+  [PASS] EV-31 fact not used by any v1.0 query (incl. EV-06)
+  [PASS] EV-31 not a near-duplicate of any dev / smoke / v1.0 question (word Jaccard < 0.6): max 0.17 vs EV-30
+  [PASS] questions unique in v1.1
+v1.1 SHA-256: e860b7294c57c2275c8d9a886b39fb55470158be103ca3288d478cdad73e39ca
+VALIDATION: PASS
+FROZEN: v1.1 at 2026-11-26T17:00:48+00:00 -> evaluation/datasets/eval_dataset_v1_1_freeze.json, manifests/eval-dataset-v1_1.sha256

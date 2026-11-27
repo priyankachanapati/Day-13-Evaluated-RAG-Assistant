@@ -1,0 +1,21 @@
+== Manifest verification (2026-11-26T15:24:40Z) ==
+Day 13 project : /Users/vamsi/Documents/AI-Engineering-Training/Day-13/01-Code/policy-qa-rag-v2
+Day 12 project : /Users/vamsi/Documents/AI-Engineering-Training/Day-12/01-Code/policy-qa-rag
+
+-- [1] Day 13 files vs manifests/v1-baseline-code.sha256
+   PASS (20 files)
+-- [2] Day 12 working files vs manifests/v1-baseline-code.sha256
+   PASS
+-- [3] Day 12 git commit b366fc8 vs manifests/v1-baseline-code.sha256
+   PASS
+-- [1] Day 13 files vs manifests/corpus.sha256
+   PASS (6 files)
+-- [2] Day 12 working files vs manifests/corpus.sha256
+   PASS
+-- [3] Day 12 git commit b366fc8 vs manifests/corpus.sha256
+   PASS
+-- [4] Reference results vs Day 12 results/
+   PASS  reference/day12-smoke-results-run1.json
+   PASS  reference/day12-smoke-test-log-run1.txt
+
+OVERALL: PASS

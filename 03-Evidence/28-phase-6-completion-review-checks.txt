@@ -1,0 +1,19 @@
+== Phase 6 completion review checks (2026-11-26T17:17:41Z); no code changes, no LLM calls ==
+-- tests:
+191 passed, 2 deselected in 18.91s
+-- lint:
+All checks passed!
+63 files already formatted
+-- v1 baseline + corpus:
+OVERALL: PASS
+-- frozen manifests (Phase 2-6, dataset v1.0, v1.1 + exposure record, dev queries, dev answer keys, catalog):
+   PASS (66 files)
+-- dataset validators:
+   v1.0 VALIDATION: PASS
+   v1.1 VALIDATION: PASS
+-- EV-06 exposure record present and hashed: 1 entry
+-- held-out IDs in result files: 0 | real-smoke-1 queries: ['DEV-01', 'DEV-02', 'DEV-03', 'DEV-04', 'DEV-05', 'SM-13', 'SM-14', 'SM-15']
+-- secret scan (excl. git-ignored .env): 0 files | .env.example placeholder: True
+-- Phase 1 reproduction:
+OVERALL: PASS (15/15 questions reproduced)
+-- Day 12 git changes: 0

@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "purpose": "Answer keys for the 5 frozen development queries (dev_queries.json is unchanged). Used only for Phase 6 integration/debugging. Required evidence is taken from dev_queries.json; this file adds answer terms and reference answers.",
+  "rules": [
+    "answer_terms: groups of acceptable phrasings; every group must be matched (case-insensitive); at least one term per group occurs verbatim in the required evidence text.",
+    "Written from the policy text before any answer was generated."
+  ],
+  "keys": {
+    "DEV-01": {
+      "answer_terms": [["21 calendar days", "21 days", "twenty-one days"]],
+      "reference_answer": "Requests for 5 or more consecutive working days must be submitted at least 21 calendar days in advance."
+    },
+    "DEV-02": {
+      "answer_terms": [["password manager"]],
+      "reference_answer": "KeyVault is the only approved password manager; it is installed on all company laptops."
+    },
+    "DEV-03": {
+      "answer_terms": [["4357"]],
+      "reference_answer": "The IT Service Desk can be reached on internal extension 4357."
+    },
+    "DEV-04": {
+      "answer_terms": [["only when connected", "only if connected", "only while connected"], ["at all times", "always"]],
+      "reference_answer": "Public Wi-Fi may be used for work only when connected through the company VPN, and employees must connect to company systems through the VPN at all times when working from home."
+    },
+    "DEV-05": {
+      "answer_terms": [["6 hours", "six hours"], ["USD 60", "$60", "60 per day"]],
+      "reference_answer": "Yes, premium economy may be booked for journeys of 6 hours or longer, and meals are reimbursed up to USD 60 per day."
+    }
+  },
+  "refusal_probes": {
+    "source": "tests/smoke_questions.json (frozen Day 12 v1 smoke test): the 3 unanswerable questions SM-13, SM-14, SM-15",
+    "ids": ["SM-13", "SM-14", "SM-15"],
+    "note": "The development set has no unanswerable query; these Day 12 questions (not part of the 30-query held-out set) are used to check refusal behaviour during integration."
+  }
+}

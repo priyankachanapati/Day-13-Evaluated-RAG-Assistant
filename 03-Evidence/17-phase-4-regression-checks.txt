@@ -1,0 +1,35 @@
+== Phase 4 regression checks (2026-11-26T16:17:33Z); HF_HUB_OFFLINE=1 (no network) ==
+
+-- 1. Frozen v1 tests + all v2 tests (real cross-encoder test included, loaded offline)
+...............................................                          [100%]
+119 passed, 2 deselected in 7.18s
+   tests_v2/test_reranker.py: 10 tests
+
+-- 2. Lint + format
+All checks passed!
+39 files already formatted
+
+-- 3. Frozen v1 baseline + corpus manifests
+OVERALL: PASS
+
+-- 4. Phase 2 artifacts (14) and Phase 3 artifacts (13) unchanged
+   OK files: 27
+   PASS
+
+-- 5. Evidence catalog rebuild
+Saved catalog identical to rebuild: PASS
+
+-- 6. Phase 1 v1 baseline reproduction
+  [PASS] retrieval: scores rounded to 4 dp exactly equal saved values (strict): 60/60 chunks (similarity and distance both exact)
+OVERALL: PASS (15/15 questions reproduced)
+
+-- 7. Activity C run 3 (after formatting): hash must equal runs 1-2 (e70b4ff0...)
+Results SHA-256 (floats rounded to 4 dp; excludes run metadata and latency): e70b4ff0d7e28ba308ebb23ae6746cb4da4d2082b4845f4db76717687a7bb743
+OVERALL: PASS (integrity, same-pool and no-truncation checks)
+
+-- 8. Cross-encoder scores at FULL precision: run 3 vs run 2 (separate processes)
+   150 reranked (query, strategy, chunk) scores; identical order: True; max |diff| = 0.000e+00; bit-identical: True
+
+-- 9. No LLM/Groq call in Phase 4 code: 0 files reference an LLM client
+-- 10. Day 12 git working tree changes: 0
+-- 11. .env present: no
