@@ -1,0 +1,481 @@
+{
+  "run_utc": "2026-11-27T08:56:07+00:00",
+  "k": 3,
+  "strategies": {
+    "fixed_500": "Fixed character, 500 chars, no overlap",
+    "recursive_800_100": "Recursive character, 800 chars, 100 overlap"
+  },
+  "per_query": [
+    {
+      "id": "DEV-01",
+      "query": "How far in advance do I have to request a two-week holiday?",
+      "required_evidence": [
+        [
+          "HR-001-S02-E04"
+        ]
+      ],
+      "results": {
+        "fixed_500": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-001-CH05",
+              "similarity": 0.4076,
+              "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+              "relevant": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "similarity": 0.3983,
+              "section": "2. Eligibility; 3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-001-CH03",
+              "similarity": 0.3965,
+              "section": "3. Carry-Forward of Annual Leave; 4. Sick Leave",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "coverage": 0.0,
+            "relevant_retrieved": 0,
+            "relevant_in_index": 1,
+            "groups_satisfied": 0,
+            "groups_total": 1,
+            "first_relevant_rank": null
+          }
+        },
+        "recursive_800_100": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-001-CH02",
+              "similarity": 0.4372,
+              "section": "2. Annual Leave; 3. Carry-Forward of Annual Leave; 4. Sick Leave",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "similarity": 0.4285,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-001-CH04",
+              "similarity": 0.3885,
+              "section": "6. Bereavement Leave; 7. Public Holidays; 8. Contact",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 1,
+            "groups_total": 1,
+            "first_relevant_rank": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "DEV-02",
+      "query": "What is KeyVault?",
+      "required_evidence": [
+        [
+          "IT-001-S05-E03"
+        ]
+      ],
+      "results": {
+        "fixed_500": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH03",
+              "similarity": 0.3469,
+              "section": "4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH02",
+              "similarity": 0.2382,
+              "section": "2. Password Requirements; 3. Multi-Factor Authentication; 4. Account Lockout",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-001-CH01",
+              "similarity": 0.1689,
+              "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 1,
+            "groups_total": 1,
+            "first_relevant_rank": 1
+          }
+        },
+        "recursive_800_100": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH02",
+              "similarity": 0.3743,
+              "section": "3. Multi-Factor Authentication; 4. Account Lockout; 5. Password Storage and Sharing; 6. Reporting a Compromised Account",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-001-CH01",
+              "similarity": 0.2085,
+              "section": "Introduction; 1. Purpose and Scope; 2. Password Requirements; 3. Multi-Factor Authentication",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH01",
+              "similarity": 0.1639,
+              "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment; 3. Acceptable Use",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 1,
+            "groups_total": 1,
+            "first_relevant_rank": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "DEV-03",
+      "query": "What is the IT Service Desk's internal extension number?",
+      "required_evidence": [
+        [
+          "IT-001-S06-E02",
+          "IT-002-S08-E01"
+        ]
+      ],
+      "results": {
+        "fixed_500": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH04",
+              "similarity": 0.4898,
+              "section": "6. Reporting a Compromised Account; 7. Enforcement",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-002-CH03",
+              "similarity": 0.4248,
+              "section": "4. Software Installation; 5. Removable Storage; 6. Lost or Stolen Equipment",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH04",
+              "similarity": 0.3934,
+              "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+              "relevant": true
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 2,
+            "relevant_in_index": 2,
+            "groups_satisfied": 1,
+            "groups_total": 1,
+            "first_relevant_rank": 1
+          }
+        },
+        "recursive_800_100": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "IT-001-CH03",
+              "similarity": 0.4739,
+              "section": "6. Reporting a Compromised Account; 7. Enforcement",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "IT-002-CH03",
+              "similarity": 0.443,
+              "section": "6. Lost or Stolen Equipment; 7. Returning Equipment; 8. Contact",
+              "relevant": true
+            },
+            {
+              "rank": 3,
+              "chunk_id": "IT-002-CH01",
+              "similarity": 0.3402,
+              "section": "Introduction; 1. Purpose and Scope; 2. Issued Equipment; 3. Acceptable Use",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 2,
+            "relevant_in_index": 2,
+            "groups_satisfied": 1,
+            "groups_total": 1,
+            "first_relevant_rank": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "DEV-04",
+      "query": "Can I use public Wi-Fi when working from home, and do I always need the VPN?",
+      "required_evidence": [
+        [
+          "HR-002-S06-E03"
+        ],
+        [
+          "HR-002-S06-E02"
+        ]
+      ],
+      "results": {
+        "fixed_500": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-002-CH04",
+              "similarity": 0.6565,
+              "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH03",
+              "similarity": 0.3746,
+              "section": "4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "similarity": 0.333,
+              "section": "2. Eligibility; 3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 2,
+            "groups_total": 2,
+            "first_relevant_rank": 1
+          }
+        },
+        "recursive_800_100": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-002-CH03",
+              "similarity": 0.5945,
+              "section": "6. Home Workspace and Security; 7. Internet Allowance; 8. Working From Another Country; 9. Contact",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-002-CH02",
+              "similarity": 0.3545,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH01",
+              "similarity": 0.2629,
+              "section": "Introduction; 1. Purpose and Scope; 2. Eligibility; 3. Number of Work-From-Home Days",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 2,
+            "groups_total": 2,
+            "first_relevant_rank": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "DEV-05",
+      "query": "On a 7-hour business flight can I book premium economy, and how much can I spend on meals per day?",
+      "required_evidence": [
+        [
+          "HR-003-S04-E02"
+        ],
+        [
+          "HR-003-S05-E01"
+        ]
+      ],
+      "results": {
+        "fixed_500": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-003-CH03",
+              "similarity": 0.5776,
+              "section": "3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals; 6. Use of a Personal Vehicle",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-003-CH04",
+              "similarity": 0.2826,
+              "section": "6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+              "relevant": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-003-CH02",
+              "similarity": 0.2337,
+              "section": "2. Submitting a Claim; 3. Approval and Payment",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 1,
+            "relevant_in_index": 1,
+            "groups_satisfied": 2,
+            "groups_total": 2,
+            "first_relevant_rank": 1
+          }
+        },
+        "recursive_800_100": {
+          "top3": [
+            {
+              "rank": 1,
+              "chunk_id": "HR-003-CH02",
+              "similarity": 0.544,
+              "section": "2. Submitting a Claim; 3. Approval and Payment; 4. Business Travel - Flights and Accommodation; 5. Business Travel - Meals",
+              "relevant": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "HR-003-CH03",
+              "similarity": 0.4532,
+              "section": "5. Business Travel - Meals; 6. Use of a Personal Vehicle; 7. Non-Reimbursable Expenses; 8. Contact",
+              "relevant": true
+            },
+            {
+              "rank": 3,
+              "chunk_id": "HR-002-CH02",
+              "similarity": 0.2356,
+              "section": "3. Number of Work-From-Home Days; 4. Requesting Work-From-Home Days; 5. Core Working Hours; 6. Home Workspace and Security",
+              "relevant": false
+            }
+          ],
+          "metrics": {
+            "k": 3,
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "coverage": 1.0,
+            "relevant_retrieved": 2,
+            "relevant_in_index": 2,
+            "groups_satisfied": 2,
+            "groups_total": 2,
+            "first_relevant_rank": 1
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "fixed_500": {
+      "dev5": {
+        "hit_rate": 0.8,
+        "mrr": 0.8,
+        "precision": 0.3333,
+        "coverage": 0.8
+      },
+      "phase7_saved_25": {
+        "hit_rate": 0.88,
+        "mrr": 0.8,
+        "coverage": 0.84
+      }
+    },
+    "recursive_800_100": {
+      "dev5": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "precision": 0.4667,
+        "coverage": 1.0
+      },
+      "phase7_saved_25": {
+        "hit_rate": 1.0,
+        "mrr": 0.9533333333333333,
+        "coverage": 1.0
+      }
+    }
+  },
+  "all_checks_pass": true
+}
